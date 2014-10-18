@@ -4,6 +4,7 @@ lock '3.2.1'
 set :application, 'hackpitt'
 set :deploy_to, '/u/sites/hackpitt'
 set :keep_releases, 5
+set :tmp_dir, '/u/sites/hackpitt/tmp'
 
 # Git
 set :scm, :git
