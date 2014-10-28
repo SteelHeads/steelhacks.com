@@ -1,88 +1,102 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HackPitt</title>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure//pure.css">
-    <!--[if lte IE 8]>
-      <link rel="stylesheet" href="http://yui.yahooapis.com/pure//grids-responsive-old-ie.css">
-    <![endif]-->
-    <!--[if gt IE 8]><!-->
-        <link rel="stylesheet" href="http://yui.yahooapis.com/pure//grids-responsive.css">
-    <!--<![endif]-->
-        <!--[if lte IE 8]>
-           <link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
-    <![endif]-->
-        <!--[if gt IE 8]><!-->
-           <link rel="stylesheet" href="css/layouts/marketing.css">
-        <!--<![endif]-->
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-    <style type="text/css">
-        body * {
-            font-family: 'Source Sans Pro', sans-serif;
-        }
-        .ribbon1{
-            background: #FFF;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HackPitt</title>
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure//pure.css">
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure//grids-responsive-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure//grids-responsive.css">
+  <!--<![endif]-->
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="css/layouts/marketing.css">
+  <!--<![endif]-->
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <style type="text/css">
+  body * {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  p {
+    color: #fff;
+  }
+  .splash-container {
+    background: #fdf498;
+  }
+  .ribbon {
+    background: #7bc043;
+  }
+  #info {
+    background: #67bde2;
+  }
+  .content-subhead, .content-head, .splash-container p, .splash-container h1 {
+    color: #d6392f;
+  }
+  a.pure-button-primary {
+    color: #7bc043;
+  }
+  </style>
 </head>
 <body>
-<div class="header">
+  <div class="header"> <!--start toolbar-->
     <div class="pure-menu pure-menu-open pure-menu-horizontal">
-    <ul>
+      <ul>
         <li class="pure-menu-selected"><a href="#">Home</a></li>
-    </ul>
-</div>
-</div>
-<div class="splash-container">
+      </ul>
+    </div>
+  </div><!--end toolbar-->
+  <div class="splash-container"><!--start splash-->
     <div class="splash">
-        <h1 class="splash-head">HackPitt</h1>
-        <p class="splash-subhead">
-            Coming soon in late February/early March 2015.
-        </p>
-        <p>
-            <a href="#" class="pure-button pure-button-primary">Sign Up!</a>
-        </p>
+      <h1 class="splash-head">HackPitt</h1>
+      <p class="splash-subhead">
+        Coming soon in late February/early March 2015.
+      </p>
+      <p>
+        <a href="#" class="pure-button pure-button-primary">Sign Up!</a>
+      </p>
     </div>
-</div>
-<div class="content-wrapper">
-    <div class="content">
-        <h2 class="content-head is-center">About</h2>
-
-        <div class="pure-g">
-            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <h3 class="content-subhead">
-                    <i class="fa fa-institution"></i>
-                    Location
-                </h3>
-                <p>
-                    HackPitt will be held at the University of Pittsburgh.
-                </p>
-            </div>
-            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <h3 class="content-subhead">
-                    <i class="fa fa-clock-o"></i>
-                    36 Hours of hacking
-                </h3>
-                <p>
-                    The hackathon will run for either 24 or 36 hours in late February or early March, 2015.
-                </p>
-            </div>
+  </div><!--end splash-->
+  <div class="content-wrapper">
+    <div id="info" class="content"><!--start information-->
+      <h2 class="content-head is-center">About</h2>
+      <div class="pure-g">
+        <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+          <h3 class="content-subhead">
+            <i class="fa fa-institution"></i>
+            Location
+          </h3>
+          <p>
+            HackPitt will be held at the University of Pittsburgh.
+          </p>
         </div>
-    </div>
+        <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+          <h3 class="content-subhead">
+            <i class="fa fa-clock-o"></i>
+            36 Hours of hacking
+          </h3>
+          <p>
+            The hackathon will run for either 24 or 36 hours in late February or early March, 2015.
+          </p>
+        </div>
+      </div>
+    </div><!--end information-->
     <div id="ribbon1" class="ribbon l-box-lrg pure-g">
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
-            <h2 class="content-head content-head-ribbon">Stay tuned</h2>
-            <p>
-                This page will be updated with a lot more information as it comes in.
-            </p>
-        </div>
+      <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+        <h2 class="content-head content-head-ribbon">Stay tuned</h2>
+        <p>
+          This page will be updated with a lot more information as it comes in.
+        </p>
+      </div>
     </div>
     <div class="footer l-box is-center">
-        Made with love by the HackPitt organizers. Shout out to Pure CSS by the Yahoo! team.
+      Made with love by the HackPitt organizers. Shout out to Pure CSS by the Yahoo! team.
     </div>
-</div>
+  </div>
 </body>
 </html>
