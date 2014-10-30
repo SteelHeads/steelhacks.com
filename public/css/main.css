@@ -16,6 +16,9 @@ p {
 .content-subhead, .content-head, .splash-container p, .splash-container h1 {
   color: #f7b84d;
 }
+.splash-head {
+  font-family: 'Oxygen', sans-serif;
+}
 .pure-button, a.pure-button-primary {
   background: #5b9fc9;
   color: #fff;
