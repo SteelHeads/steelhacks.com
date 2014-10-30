@@ -1,0 +1,21 @@
+body * {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+p {
+  color: #fff;
+}
+.splash-container {
+  background: #fdf498;
+}
+.ribbon {
+  background: #7bc043;
+}
+#info {
+  background: #67bde2;
+}
+.content-subhead, .content-head, .splash-container p, .splash-container h1 {
+  color: #d6392f;
+}
+a.pure-button-primary {
+  color: #7bc043;
+}
