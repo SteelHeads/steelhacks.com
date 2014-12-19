@@ -1,89 +1,95 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--Ritwik Gupta-->
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SteelHacks</title>
-  <link rel="stylesheet" href="http://yui.yahooapis.com/pure//pure.css">
-  <!--[if lte IE 8]>
-  <link rel="stylesheet" href="http://yui.yahooapis.com/pure//grids-responsive-old-ie.css">
-  <![endif]-->
-  <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="http://yui.yahooapis.com/pure//grids-responsive.css">
-  <!--<![endif]-->
-  <!--[if lte IE 8]>
-  <link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
-  <![endif]-->
-  <!--[if gt IE 8]><!-->
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/layouts/marketing.css">
-  <!--<![endif]-->
+  <title>Pratibha 2015</title>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=no">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/ripples.min.css" rel="stylesheet">
+  <link href="css/material-wfont.min.css" rel="stylesheet">
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
-  <link rel="stylesheet" href="css/main.css" type="text/css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <style>
+  .navbar-default , .collapse, .navbar-header {
+    background-color: #0d47a1;
+  }
+  .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
+    background-color: #0d47a1;
+  }
+  .img-responsive {
+    margin: 0 auto;
+  }
+  </style>
 </head>
 <body>
-  <div class="header"> <!--start toolbar-->
-    <div class="pure-menu pure-menu-open pure-menu-horizontal">
-      <ul>
-        <li class="pure-menu-selected"><a href="#">Home</a></li>
-      </ul>
+  <div class="container">
+    <div class="row clearfix">
+      <div class="col-md-12 column">
+        <nav class="navbar navbar-warning" role="navigation"> <!--navbar start-->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">SteelHacks</a>
+          </div>
+          <div class="collapse navbar-collapse navbar-warning-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active">
+                <a href="index.html"><i class="fa fa-home"></i> Home</a>
+              </li>
+            </ul>
+          </div>
+        </nav> <!--end navbar-->
+        <div class="jumbotron text-center">
+          <img class="img-responsive" src="img/banner.png">
+          <p>
+            <a class="btn btn-info btn-large" href="information.html">Register</a>
+          </p>
+        </div>
+      </div>
     </div>
-  </div><!--end toolbar-->
-  <div class="splash-container"><!--start splash-->
-    <div class="splash">
-      <h1 class="splash-head">SteelHacks</h1>
-      <p class="splash-subhead">
-        March 20-22, 2015.
-      </p>
-      <p>
-        <a href="#" class="pure-button pure-button-primary">Sign Up!</a>
-      </p>
-    </div>
-  </div><!--end splash-->
-  <div class="content-wrapper">
-    <div id="info" class="content"><!--start information-->
-      <h2 class="content-head is-center">About</h2>
-      <div class="pure-g">
-        <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-          <h3 class="content-subhead">
-            <i class="fa fa-question-circle"></i>
-            What is a hackathon?
-          </h3>
-          <p>
-            A hackathon is basically a marathon of hacking. Not hacking in the Hollywood sense (breaking into "mainframes"), but instead to make.
-          </p>
-        </div>
-        <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-          <h3 class="content-subhead">
-            <i class="fa fa-institution"></i>
-            Location
-          </h3>
-          <p>
-            SteelHacks will be held at the University of Pittsburgh.
-          </p>
-        </div>
-        <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-          <h3 class="content-subhead">
-            <i class="fa fa-clock-o"></i>
-            36 Hours of hacking
-          </h3>
-          <p>
-            The hackathon will run for 36 hours from March 20th to March 22nd, 2015.
-          </p>
-        </div>
-    </div><!--end information-->
-    <div id="ribbon1" class="ribbon l-box-lrg pure-g">
-      <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
-        <h2 class="content-head content-head-ribbon">Stay tuned</h2>
+    <div class="row clearfix text-center">
+      <div class="col-md-4 column">
+        <h3>
+          <i class="fa fa-question-circle"></i>
+          What is a hackathon?
+        </h3>
         <p>
-          This page will be updated with a lot more information as it comes in.
+          A hackathon is basically a marathon of hacking. Not hacking in the Hollywood sense (breaking into "mainframes"), but instead to make.
+        </p>
+      </div>
+      <div class="col-md-4 column">
+        <h3>
+          <i class="fa fa-institution"></i>
+          Location
+        </h3>
+        <p>
+          SteelHacks will be held at the University of Pittsburgh.
+        </p>
+      </div>
+      <div class="col-md-4 column">
+        <h3>
+          <i class="fa fa-clock-o"></i>
+          36 Hours of hacking
+        </h3>
+        <p>
+          The hackathon will run for 36 hours from March 20th to March 22nd, 2015.
         </p>
       </div>
     </div>
-    <div class="footer l-box is-center">
-      Made with love by the SteelHacks organizers. Shout out to Pure CSS by the Yahoo! team.
+  </div>
+  <div class="footer">
+    <div class="container text-right">
+      <p class="text-muted">&#169; SteelHacks 2014-2015</p>
     </div>
   </div>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+  <script src="js/ripples.min.js"></script>
+  <script src="js/material.min.js"></script>
+  <script>
+      $(document).ready(function() {
+          $.material.init();
+      });
+  </script>
 </body>
 </html>
