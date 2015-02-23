@@ -1,36 +1,8 @@
-body, .jumbotron {
-  background-color: #616161;
+.sponsors {
+  background: rgba(255, 255, 255, 0.5);
+  margin: 30px 0;
+  padding-bottom: 20px;
 }
-
-.btn {
-  background-color: #fd971f;
-  color: #616161;
-}
-
-.btn-primary {
-  background-image: radial-gradient(circle, #fd971f 80%, #fd971f 81%);
-}
-
-.navbar-default , .collapse, .navbar-header {
-  background-color: #fd971f;
-}
-
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
-  background-color: #999999;
-}
-
-p {
-  color: #ffd54f;
-}
-
-.navbar-default .navbar-nav>li>a, .navbar-default .navbar-brand {
-  color: #616161;
-}
-
-.jumbotron h1, h2{
-  color: #ffffff;
-}
-
-.footer p {
-  color: #fd971f;
+.sponsors h2 {
+  margin-bottom: 30px;
 }
