@@ -1,11 +1,15 @@
 .banner {
   margin: 0 auto;
 }
-.sponsors {
+.sponsors-box {
   background: rgba(255, 255, 255, 0.5);
   margin: 30px 0;
   padding-bottom: 20px;
 }
-.sponsors h2 {
+.sponsors-box h2 {
   margin-bottom: 30px;
+}
+.sponsors {
+  display: flex;
+  align-items: center;
 }
