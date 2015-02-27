@@ -12,6 +12,10 @@
 .supporters {
   display: flex;
   align-items: center;
+  justify-content: space-around;
+}
+.supporter {
+  text-align: center;
 }
 .jumbo-margin {
   margin-top: 15px;
