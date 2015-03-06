@@ -9,10 +9,19 @@
 .supporters-box h2 {
   margin-bottom: 30px;
 }
+.supporters-box .container {
+  padding: 0;
+  width: 100%;
+}
 .supporters {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+}
+.supporters .supporter {
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 .jumbo-margin {
   margin-top: 15px;
