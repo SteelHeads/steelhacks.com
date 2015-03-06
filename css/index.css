@@ -12,6 +12,7 @@
 .supporters-box .container {
   padding: 0;
   width: 100%;
+  margin-right: -20px;
 }
 .supporters {
   display: flex;
