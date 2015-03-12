@@ -1,26 +1,31 @@
 .banner {
   margin: 0 auto;
 }
-.supporters-box {
+.supporters-box,
+.sanctioners-box {
   background: rgba(255, 255, 255, 0.5);
   margin: 30px 0;
   padding-bottom: 20px;
 }
-.supporters-box h2 {
+.supporters-box h2,
+.sanctioners-box h2 {
   margin-bottom: 30px;
 }
-.supporters-box .container {
+.supporters-box .container,
+.sanctioners-box .container {
   padding: 0;
   width: 100%;
   margin-right: -20px;
 }
-.supporters {
+.supporters,
+.sanctioners {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
-.supporters .supporter {
+.supporters .supporter,
+.sanctioners .sanctioner {
   margin-right: 30px;
   margin-bottom: 30px;
 }
