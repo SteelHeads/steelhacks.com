@@ -26,10 +26,11 @@
      <link href="css/material-wfont.min.css" rel="stylesheet">
      <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
      <link rel="stylesheet" href="css/index.css">
+     <link rel="stylesheet" href="css/countdown.css">
      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-     <script src="countdown_v4.3/countdown.js"></script>
+     <script src="js/countdown.js"></script>
 </head>
-<body>
+<body onload="showallclocks()">
      <div class="container">
           <div class="row clearfix">
                <div class="col-md-12 column">
@@ -42,20 +43,29 @@
                          </p>
                           <div id="container">
                             <!--Countdown clock goes here-->
-                            <p style="font-size: 30px; margin: 7px 0px"><strong><a href="http://steelhacks2015.challengepost.com">ChallengePost</a> submission deadline: March 29, 2015, 8:30 AM EDT</strong></p>
+                            <p style="font-size: 30px; margin: 7px 0px"><strong><a href="http://steelhacks2015.challengepost.com">ChallengePost</a> submission deadline: March 29, 2015, 8:30am EDT</strong></p>
                             <div align="center">
                               <script>
-                              var myCountdownTest = new Countdown({
-                                              year  : 2015,
-                                              month : 3, 
-                                              day   : 29,
-                                              hour  : 8,
-                                              minute: 30,
-                                              second: 00,
-                                              width : 900, 
-                                              height  : 120
-                                              });
+                                 var countdownTo = new Date("29 March 2015 08:30 -0400");
                               </script>
+                              <div id=countdown>
+                                 <div class=group>
+                                   <div class=flip><span class=number id=cd_days></span></div><div class=crossbar></div>
+                                   <div class=countdownLabel>DAYS</div>
+                                 </div>
+                                 <div class=group>
+                                   <div class=flip><span class=number id=cd_hours></span></div><div class=crossbar></div>
+                                   <div class=countdownLabel>HOURS</div>
+                                 </div>
+                                 <div class=group>
+                                   <div class=flip><span class=number id=cd_minutes></span></div><div class=crossbar></div>
+                                   <div class=countdownLabel>MINUTES</div>
+                                 </div>
+                                 <div class=group>
+                                   <div class=flip><span class=number id=cd_seconds></span></div><div class=crossbar></div>
+                                   <div class=countdownLabel>SECONDS</div>
+                                 </div>
+                              </div>
                             </div>
                           </div>
                     </div>
