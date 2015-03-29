@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <!--Megan Chen-->
 <html>
+
 <head>
      <title>SteelHacks Live</title>
      <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=no">
@@ -30,218 +31,264 @@
      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
      <script src="js/countdown.js"></script>
 </head>
+
 <body onload="showallclocks()">
      <div class="container">
           <div class="row clearfix">
                <div class="col-md-12 column">
                     <div class="jumbotron jumbo-margin text-center">
-                         <a href="./"><img class="img-responsive banner" src="img/banner.png"></a>
+                         <a href="./">
+                              <img class="img-responsive banner" src="img/banner.png">
+                         </a>
                          <p>
                               <a href="live.html#schedule" class="btn btn-danger btn-large">Schedule of events</a>
                               <a href="live.html" class="btn btn-success btn-large">SteelHacks LIVE!</a>
                          </p>
-                          <div id="container">
-                            <!--Countdown clock goes here-->
-                            <p style="font-size: 30px; margin: 7px 0px"><strong><a href="http://steelhacks2015.challengepost.com">ChallengePost</a> submission deadline: March 29, 2015, 8:30am EDT</strong></p>
-                            <div align="center">
-                              <script>
-                                 var countdownTo = new Date("29 March 2015 08:30 -0400");
-                              </script>
-                              <div id=countdown>
-                                 <div class=group>
-                                   <div class=flip><span class=number id=cd_days></span></div><div class=crossbar></div>
-                                   <div class=countdownLabel>DAYS</div>
-                                 </div>
-                                 <div class=group>
-                                   <div class=flip><span class=number id=cd_hours></span></div><div class=crossbar></div>
-                                   <div class=countdownLabel>HOURS</div>
-                                 </div>
-                                 <div class=group>
-                                   <div class=flip><span class=number id=cd_minutes></span></div><div class=crossbar></div>
-                                   <div class=countdownLabel>MINUTES</div>
-                                 </div>
-                                 <div class=group>
-                                   <div class=flip><span class=number id=cd_seconds></span></div><div class=crossbar></div>
-                                   <div class=countdownLabel>SECONDS</div>
-                                 </div>
+                         <div id="container">
+                              <!--Countdown clock goes here-->
+                              <p style="font-size: 30px; margin: 7px 0px">
+                                   <strong><a href="http://steelhacks2015.challengepost.com">ChallengePost</a> submission deadline: March 29, 2015, 8:30am EDT</strong>
+                              </p>
+                              <div align="center">
+                                   <script>
+                                        var countdownTo = new Date("29 March 2015 08:30 -0400");
+                                   </script>
+                                   <div id=countdown>
+                                        <div class=group>
+                                             <div class=flip>
+                                                  <span class=number id=cd_days></span>
+                                             </div>
+                                             <div class=crossbar></div>
+                                             <div class=countdownLabel>DAYS</div>
+                                        </div>
+                                        <div class=group>
+                                             <div class=flip>
+                                                  <span class=number id=cd_hours></span>
+                                             </div>
+                                             <div class=crossbar></div>
+                                             <div class=countdownLabel>HOURS</div>
+                                        </div>
+                                        <div class=group>
+                                             <div class=flip>
+                                                  <span class=number id=cd_minutes></span>
+                                             </div>
+                                             <div class=crossbar></div>
+                                             <div class=countdownLabel>MINUTES</div>
+                                        </div>
+                                        <div class=group>
+                                             <div class=flip>
+                                                  <span class=number id=cd_seconds></span>
+                                             </div>
+                                             <div class=crossbar></div>
+                                             <div class=countdownLabel>SECONDS</div>
+                                        </div>
+                                   </div>
                               </div>
-                            </div>
-                          </div>
+                         </div>
                     </div>
                </div>
           </div>
           <div class="row clearfix text-center">
-            <h1><strong>Announcements</strong></h1>
-              <div>
-                <div class="jumbotron">
-                    <h2>[Sun 12:10am] Tech Talk: Building Web Apps with Sinatra!</h2>
-                    <p>Reshef Elisha is giving our final tech talk on building web apps with Sinatra right now in the William Pitt Union Assembly Room!</p>
-                </div>
-                <div class="jumbotron">
-                    <h2>[Sat 11:32pm] Tech Talk: Android Development!</h2>
-                    <p>Ritwik Gupta is giving a tech talk on Android Development right now until midnight! Come to the Pitt Union Assembly Room to listen to the talk!</p>
-                </div>
-              </div>
-              <div>
-              <div>
-                <div class="jumbotron">
-                    <h2>[Sat 11:04pm] Tech Talks Starting</h2>
-                    <p>Robbie McKinistry is giving a tech talk on Web Development with Go right now. Head over to the William Pitt Union Assembly Room if you're interested!</p>
-                </div>
-              </div>
-              <div>
-                <div class="jumbotron">
-                    <h2>[Sat 6:03pm] Dinner!</h2>
-                    <p>Dinner is now available in room 5319!</p>
-                </div>
-              </div>
-              <div>
-                <div class="jumbotron">
-                    <h2>[Sat 12:11pm] Lunch!</h2>
-                    <p>Lunch is now available in room 5319!</p>
-                </div>
-              </div>
-              <div>
-                <div class="jumbotron">
-                    <h2>[Sat 8:55am] Breakfast!</h2>
-                    <p>Good morning, everyone! Hope you have all rested up (or survived the whole night awake) and are ready for another exciting day of hacking! To get you fueled up, breakfast is now ready in the food room (5319), so come over and get a nice early morning energy boost!</p>
-                </div>
-              </div>
-              <div>
-                <div class="jumbotron">
-                    <h2>[Sat 12:02am] Code in the Dark update</h2>
-                    <p>If you're interested in participating in MLH's Code in the Dark competition, it's starting now. Head straight to room 5505.</p>
-                </div>
-              </div>
-              <div>
-                <div class="jumbotron">
-                    <h2>[Fri 9:59pm] Updates from MLH: Cupcakes and Code in the Dark</h2>
-                    <p>Due to a few last-minute logistical changes, MLH will be providing cupcakes at 12 AM on SUNDAY, not 12 AM on Saturday (as in 2 hours from now). In addition, in light of this time change and in hopes of accommodating more people, the Code in the Dark competition will be held at 12 AM on Saturday (so 2 hours from now!) rather than at 3 AM. It will be in room 5505.</p>
-                </div>
-              </div>
-              <div>
-                <div class="jumbotron">
-                    <h2>[Fri 8:22pm] Need Help? Don't Fret!</h2>
-                    <p>If you ever need help with your hacking, whether it's a technical or non-technical issue, don't panic! We have a group of talented and enthusiastic mentors on hand to help you out! Their names and contact info can be found under the Resources section of this page, in the Mentors List. So please do not hesitate to contact an individual mentor via whatever forms of communication they have available, and he/she will be more than happy to assist you! Alternatively, if you are not sure which specific mentor(s) to ask, or if you want just any mentor to be able to investigate your issue and be ready to help you out, you can also fill out the Help Line form, also found under the Resources section of this page. Just indicate your name and hacking location, and type + description of your problem, and any or all of the mentors will be able to see your issue and offer you a hand!</p>
-                </div>
-              </div>
-              <div>
-                <div class="jumbotron">
-                    <h2>[Fri 7:31pm] Hardware</h2>
-                    <p>If you are looking to borrow any piece of hardware, please stop by room 5710. We'll be happy to check out any available hardware to hackers for the entire duration of the hackathon. The full list of hardware that we can lend out to you can be found under the Hardware list in the Resources section of this page. Please remember to bring either a government-issued photo ID or a credit card when you come to the hardware checkout room. Happy hacking!</p>
-                </div>
-              </div>
-              <div>
-                <div class="jumbotron">
-                    <h2>[Fri 6:17pm] IT'S HAPPENING!!!!!</h2>
-                    <p>Finally, the moment you've been waiting for has come, and SteelHacks check-in has kicked off! Come to the 2nd floor of Sennott Square to check in and receive your free t-shirt and some awesome stickers courtesy of Namecheap, Github, and Trello! Once you do, head straight into the auditorium (room 2400) for the opening ceremony, which will start at 7PM. Enjoy some appetizers while you check in and get settled, too :)</p>
-                </div>
-              </div>
-              <div>
-                <div class="jumbotron">
-                    <h2>[Fri 7:32am] Less than 11 hours left until kickoff!</h2>
-                    <p>We are so excited to have you here hacking with us this weekend! Check-in will open at 6 PM in Sennott Square, and the opening ceremony will commence at 7 PM!</p>
-                </div>
-              </div>
-              <div>
-                <div class="jumbotron">
-                    <h2>[Fri 7:32am] Hello World!</h2>
-                    <p>Welcome to SteelHacks 2015!</p>
-                </div>
-              </div>
-          </div>
-          <a name="schedule"></a>
-          <div class="row clearfix text-center">
-            <h1><strong>Schedule</strong></h1>
-               <div class="col-md-4 column">
-                <div class="jumbotron">
-                    <h2>Friday:</h2>
-                    <ul>
-                        <li class="text-left">6:00-7:00PM - Registration</li>
-                        <li class="text-left">6:30-7:00PM - <span class="glyphicon glyphicon-cutlery"></span> Appetizers</li>
-                        <li class="text-left">7:00-7:30PM - Opening Ceremony</li>
-                        <li class="text-left">7:30-8:00PM - Teamless mingle/Claim hackspaces</li>
-                        <li class="text-left"><b style='color: red;'>8:00PM - Hacking starts</b></li>
-                    </ul>
-                </div>
+               <h1>
+                    <strong>Announcements</strong>
+               </h1>
+               <div>
+                    <div class="jumbotron">
+                         <h2>[Sun 12:36am] New prize</h2>
+                         <p>Amazon is sponsoring a prize for the best use of AWS.</p>
+                    </div>
                </div>
-               <div class="col-md-4 column">
-                <div class="jumbotron">
-                    <h2>Saturday:</h2>
-                    <ul>
-                        <li class="text-left">12:00-12:30AM - Code in the dark (competition!)</li>
-                        <li class="text-left">9:00-10:00AM - <span class="glyphicon glyphicon-cutlery"></span> Breakfast</li>
-                        <li class="text-left">1:00-2:00PM - <span class="glyphicon glyphicon-cutlery"></span> Lunch</li>
-                        <li class="text-left">3:00-3:30PM - Bubble-wrap</li>
-                        <li class="text-left">7:00-8:00PM - <span class="glyphicon glyphicon-cutlery"></span> Dinner</li>
-                        <li class="text-left">11:00PM-12:30AM - Tech talks</li>
-                        <ul>
-                          <li class="text-left"><i>11:00-11:30PM - Web Development in Go</i></li>
-                          <li class="text-left"><i>11:30PM-12:00AM - Android Development</i></li>
-                          <li class="text-left"><i>12:00-12:30AM - Building Web Apps with Sinatra</i></li>
-                        </ul>
-                    </ul>
-                </div>
+               <div>
+                    <div class="jumbotron">
+                         <h2>[Sun 12:10am] Tech Talk: Building Web Apps with Sinatra!</h2>
+                         <p>Reshef Elisha is giving our final tech talk on building web apps with Sinatra right now in the William Pitt Union Assembly Room!</p>
+                    </div>
                </div>
-               <div class="col-md-4 column">
-                <div class="jumbotron">
-                    <h2>Sunday:</h2>
-                    <ul>
-                        <li class="text-left">12:00-12:30AM - Cupcakes!</li>
-                        <li class="text-left"><b style='color: red;'>8:00AM - Hacking ends</b></li>
-                        <li class="text-left">8:00-9:30AM - <span class="glyphicon glyphicon-cutlery"></span> Breakfast</li>
-                        <li class="text-left"><b style='color: red;'>8:30AM - Submissions due on ChallengePost</b></li>
-                        <li class="text-left">9:30-10:30AM - Expo/Judging (first round)</li>
-                        <li class="text-left">11:00-1:30PM - Closing ceremony (and second round of judging)</li>
-                    </ul>
-                </div>
+               <div>
+                    <div class="jumbotron">
+                         <h2>[Sat 11:32pm] Tech Talk: Android Development!</h2>
+                         <p>Ritwik Gupta is giving a tech talk on Android Development right now until midnight! Come to the Pitt Union Assembly Room to listen to the talk!</p>
+                    </div>
                </div>
-          </div>
-          <a name="info"></a>
-          <div class="row clearfix text-center">
-            <h1><strong>Information</strong></h1>
-              <div class="col-md-4 column">
-                <div class="jumbotron">
-                    <h2>Social Media</h2>
-                    <ul>
-                        <li class="text-left">Facebook: <a href="http://www.facebook.com/steelhacks">http://www.fb.com/steelhacks</a></li>
-                        <li class="text-left">Twitter: <a href="http://twitter.com/steelhacks">@steelhacks</a></li>
-                    </ul>
-                </div>
+               <div>
+                    <div>
+                         <div class="jumbotron">
+                              <h2>[Sat 11:04pm] Tech Talks Starting</h2>
+                              <p>Robbie McKinistry is giving a tech talk on Web Development with Go right now. Head over to the William Pitt Union Assembly Room if you're interested!</p>
+                         </div>
+                    </div>
+                    <div>
+                         <div class="jumbotron">
+                              <h2>[Sat 6:03pm] Dinner!</h2>
+                              <p>Dinner is now available in room 5319!</p>
+                         </div>
+                    </div>
+                    <div>
+                         <div class="jumbotron">
+                              <h2>[Sat 12:11pm] Lunch!</h2>
+                              <p>Lunch is now available in room 5319!</p>
+                         </div>
+                    </div>
+                    <div>
+                         <div class="jumbotron">
+                              <h2>[Sat 8:55am] Breakfast!</h2>
+                              <p>Good morning, everyone! Hope you have all rested up (or survived the whole night awake) and are ready for another exciting day of hacking! To get you fueled up, breakfast is now ready in the food room (5319), so come over
+                                   and get a nice early morning energy boost!</p>
+                         </div>
+                    </div>
+                    <div>
+                         <div class="jumbotron">
+                              <h2>[Sat 12:02am] Code in the Dark update</h2>
+                              <p>If you're interested in participating in MLH's Code in the Dark competition, it's starting now. Head straight to room 5505.</p>
+                         </div>
+                    </div>
+                    <div>
+                         <div class="jumbotron">
+                              <h2>[Fri 9:59pm] Updates from MLH: Cupcakes and Code in the Dark</h2>
+                              <p>Due to a few last-minute logistical changes, MLH will be providing cupcakes at 12 AM on SUNDAY, not 12 AM on Saturday (as in 2 hours from now). In addition, in light of this time change and in hopes of accommodating more
+                                   people, the Code in the Dark competition will be held at 12 AM on Saturday (so 2 hours from now!) rather than at 3 AM. It will be in room 5505.</p>
+                         </div>
+                    </div>
+                    <div>
+                         <div class="jumbotron">
+                              <h2>[Fri 8:22pm] Need Help? Don't Fret!</h2>
+                              <p>If you ever need help with your hacking, whether it's a technical or non-technical issue, don't panic! We have a group of talented and enthusiastic mentors on hand to help you out! Their names and contact info can be found
+                                   under the Resources section of this page, in the Mentors List. So please do not hesitate to contact an individual mentor via whatever forms of communication they have available, and he/she will be more than happy to
+                                   assist you! Alternatively, if you are not sure which specific mentor(s) to ask, or if you want just any mentor to be able to investigate your issue and be ready to help you out, you can also fill out the Help Line form,
+                                   also found under the Resources section of this page. Just indicate your name and hacking location, and type + description of your problem, and any or all of the mentors will be able to see your issue and offer you a
+                                   hand!</p>
+                         </div>
+                    </div>
+                    <div>
+                         <div class="jumbotron">
+                              <h2>[Fri 7:31pm] Hardware</h2>
+                              <p>If you are looking to borrow any piece of hardware, please stop by room 5710. We'll be happy to check out any available hardware to hackers for the entire duration of the hackathon. The full list of hardware that we can lend
+                                   out to you can be found under the Hardware list in the Resources section of this page. Please remember to bring either a government-issued photo ID or a credit card when you come to the hardware checkout room. Happy
+                                   hacking!</p>
+                         </div>
+                    </div>
+                    <div>
+                         <div class="jumbotron">
+                              <h2>[Fri 6:17pm] IT'S HAPPENING!!!!!</h2>
+                              <p>Finally, the moment you've been waiting for has come, and SteelHacks check-in has kicked off! Come to the 2nd floor of Sennott Square to check in and receive your free t-shirt and some awesome stickers courtesy of Namecheap,
+                                   Github, and Trello! Once you do, head straight into the auditorium (room 2400) for the opening ceremony, which will start at 7PM. Enjoy some appetizers while you check in and get settled, too :)</p>
+                         </div>
+                    </div>
+                    <div>
+                         <div class="jumbotron">
+                              <h2>[Fri 7:32am] Less than 11 hours left until kickoff!</h2>
+                              <p>We are so excited to have you here hacking with us this weekend! Check-in will open at 6 PM in Sennott Square, and the opening ceremony will commence at 7 PM!</p>
+                         </div>
+                    </div>
+                    <div>
+                         <div class="jumbotron">
+                              <h2>[Fri 7:32am] Hello World!</h2>
+                              <p>Welcome to SteelHacks 2015!</p>
+                         </div>
+                    </div>
                </div>
-              <div class="col-md-4 column">
-                <div class="jumbotron">
-                    <h2>Resources</h2>
-                    <ul>
-                        <li class="text-left">Facebook Event: <a href="https://www.facebook.com/events/444159109066553/">SteelHacks</a></li>
-                        <li class="text-left">Hardware: <a href="https://mlh.io/events/158/hardware_checkouts/">See what's available for checkout</a></li>
-                        <li class="text-left">Mentors List: <a href="https://docs.google.com/spreadsheets/d/1ONSTM9UiR4l5Vgw4sKv0Nh25A12usIGL1tip0VIEaWE/edit#gid=1819920707">Look for specific mentors here!</a></li>
-                        <li class="text-left">Be a Mentor: <a href="https://docs.google.com/forms/d/1T3BGH1cQkGaiZrSkaMcGRe9jxtBMSwQJTvZfNN09t0Q/viewform">Mentor Sign Up!</a></li>
-                        <li class="text-left">Help Line: <a href="http://goo.gl/forms/NLbVlHF5Zy">Request help from a mentor!</a></li>
-                        <li class="text-left">Prizes and Submissions: <a href="http://steelhacks2015.challengepost.com/">ChallengePost</a></li>
-                    </ul>
-                </div>
+               <a name="schedule"></a>
+               <div class="row clearfix text-center">
+                    <h1>
+                         <strong>Schedule</strong>
+                    </h1>
+                    <div class="col-md-4 column">
+                         <div class="jumbotron">
+                              <h2>Friday:</h2>
+                              <ul>
+                                   <li class="text-left">6:00-7:00PM - Registration</li>
+                                   <li class="text-left">6:30-7:00PM -
+                                        <span class="glyphicon glyphicon-cutlery"></span> Appetizers</li>
+                                   <li class="text-left">7:00-7:30PM - Opening Ceremony</li>
+                                   <li class="text-left">7:30-8:00PM - Teamless mingle/Claim hackspaces</li>
+                                   <li class="text-left"><b style='color: red;'>8:00PM - Hacking starts</b></li>
+                              </ul>
+                         </div>
+                    </div>
+                    <div class="col-md-4 column">
+                         <div class="jumbotron">
+                              <h2>Saturday:</h2>
+                              <ul>
+                                   <li class="text-left">12:00-12:30AM - Code in the dark (competition!)</li>
+                                   <li class="text-left">9:00-10:00AM -
+                                        <span class="glyphicon glyphicon-cutlery"></span> Breakfast</li>
+                                   <li class="text-left">1:00-2:00PM -
+                                        <span class="glyphicon glyphicon-cutlery"></span> Lunch</li>
+                                   <li class="text-left">3:00-3:30PM - Bubble-wrap</li>
+                                   <li class="text-left">7:00-8:00PM -
+                                        <span class="glyphicon glyphicon-cutlery"></span> Dinner</li>
+                                   <li class="text-left">11:00PM-12:30AM - Tech talks</li>
+                                   <ul>
+                                        <li class="text-left"><i>11:00-11:30PM - Web Development in Go</i></li>
+                                        <li class="text-left"><i>11:30PM-12:00AM - Android Development</i></li>
+                                        <li class="text-left"><i>12:00-12:30AM - Building Web Apps with Sinatra</i></li>
+                                   </ul>
+                              </ul>
+                         </div>
+                    </div>
+                    <div class="col-md-4 column">
+                         <div class="jumbotron">
+                              <h2>Sunday:</h2>
+                              <ul>
+                                   <li class="text-left">12:00-12:30AM - Cupcakes!</li>
+                                   <li class="text-left"><b style='color: red;'>8:00AM - Hacking ends</b></li>
+                                   <li class="text-left">8:00-9:30AM -
+                                        <span class="glyphicon glyphicon-cutlery"></span> Breakfast</li>
+                                   <li class="text-left"><b style='color: red;'>8:30AM - Submissions due on ChallengePost</b></li>
+                                   <li class="text-left">9:30-10:30AM - Expo/Judging (first round)</li>
+                                   <li class="text-left">11:00-1:30PM - Closing ceremony (and second round of judging)</li>
+                              </ul>
+                         </div>
+                    </div>
                </div>
-              <div class="col-md-4 column">
-                <div class="jumbotron">
-                    <h2>Maps</h2>
-                </div>
+               <a name="info"></a>
+               <div class="row clearfix text-center">
+                    <h1>
+                         <strong>Information</strong>
+                    </h1>
+                    <div class="col-md-4 column">
+                         <div class="jumbotron">
+                              <h2>Social Media</h2>
+                              <ul>
+                                   <li class="text-left">Facebook: <a href="http://www.facebook.com/steelhacks">http://www.fb.com/steelhacks</a></li>
+                                   <li class="text-left">Twitter: <a href="http://twitter.com/steelhacks">@steelhacks</a></li>
+                              </ul>
+                         </div>
+                    </div>
+                    <div class="col-md-4 column">
+                         <div class="jumbotron">
+                              <h2>Resources</h2>
+                              <ul>
+                                   <li class="text-left">Facebook Event: <a href="https://www.facebook.com/events/444159109066553/">SteelHacks</a></li>
+                                   <li class="text-left">Hardware: <a href="https://mlh.io/events/158/hardware_checkouts/">See what's available for checkout</a></li>
+                                   <li class="text-left">Mentors List: <a href="https://docs.google.com/spreadsheets/d/1ONSTM9UiR4l5Vgw4sKv0Nh25A12usIGL1tip0VIEaWE/edit#gid=1819920707">Look for specific mentors here!</a></li>
+                                   <li class="text-left">Be a Mentor: <a href="https://docs.google.com/forms/d/1T3BGH1cQkGaiZrSkaMcGRe9jxtBMSwQJTvZfNN09t0Q/viewform">Mentor Sign Up!</a></li>
+                                   <li class="text-left">Help Line: <a href="http://goo.gl/forms/NLbVlHF5Zy">Request help from a mentor!</a></li>
+                                   <li class="text-left">Prizes and Submissions: <a href="http://steelhacks2015.challengepost.com/">ChallengePost</a></li>
+                              </ul>
+                         </div>
+                    </div>
+                    <div class="col-md-4 column">
+                         <div class="jumbotron">
+                              <h2>Maps</h2>
+                         </div>
+                    </div>
                </div>
-          </div>
-          <div class="footer">
-               <div class="container text-right">
-                    <p class="text-muted">&#169; SteelHacks 2014-2015</p>
+               <div class="footer">
+                    <div class="container text-right">
+                         <p class="text-muted">&#169; SteelHacks 2014-2015</p>
+                    </div>
                </div>
-          </div>
-          <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+               <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+               <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-          <script src="js/ripples.min.js"></script>
-          <script src="js/material.min.js"></script>
-          <script>
-               $(document).ready(function() {
-                    $.material.init();
-               });
-          </script>
+               <script src="js/ripples.min.js"></script>
+               <script src="js/material.min.js"></script>
+               <script>
+                    $(document).ready(function() {
+                         $.material.init();
+                    });
+               </script>
 </body>
+
 </html>
