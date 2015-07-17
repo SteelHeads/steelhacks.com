@@ -5,13 +5,11 @@
 
 .custom-pretty-input input[type='email'] {
   border-radius: 10px 0px 0px 10px;
-  float: left;
   padding: 10px;
   border: 1px solid #C1CDD6;
 }
 
 .custom-pretty-input input[type='submit'] {
-  float: left;
   background: #00B9D1;
   padding: 10px;
   border-radius: 0px 10px 10px 0px;

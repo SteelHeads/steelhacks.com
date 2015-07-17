@@ -28,21 +28,21 @@ a {
 	position: relative;
 }
 
-h1 {font-size:40px;}
+h1 {font-size:58px;}
 h2 {font-size:36px;}
 h3 {font-size:30px;}
-h4 {font-size:24px;}
+h4 {font-size:36px;}
 h5 {font-size:20px;}
 h6 {font-size:18px;}
 
 .heading {
-	color:#484d53;
-	font-family:'Proxima Bold';
+	color:#f1f8fe;
+	font-family: 'Montserrat', sans-serif;
 	line-height:38px;
 }
 
 .subheading {
-	color:#6a727b;
+	color:#e9f4fd;
 	font-family:'Proxima';
 	line-height:38px;
 	margin:30px 0;
@@ -110,12 +110,13 @@ p {
 	margin:20px 0;
 	font-size:30px;
 	line-height: 42px;
+  color:#e9f4fd;
 }
 
 p.small {
 	font-size:18px;
 	line-height: 36px;
-	color:#6a727b;
+	color:#e9f4fd;
 }
 
 .navbar-filler {
@@ -156,7 +157,7 @@ header .intro-book {
 	}
 }
 
-header .intro-text { 
+header .intro-text {
 	position: relative;
 }
 
@@ -229,7 +230,7 @@ header .intro-text {
 	color: #484d53;
 }
 @media(min-width:768px) {
-	
+
 	.navbar-default .navbar-nav > li > a:hover:after,
 	.navbar-default .navbar-nav > li > a:focus:after, .navbar-default .navbar-nav > li.active > a:after {
 	  		width:100%;
@@ -358,7 +359,6 @@ section.reviews {
 }
 
 .book-preview {
-	display: inline-block;
 	max-width:400px;
 	width:80%;
 	position: relative;
@@ -568,7 +568,7 @@ footer .social a:before {
 footer .social a:hover {
 	color:white;
 }
-footer .social a:hover:before { 
+footer .social a:hover:before {
 	width:100%;
  	height:100%;
  	top:0; left:0;
@@ -804,7 +804,7 @@ button:focus {
 	background: rgba(255,255,255,.95);
 	display:table;
 	opacity: 0;
-        
+
 } .mobile-nav.active{top:0;opacity:1;}
 @media(min-width:768px){
 	.mobile-nav{display:none;}
