@@ -2555,7 +2555,7 @@ output {
   font-size: 14px;
   line-height: 1.42857143;
   color: #555;
-} 
+}
 .form-control[disabled],
 .form-control[readonly],
 fieldset[disabled] .form-control {
@@ -4023,7 +4023,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-nav > li > a {
   font-size:18px;
-  font-family:'Proxima';
   color: white;
 }
 .navbar-default .navbar-nav > li > a:hover,
