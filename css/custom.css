@@ -1,6 +1,15 @@
+@media (min-width: 10px) and (max-width: 990px) { ... }
+  .logo .book-preview{
+    margin: 0 auto;
+  }
+
+  .logo .background-device {
+    position: relative;
+  }
+}
+
 .custom-pretty-input {
   font-family: helvetica, arial;
-  font-size: 1.2em;
 }
 
 .custom-pretty-input .field-container {
@@ -13,6 +22,7 @@
   border-radius: 10px 0px 0px 10px;
   border: 1px solid #C1CDD6;
   float: left;
+  font-size: 1.2em;
   padding: 10px;
 }
 
@@ -22,6 +32,7 @@
   border: 1px solid #00a2b8;
   color: white;
   float: left;
+  font-size: 1.2em;
   font-weight: bold;
   padding: 10px;
 }
