@@ -1,21 +1,29 @@
 .custom-pretty-input {
   font-family: helvetica, arial;
-  font: 36px;
+  font-size: 1.2em;
+}
+
+.custom-pretty-input .field-container {
+  display: inline-block;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .custom-pretty-input input[type='email'] {
   border-radius: 10px 0px 0px 10px;
-  padding: 10px;
   border: 1px solid #C1CDD6;
+  float: left;
+  padding: 10px;
 }
 
 .custom-pretty-input input[type='submit'] {
   background: #00B9D1;
-  padding: 10px;
   border-radius: 0px 10px 10px 0px;
-  color: white;
-  font-weight: bold;
   border: 1px solid #00a2b8;
+  color: white;
+  float: left;
+  font-weight: bold;
+  padding: 10px;
 }
 
 .custom-pretty-input input[type='submit']:hover {
