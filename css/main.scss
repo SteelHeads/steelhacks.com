@@ -21,15 +21,26 @@ $grey-color-dark:  darken($grey-color, 25%);
 
 // Responsive design stuff
 $small: 600px;
-$medium: 900px;
 $large: 1024px;
 
-@mixin min-width($size) {
+@mixin size-between($smaller, $larger) {
+  @media screen and (min-width: $smaller) and (max-width: $larger) {
+    @content;
+  }
+}
+
+@mixin size-greater-than($size) {
   @media screen and (min-width: $size) {
     @content;
   }
 }
 
+@mixin size-less-than($size) {
+  @media screen and (max-width: $size) {
+    @content;
+  }
+}
+
 // Import other files
-@import 'base';
-@import 'layout';
+@import 'structure';
+@import 'page';

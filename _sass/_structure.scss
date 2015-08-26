@@ -19,15 +19,15 @@ h6 {
   > .container {
     margin: 0 auto;
 
-    @include min-width($small) {
-      width: 500px;
+    @include size-less-than($small) {
+      width: 95%;
     }
 
-    @include min-width($medium) {
-      width: 800px;
+    @include size-between($small, $large) {
+      width: 80%;
     }
 
-    @include min-width($large) {
+    @include size-greater-than($large) {
       width: 900px;
     }
   }
