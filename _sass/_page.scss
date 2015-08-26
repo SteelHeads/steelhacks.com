@@ -1,4 +1,39 @@
-.site-header {
-
+#welcome {
+  background: grey;
+  height: 400px;
 }
 
+#navbar {
+  clear: both;
+
+  a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+
+    &.button {
+      border: 1px solid white;
+      border-radius: 2px;
+      padding: 7px 26px;
+    }
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+
+  .fa {
+    font-size: 21px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    display: inline;
+    margin-left: 11px;
+    margin-right: 11px;
+  }
+}
