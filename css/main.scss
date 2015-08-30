@@ -19,6 +19,9 @@ $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
+$yellow-color:      #F4C807;
+$yellow-color-dark: #E8AC0F;
+
 // Responsive design stuff
 $small: 600px;
 $large: 1024px;
@@ -37,6 +40,21 @@ $large: 1024px;
 
 @mixin size-less-than($size) {
   @media screen and (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin placeholder-style() {
+  &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    @content;
+  }
+  &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    @content
+  }
+  &::-moz-placeholder { /* Mozilla Firefox 19+ */
+    @content
+  }
+  &:-ms-input-placeholder { /* Internet Explorer 10-11 */
     @content;
   }
 }

@@ -37,3 +37,51 @@
     margin-right: 11px;
   }
 }
+
+#signup-form {
+  color: white;
+  background-color: $yellow-color;
+
+  h3 {
+    text-align: center;
+  }
+}
+
+#homepage-signup-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 44px;
+  margin-top: 44px;
+
+  input {
+    background: $yellow-color;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+
+    @include placeholder-style() {
+      color: white;
+      opacity: 1;
+    }
+
+    &:focus {
+      outline: none;
+
+      @include placeholder-style() {
+        opacity: 0;
+      }
+    }
+  }
+
+  button {
+    background-color: $yellow-color-dark;
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    font-size: 16px;
+    min-width: 200px;
+    padding: 10px;
+  }
+}
