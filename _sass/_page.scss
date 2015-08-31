@@ -166,15 +166,50 @@
 }
 
 #map {
-  iframe {
-    width: 100%;
-
-    @include size-less-than($small) {
-      height: 250px;
-    }
-
-    @include size-greater-than($small) {
-      height: 350px;
-    }
+  @include size-less-than($small) {
+    height: 250px;
   }
+
+  @include size-greater-than($small) {
+    height: 350px;
+  }
+
+  iframe {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+footer {
+  $spacing-amount: 30px;
+
+  background-color: $grey-color-dark;
+  color: white;
+  font-size: 16px;
+  padding-bottom: $spacing-amount;
+  padding-top: $spacing-amount;
+
+  a,
+  a:visited {
+    color: white;
+    font-size: 18px;
+  }
+
+  .fa {
+    padding-left: .5em;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline;
+  }
+}
+
+.heart {
+  color: #F60D0D;
 }
