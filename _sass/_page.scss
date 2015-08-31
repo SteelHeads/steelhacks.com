@@ -164,3 +164,17 @@
     text-align: center;
   }
 }
+
+#map {
+  iframe {
+    width: 100%;
+
+    @include size-less-than($small) {
+      height: 250px;
+    }
+
+    @include size-greater-than($small) {
+      height: 350px;
+    }
+  }
+}
