@@ -22,6 +22,18 @@ h3 {
 .slice {
   width: 100%;
 
+  &.slice--big {
+    $margin-amount: 60px;
+    margin-bottom: $margin-amount;
+    margin-top: $margin-amount;
+
+    h1,
+    h2,
+    h3 {
+      margin-top: 0;
+    }
+  }
+
   > .container {
     margin: 0 auto;
     overflow: hidden;
@@ -35,7 +47,28 @@ h3 {
     }
 
     @include size-greater-than($large) {
-      width: 900px;
+      width: 950px;
+    }
+  }
+}
+
+.column-wrapper {
+  @include size-greater-than($medium) {
+    display: flex;
+  }
+
+  .column {
+    @include size-less-than($medium) {
+      width: 100%;
+    }
+
+    @include size-greater-than($medium) {
+      margin-right: 1.25%;
+      width: 32.5%;
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 }

@@ -85,3 +85,29 @@
     padding: 10px;
   }
 }
+
+.event-box {
+  border: 2px solid $grey-color;
+  list-style: none;
+  padding: 0;
+
+  .event {
+    display: block;
+    padding-bottom: 12px;
+    padding-left: 25px;
+    padding-right: 100px;
+    padding-top: 12px;
+
+    &:hover {
+      background-color: $grey-color-light;
+    }
+
+    .time {
+      color: #999999;
+    }
+
+    .title {
+      color: $yellow-color;
+    }
+  }
+}

@@ -36,3 +36,46 @@ layout: default
     </form>
   </div>
 </div>
+<div id='schedule' class='slice slice--big'>
+  <div class='container'>
+    <h2>Schedule</h2>
+    <div class='column-wrapper'>
+      <div class='column'>
+        <h3>Friday, Feb 8th</h3>
+        <ul class='event-box'>
+          {% for event in site.data.friday %}
+            <li class='event'>
+              <p class='time'>{{ event.time }}</p>
+              <p class='title'>{{ event.title }}</p>
+              <p class='description'>{{ event.description }}</p>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class='column'>
+        <h3>Saturday, Feb 9th</h3>
+        <ul class='event-box'>
+          {% for event in site.data.saturday %}
+            <li class='event'>
+              <p class='time'>{{ event.time }}</p>
+              <p class='title'>{{ event.title }}</p>
+              <p class='description'>{{ event.description }}</p>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class='column'>
+        <h3>Sunday, Feb 10th</h3>
+        <ul class='event-box'>
+          {% for event in site.data.sunday %}
+            <li class='event'>
+              <p class='time'>{{ event.time }}</p>
+              <p class='title'>{{ event.title }}</p>
+              <p class='description'>{{ event.description }}</p>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

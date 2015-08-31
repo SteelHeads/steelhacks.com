@@ -15,15 +15,15 @@ $text-color:       #111;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color:       #C5C5C5;
+$grey-color-light: #F7F7F7;
 
 $yellow-color:      #F4C807;
 $yellow-color-dark: #E8AC0F;
 
 // Responsive design stuff
 $small: 600px;
+$medium: 900px;
 $large: 1024px;
 
 @mixin size-between($smaller, $larger) {
