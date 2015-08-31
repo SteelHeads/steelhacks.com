@@ -79,3 +79,20 @@ layout: default
     </div>
   </div>
 </div>
+<div id='faq' class='slice slice--big'>
+  <div class='container'>
+    <h2>FAQ</h2>
+    {% for question in site.data.faq %}
+      <div class='question'>
+        <div class='question__header'>
+          {{ question.title }}
+          <i class='fa fa-chevron-down pull-right'></i>
+          <i class='fa fa-chevron-up pull-right'></i>
+        </div>
+        <div class='question__body'>
+          {{ question.body }}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

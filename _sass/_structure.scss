@@ -23,9 +23,9 @@ h3 {
   width: 100%;
 
   &.slice--big {
-    $margin-amount: 60px;
-    margin-bottom: $margin-amount;
-    margin-top: $margin-amount;
+    $spacing-amount: 60px;
+    padding-bottom: $spacing-amount;
+    padding-top: $spacing-amount;
 
     h1,
     h2,

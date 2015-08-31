@@ -111,3 +111,51 @@
     }
   }
 }
+
+#faq {
+  background-color: $yellow-color-dark;
+  color: white;
+}
+
+.question {
+  $spacing-amount: 22px;
+
+  border: 2px solid white;
+  font-size: 22px;
+  padding: $spacing-amount;
+
+  &:not(:last-of-type) {
+    border-bottom: 0;
+  }
+
+  &:first-of-type,
+  &.active {
+    background-color: black;
+
+    .question__body {
+      display: block;
+    }
+
+    .fa-chevron-down {
+      display: none;
+    }
+
+    .fa-chevron-up {
+      display: block;
+    }
+  }
+
+  .fa {
+    font-size: 16px;
+  }
+
+  .fa-chevron-up {
+    display: none;
+  }
+
+  .question__body {
+    display: none;
+    margin-top: $spacing-amount;
+  }
+}
+
