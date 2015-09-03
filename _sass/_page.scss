@@ -63,9 +63,26 @@
 
 #homepage-signup-form {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 44px;
   margin-top: 44px;
+
+  @include size-less-than($medium) {
+    flex-direction: column;
+    align-items: stretch;
+
+    input {
+      margin-bottom: 1em;
+    }
+  }
+
+  @include size-less-than($large) {
+    > * {
+      flex-grow: 1;
+    }
+  }
+
 
   input {
     background: $yellow-color;
@@ -78,6 +95,16 @@
     @include placeholder-style() {
       color: white;
       opacity: 1;
+    }
+
+    @include size-between($medium, $large) {
+      &:first-of-type {
+        margin-right: .5em;
+      }
+
+      &:last-of-type {
+        margin-left: .5em;
+      }
     }
 
     &:focus {
@@ -97,6 +124,10 @@
     font-size: 16px;
     min-width: 200px;
     padding: 10px;
+
+    @include size-between($medium, $large) {
+      margin-top: .5em;
+    }
   }
 }
 
