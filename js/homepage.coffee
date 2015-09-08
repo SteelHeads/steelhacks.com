@@ -18,3 +18,10 @@ window.onload = ->
   # Set up the click handler on the question headers
   questionHeaders = document.querySelectorAll '.question__header'
   addClickHandler header for header in questionHeaders
+
+  # Mock signup button click
+  signupButton = document.getElementById 'signup-button'
+  signupButton.addEventListener 'click', ->
+    event.preventDefault()
+    alert 'Sign up button clicked'
+
