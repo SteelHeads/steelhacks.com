@@ -28,10 +28,3 @@ window.onload = ->
     menu.classList.add 'visible' unless mobileNavVisible
     menu.classList.remove 'visible' if mobileNavVisible
     mobileNavVisible = !mobileNavVisible
-
-  # Mock signup button click
-  signupButton = document.getElementById 'signup-button'
-  signupButton.addEventListener 'click', (event)->
-    event.preventDefault()
-    alert 'Sign up button clicked'
-
