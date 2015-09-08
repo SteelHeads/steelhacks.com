@@ -2,6 +2,7 @@
 ---
 
 activeQuestion = null
+mobileNavVisible = false
 
 addClickHandler = (el) ->
   el.addEventListener 'click', ->
@@ -19,9 +20,18 @@ window.onload = ->
   questionHeaders = document.querySelectorAll '.question__header'
   addClickHandler header for header in questionHeaders
 
+  # Mobile navbar trigger
+  mobileNavButton = document.getElementById 'mobile-nav-trigger'
+  menu = document.getElementById 'menu'
+  mobileNavButton.addEventListener 'click', (event)->
+    event.preventDefault()
+    menu.classList.add 'visible' unless mobileNavVisible
+    menu.classList.remove 'visible' if mobileNavVisible
+    mobileNavVisible = !mobileNavVisible
+
   # Mock signup button click
   signupButton = document.getElementById 'signup-button'
-  signupButton.addEventListener 'click', ->
+  signupButton.addEventListener 'click', (event)->
     event.preventDefault()
     alert 'Sign up button clicked'
 

@@ -10,7 +10,62 @@
 }
 
 #navbar {
+  $mobile-navbar-width: 700px;
+
   clear: both;
+
+  @include size-less-than($mobile-navbar-width) {
+    border-bottom: 1px solid white;
+
+    #menu {
+      display: none;
+      float: left;
+      line-height: 2em;
+      margin-top: 0;
+      text-align: left;
+      width: 100%;
+
+      &:before {
+        clear: both;
+        overflow: auto;
+        zoom: 1;
+      }
+
+      &.visible {
+        display: block;
+      }
+
+      a.button {
+        line-height: 3.5em;
+      }
+    }
+
+    li {
+      display: block;
+    }
+
+    .social-link {
+      padding-left: .5em;
+    }
+  }
+
+  @include size-greater-than($mobile-navbar-width) {
+    #menu {
+      float: right;
+    }
+
+    li {
+      display: inline;
+    }
+
+    .social-link {
+      display: none;
+    }
+
+    #mobile-nav-trigger {
+      display: none;
+    }
+  }
 
   #brand {
     margin-top: 12px;
@@ -46,7 +101,6 @@
   }
 
   li {
-    display: inline;
     margin-left: 11px;
     margin-right: 11px;
   }
