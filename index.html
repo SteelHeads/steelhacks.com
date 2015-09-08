@@ -53,42 +53,25 @@ layout: default
   <div class='container'>
     <h2>Schedule</h2>
     <div class='column-wrapper'>
-      <div class='column'>
-        <h3>Friday, Feb 8th</h3>
-        <ul class='event-box'>
-          {% for event in site.data.friday %}
-            <li class='event'>
-              <p class='time'>{{ event.time }}</p>
-              <p class='title'>{{ event.title }}</p>
-              <p class='description'>{{ event.description }}</p>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-      <div class='column'>
-        <h3>Saturday, Feb 9th</h3>
-        <ul class='event-box'>
-          {% for event in site.data.saturday %}
-            <li class='event'>
-              <p class='time'>{{ event.time }}</p>
-              <p class='title'>{{ event.title }}</p>
-              <p class='description'>{{ event.description }}</p>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-      <div class='column'>
-        <h3>Sunday, Feb 10th</h3>
-        <ul class='event-box'>
-          {% for event in site.data.sunday %}
-            <li class='event'>
-              <p class='time'>{{ event.time }}</p>
-              <p class='title'>{{ event.title }}</p>
-              <p class='description'>{{ event.description }}</p>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
+      {% for day in site.data.events %}
+        <div class='column'>
+          <h3>{{ day.date }}</h3>
+          <ul class='event-box'>
+            {% for event in day.events %}
+              <li class='event'>
+                <div class='event__body'>
+                  <p class='time'>{{ event.time }}</p>
+                  <p class='title'>{{ event.title }}</p>
+                  <p class='description'>{{ event.description }}</p>
+                </div>
+                <div class='event__timeline'>
+
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
     </div>
   </div>
 </div>

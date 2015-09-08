@@ -148,11 +148,8 @@
   padding: 0;
 
   .event {
-    display: block;
-    padding-bottom: 12px;
-    padding-left: 25px;
-    padding-right: 100px;
-    padding-top: 12px;
+    display: flex;
+    padding: 12px 25px;
 
     &:hover {
       background-color: $grey-color-light;
@@ -165,6 +162,14 @@
     .title {
       color: $yellow-color;
     }
+  }
+
+  .event__body {
+
+  }
+
+  .event__timeline {
+
   }
 }
 
