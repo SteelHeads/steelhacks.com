@@ -1,21 +1,35 @@
 - title: Who can attend SteelHACKS?
   body: |
-    Any undergraduate or graduate student at any college in the world! Non-PITT college undergraduate students must be at least 18 years old. Unfortunately, high school and graduate students can’t attend (MIT M.Eng. students are eligible, however).
+    Any undergraduate or graduate student at any college in the world! Non-Pitt college undergraduate students must be at least 18 years old. Unfortunately, high school students can’t attend this year.
 
 - title: Does this cost money?
+  body: |
+    Not at all! In fact, we pay for all your meals and provide you with all the hardware and help you need at any time for free.
 
 - title: I can't register anymore!
+  body: |
+    Don't panic! Shoot an email to steelhacks@pitt.edu and we'll try to sort it out.
 
 - title: Where will I sleep?
+  body: |
+    If you're a Pitt student, you can sleep in your residence hall/apartment. For non-Pitt students, the venue will have designated sleeping places.
 
 - title: I missed the confirmation deadline! Can I still come?
+  body: |
+    Send us an email to steelhacks@pitt.edu, and we'll see if we can find you a spot!
 
 - title: How do I get there?
+  body: |
+    We're still figuring out travel reimbursement, so be patient. Students at any university in Pittsburgh can simply take a Port Authority bus straight to the event, so that's simple.
 
 - title: How do teams work?
-
-- title: What if I'm a Pitt student?
+  body: |
+    Teams can consist of up to 4 people, though you can have any amount less than that as well.
 
 - title: Since I'm traveling from far away, can I get an increase in reimbursement?
+  body: |
+    Travel reimbursements are still being worked on, but email us at steelhacks@pitt.edu for any questions regarding reimbursement.
 
 - title: What if the FAQ didn't answer my question?
+  body: |
+    You can tweet it at us @SteelHacks, or email us at steelhacks@pitt.edu!
