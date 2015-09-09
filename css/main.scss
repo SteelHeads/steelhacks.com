@@ -1,0 +1,68 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset 'utf-8';
+
+// Our variables
+$base-font-family: 'Abel', Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #C5C5C5;
+$grey-color-light: #F7F7F7;
+$grey-color-dark:  #686868;
+
+$yellow-color:      #F4C807;
+$yellow-color-dark: #E8AC0F;
+
+// Responsive design stuff
+$small: 600px;
+$medium: 900px;
+$large: 1024px;
+
+@mixin size-between($smaller, $larger) {
+  @media screen and (min-width: $smaller) and (max-width: $larger) {
+    @content;
+  }
+}
+
+@mixin size-greater-than($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin size-less-than($size) {
+  @media screen and (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin placeholder-style() {
+  &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    @content;
+  }
+  &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    @content
+  }
+  &::-moz-placeholder { /* Mozilla Firefox 19+ */
+    @content
+  }
+  &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    @content;
+  }
+}
+
+// Dependencies
+@import 'font-awesome/font-awesome';
+
+// Import other files
+@import 'structure';
+@import 'page';

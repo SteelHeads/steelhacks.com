@@ -1,0 +1,87 @@
+html,
+body {
+  font-family: $base-font-family;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+// Headers
+h1 {
+  font-size: 52px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+.text--gold {
+  color: $yellow-color;
+}
+
+.slice {
+  width: 100%;
+
+  &.slice--big {
+    $spacing-amount: 60px;
+    padding-bottom: $spacing-amount;
+    padding-top: $spacing-amount;
+
+    h1,
+    h2,
+    h3 {
+      margin-top: 0;
+    }
+  }
+
+  > .container {
+    margin: 0 auto;
+    overflow: hidden;
+
+    @include size-less-than($small) {
+      width: 95%;
+    }
+
+    @include size-between($small, $large) {
+      width: 80%;
+    }
+
+    @include size-greater-than($large) {
+      width: 950px;
+    }
+  }
+}
+
+.column-wrapper {
+  @include size-greater-than($medium) {
+    display: flex;
+  }
+
+  .column {
+    @include size-less-than($medium) {
+      width: 100%;
+    }
+
+    @include size-greater-than($medium) {
+      margin-right: 1.25%;
+      width: 32.5%;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+// Utility
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}

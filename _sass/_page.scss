@@ -1,0 +1,284 @@
+#welcome {
+  background: grey;
+  color: white;
+  padding-bottom: 50px;
+  text-align: center;
+
+  p {
+    font-size: 22px;
+  }
+}
+
+#navbar {
+  $mobile-navbar-width: 700px;
+
+  clear: both;
+
+  @include size-less-than($mobile-navbar-width) {
+    border-bottom: 1px solid white;
+
+    #menu {
+      display: none;
+      float: left;
+      line-height: 2em;
+      margin-top: 0;
+      text-align: left;
+      width: 100%;
+
+      &:before {
+        clear: both;
+        overflow: auto;
+        zoom: 1;
+      }
+
+      &.visible {
+        display: block;
+      }
+
+      a.button {
+        line-height: 3.5em;
+      }
+    }
+
+    li {
+      display: block;
+    }
+
+    .social-link {
+      padding-left: .5em;
+    }
+  }
+
+  @include size-greater-than($mobile-navbar-width) {
+    #menu {
+      float: right;
+    }
+
+    li {
+      display: inline;
+    }
+
+    .social-link {
+      display: none;
+    }
+
+    #mobile-nav-trigger {
+      display: none;
+    }
+  }
+
+  #brand {
+    margin-top: 12px;
+
+    a {
+      font-size: 22px;
+    }
+  }
+
+  a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+
+    &.button {
+      border: 1px solid white;
+      border-radius: 2px;
+      padding: 7px 26px;
+    }
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+
+  .fa {
+    font-size: 21px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    margin-left: 11px;
+    margin-right: 11px;
+  }
+}
+
+#signup-form {
+  background-color: $yellow-color;
+  color: white;
+  overflow: auto;
+  padding-bottom: 1.5em;
+
+  h3 {
+    text-align: center;
+  }
+
+  .button {
+    background-color: $yellow-color-dark;
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    min-width: 200px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+
+    @include size-less-than($small) {
+      width: 100%;
+    }
+
+    @include size-between($small, $medium) {
+      width: 50%;
+    }
+
+    @include size-greater-than($medium) {
+      width: 40%;
+    }
+  }
+}
+
+.event-box {
+  border: 2px solid $grey-color;
+  list-style: none;
+  padding: 0;
+
+  .event {
+    display: flex;
+    padding: 12px 25px;
+
+    &:hover {
+      background-color: $grey-color-light;
+    }
+
+    .time {
+      color: #999999;
+    }
+
+    .title {
+      color: $yellow-color;
+    }
+  }
+
+  .event__body {
+
+  }
+
+  .event__timeline {
+
+  }
+}
+
+#faq {
+  background-color: $yellow-color-dark;
+  color: white;
+}
+
+.question {
+  $spacing-amount: 22px;
+
+  border: 2px solid white;
+  font-size: 22px;
+
+  .question__header {
+    cursor: pointer;
+    padding: $spacing-amount;
+  }
+
+  .question__body {
+    padding: $spacing-amount;
+    padding-top: 0;
+  }
+
+  &:not(:last-of-type) {
+    border-bottom: 0;
+  }
+
+  &.active {
+    background-color: black;
+
+    .question__body {
+      display: block;
+    }
+
+    .fa-chevron-down {
+      display: none;
+    }
+
+    .fa-chevron-up {
+      display: block;
+    }
+  }
+
+  .fa {
+    font-size: 16px;
+  }
+
+  .fa-chevron-up {
+    display: none;
+  }
+
+  .question__body {
+    display: none;
+    margin-top: $spacing-amount;
+  }
+}
+
+#sponsors {
+  .get-in-touch {
+    text-align: center;
+  }
+}
+
+#map {
+  @include size-less-than($small) {
+    height: 250px;
+  }
+
+  @include size-greater-than($small) {
+    height: 350px;
+  }
+
+  iframe {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+footer {
+  $spacing-amount: 30px;
+
+  background-color: $grey-color-dark;
+  color: white;
+  font-size: 16px;
+  padding-bottom: $spacing-amount;
+  padding-top: $spacing-amount;
+
+  a,
+  a:visited {
+    color: white;
+    font-size: 18px;
+  }
+
+  .fa {
+    padding-left: .5em;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline;
+  }
+}
+
+.heart {
+  color: #F60D0D;
+}

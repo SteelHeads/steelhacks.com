@@ -1,52 +1,125 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>SteelHacks</title>
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link id="main" rel="stylesheet" type="text/css" href="css/publisher.css">
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="css/custom.css">
-</head>
+---
+title: SteelHacks 2016
+layout: default
+---
 
-<body>
-<section id="home">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 logo">
-        <div class="book-preview">
-          <img src="img/circlelogo.png" class="background-device" alt="SteelHacks Logo">
+<header id='welcome' class='slice'>
+  <nav id='navbar' class='container'>
+    <ul id='brand' class='pull-left'>
+      <li><a href='#'>SteelHacks</a></li>
+    </ul>
+    <ul id='mobile-nav-trigger' class='pull-right'>
+      <li><a href=''><i class="fa fa-bars"></i></a></li>
+    </ul>
+    <ul id='menu'>
+      <li><a href='#'>Schedule</a></li>
+      <li><a href='#'>FAQ</a></li>
+      <li><a href='#'>Sponsors</a></li>
+      <li><a class='button' href='http://eepurl.com/btv4wH'>Pre-Register</a></li>
+      <li>
+        <a target='_blank' href='https://www.facebook.com/steelhacks'>
+          <i class='fa fa-facebook-square'></i>
+          <span class='social-link'>Facebook</span>
+        </a>
+      </li>
+      <li>
+        <a target='_blank' href='https://twitter.com/steelhacks'>
+          <i class='fa fa-twitter-square'></i>
+          <span class='social-link'>Twitter</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class='container'>
+    <h1>SteelHACKS <span class='text--gold'>2016</span></h1>
+    <h3>FEB 19TH - 21TH, 2016 - PITTSBURGH, PENNSYLVANIA</h3>
+    <p>
+      SteelHACKS is a Hackathon hosted at the University of Pittsburgh for
+      students at colleges &amp; universities across the US who are passionate about getting their hands dirty using technology and design.
+    </p>
+    <p>
+      Last year was the first incarnation of SteelHACKS. Students from around
+      the Midwest came together to design and build websites and apps.
+    </p>
+  </div>
+</header>
+<div id='signup-form' class='slice'>
+  <div class='container'>
+    <h3>Seats are filling up FAST. Start your registration now.</h3>
+    <a href='http://eepurl.com/btv4wH' id='signup-button' class='button' type='submit'>Pre-Register</a>
+  </div>
+</div>
+<div id='schedule' class='slice slice--big'>
+  <div class='container'>
+    <h2>Schedule</h2>
+    <div class='column-wrapper'>
+      {% for day in site.data.events %}
+        <div class='column'>
+          <h3>{{ day.date }}</h3>
+          <ul class='event-box'>
+            {% for event in day.events %}
+              <li class='event'>
+                <div class='event__body'>
+                  <p class='time'>{{ event.time }}</p>
+                  <p class='title'>{{ event.title }}</p>
+                  <p class='description'>{{ event.description }}</p>
+                </div>
+                <div class='event__timeline'>
+
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
         </div>
-      </div>
-      <div class="col-md-6 main-content text-center">
-        <h1 class="heading">SteelHacks 2016</h1>
-        <h4 class="subheading">February @ University of Pittsburgh</h4>
-        <p>SteelHacks is coming in February 2016. Pre-register below!</p>
-        <div id="mc_embed_signup text-center">
-          <form action="//steelhacks.us10.list-manage.com/subscribe/post?u=3d15468a9f8f835d6808cdc7b&amp;id=3c834529f6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate custom-pretty-input" target="_blank" novalidate>
-            <div id="mc_embed_signup_scroll">
-              <div class="mc-field-group field-container">
-                <input placeholder="Your Email Address" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-              </div>
-              <div id="mce-responses" class="clear">
-                <div class="response" id="mce-error-response" style="display:none"></div>
-                <div class="response" id="mce-success-response" style="display:none"></div>
-              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-              <div style="position: absolute; left: -5000px;"><input type="text" name="b_3d15468a9f8f835d6808cdc7b_3c834529f6" tabindex="-1" value=""></div>
-            </div>
-          </form>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
-</section>
-
-<script src="js/jquery-1.11.1.min.js"></script>
-<script src="js/jquery.form-validator.js"></script>
-<script src="js/preloader.js"></script>
-<script src="js/bootstrap.min.js"></script>
-
-</body>
-</html>
+</div>
+<div id='faq' class='slice slice--big'>
+  <div class='container'>
+    <h2>FAQ</h2>
+    {% for question in site.data.faq %}
+      <div class='question'>
+        <div class='question__header'>
+          {{ question.title }}
+          <i class='fa fa-chevron-down pull-right'></i>
+          <i class='fa fa-chevron-up pull-right'></i>
+        </div>
+        <div class='question__body'>
+          {{ question.body }}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+<div id='sponsors' class='slice slice--big'>
+  <div class='container'>
+    <h2>Sponsors</h2>
+    <div class='get-in-touch'>
+      Interested in becoming a sponsor? <a href='#'>Get in touch</a>
+    </div>
+  </div>
+</div>
+<div id='map' class='slice'>
+  <iframe height='450' frameborder='0' style='border:0'
+src='https://www.google.com/maps/embed/v1/place?q=University+of+Pittsburgh,+Fifth+Avenue,+Pittsburgh,+PA,+United+States&key=AIzaSyC8s0xaElatGH8Tv_QcqT9eyRKmDPQsbCc' allowfullscreen></iframe>
+</div>
+<footer class='slice'>
+  <div class='container'>
+    <div class='pull-left'>
+      © 2015 SteelHACKS. All Rights Reserved.
+      Made with<i class='fa fa-heart heart'></i> at the University of
+      Pittsburgh.
+    </div>
+    <div class='pull-right'>
+      <ul>
+        <li><a target='_blank' href='https://www.facebook.com/steelhacks'>
+          <i class='fa fa-facebook-square'></i>
+        </a></li>
+        <li><a target='_blank' href='https://twitter.com/steelhacks'>
+          <i class='fa fa-twitter-square'></i>
+        </a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
