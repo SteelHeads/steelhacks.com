@@ -1,5 +1,5 @@
 #welcome {
-  background: url(img/headerbg.jpg);
+  background: url(../img/headerbg.jpg);
   color: white;
   padding-bottom: 50px;
   text-align: center;
@@ -9,6 +9,10 @@
   }
 }
 
+#main-logo {
+  max-width: 80%;
+  height: auto;
+}
 #navbar {
   $mobile-navbar-width: 700px;
 
