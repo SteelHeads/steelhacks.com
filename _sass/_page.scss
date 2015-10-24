@@ -18,6 +18,8 @@
 
   clear: both;
   background: rgba(62,66,71,0.2);
+  margin-bottom: 2%;
+  width: 100%
 
   @include size-less-than($mobile-navbar-width) {
     border-bottom: 1px solid white;
