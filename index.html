@@ -1,6 +1,7 @@
 ---
 title: SteelHacks 2016
 layout: default
+registrationUrl: "http://my.mlh.io/oauth/authorize?client_id=5ae15f82e76d215c66f7de9ae0dfcb211c89f58b0c4ce3dbe8009e9d86146fec&redirect_uri=http%3A%2F%2Fsteelhacks.com%2Fregistered.html&response_type=token"
 ---
 
 <header id='welcome' class='slice'>
@@ -12,7 +13,11 @@ layout: default
       <li><a href='#schedule'>Schedule</a></li>
       <li><a href='#faq'>FAQ</a></li>
       <li><a href='#sponsors'>Sponsors</a></li>
-      <li><a class='button' href='http://eepurl.com/btv4wH'>Pre-Register</a></li>
+      <li>
+        <a class='button' href='{{ page.registrationUrl }}'>
+          Register
+        </a>
+      </li>
       <li>
         <a target='_blank' href='https://www.facebook.com/steelhacks'>
           <i class='fa fa-facebook-square'></i>
@@ -42,7 +47,9 @@ layout: default
 <div id='signup-form' class='slice'>
   <div class='container'>
     <h3>Seats are filling up FAST. Start your registration now.</h3>
-    <a href='http://eepurl.com/btv4wH' id='signup-button' class='button' type='submit'>Pre-Register</a>
+    <a href='{{ page.registrationUrl }}' id='signup-button' class='button'>
+      Register
+    </a>
   </div>
 </div>
 <div id='schedule' class='slice slice--big'>
