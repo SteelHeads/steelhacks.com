@@ -114,7 +114,7 @@
 }
 
 #signup-form {
-  background-color: $yellow-color;
+  background-color: $yellow-color-dark;
   color: white;
   overflow: auto;
   padding-bottom: 1.5em;
@@ -124,7 +124,7 @@
   }
 
   .button {
-    background-color: $yellow-color-dark;
+    background-color: $yellow-color;
     border: 0;
     border-radius: 3px;
     color: white;
