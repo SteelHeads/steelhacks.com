@@ -13,6 +13,26 @@
   max-width: 80%;
   height: auto;
 }
+
+#mlh-trust-badge {
+  display: block;
+  left: 50px;
+  max-width: 100px;
+  min-width: 60px;
+  position: fixed;
+  top: 0;
+  width: 10%;
+  z-index: 10000;
+
+  @include size-less-than($small) {
+    top: -52px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
 #navbar {
   $mobile-navbar-width: 700px;
 
