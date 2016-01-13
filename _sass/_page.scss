@@ -328,3 +328,20 @@ footer {
 .heart {
   color: #F60D0D;
 }
+
+.sponsor {
+  display: block;
+  margin: 0 auto;
+
+  &.first {
+    width: 65%;
+  }
+
+  &.second {
+    width: 50%;
+  }
+
+  &.third {
+    width: 35%;
+  }
+}
