@@ -1,6 +1,19 @@
 - date: Friday, Feb 19th
   events:
-    - Coming soon!
+    - time: 6:00pm - 7:00pm
+      title: Welcome &amp; Registration
+      description: |
+        Arrive at the William Pitt Union and sign in to the hackathon! Be sure to bring a student ID with you.
+        
+    - time: 7:00pm - 7:50pm
+      title: Opening Ceremony
+      description: |
+        Learn about the event, the timeline, and the rules.
+        
+    - time: 8:00pm
+      title: Hacking begins
+      description:
+        Hacking officially starts now. Start coding and building away! 
 
 - date: Saturday, Feb 20th
   events:
