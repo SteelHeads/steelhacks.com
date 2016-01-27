@@ -20,7 +20,20 @@
 
 - date: Saturday, Feb 20th
   events:
-    - Coming soon!
+    - time:  9:00am
+      title: Breakfast
+
+    - time: 12:00pm
+      title: Lunch
+
+    - time: 12:30pm - 1:30pm
+      title: Tech talks
+
+    - time: 4:00pm
+      title: Women in Tech Meetup
+
+    - time: 6:30pm
+      title: Dinner
 
 - date: Sunday, Feb 21st
   events:
