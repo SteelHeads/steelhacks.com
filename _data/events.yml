@@ -3,17 +3,17 @@
     - time: '6:00pm - 7:00pm'
       title: 'Welcome &amp; Registration'
       description: |
-        'Arrive at the William Pitt Union and sign in to the hackathon! Be sure to bring a student ID with you.'
+        Arrive at the William Pitt Union and sign in to the hackathon! Be sure to bring a student ID with you.
 
     - time: '7:00pm - 7:50pm'
       title: 'Opening Ceremony'
       description: |
-        'Learn about the event, the timeline, and the rules.'
+        Learn about the event, the timeline, and the rules.
 
     - time: '8:00pm'
       title: 'Hacking begins'
       description: |
-        'Hacking officially starts now. Start coding and building away!'
+        Hacking officially starts now. Start coding and building away!
 
     - time: '8:30pm'
       title: 'Dinner'
@@ -35,7 +35,7 @@
     - time: '5:30pm - 6:15pm'
       title: 'Tech Talk: Powered by Expii'
       description: |
-        'Learn about React and Flask in this talk by the amazing scientists at Expii!'
+        Learn about React and Flask in this talk by the amazing scientists at Expii!
 
     - time: '6:30pm'
       title: 'Dinner'
@@ -44,20 +44,20 @@
   events:
     - time: '7:00am'
       title: |
-        'Breakfast'
+        Breakfast
 
     - time: '8:00am'
       title: 'Hacking ends'
       description: |
-        'All code must be written and all wires must be wired at this point.'
+        All code must be written and all wires must be wired at this point.
 
     - time: '8:15am - 9:15am'
       title: 'Presentations'
       description: |
-        'Present your hacks in a science fair style expo.'
+        Present your hacks in a science fair style expo.
 
     - time: '9:30am - 10:15am'
       title: 'Closing Ceremony'
       description: |
-        'The top seven teams will present their hacks, and the judges will pick the final winners.'
+        The top seven teams will present their hacks, and the judges will pick the final winners.
 
