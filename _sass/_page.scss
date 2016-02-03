@@ -195,7 +195,7 @@
 
   .event {
     display: flex;
-    padding: 12px 25px;
+    padding: 12px 5px;
 
     &:hover {
       background-color: $grey-color-light;
@@ -207,6 +207,10 @@
 
     .title {
       color: $yellow-color;
+    }
+    
+    p {
+      margin: 0.2em 1em;
     }
   }
 
