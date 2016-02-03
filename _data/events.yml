@@ -1,63 +1,63 @@
 - date: Friday, Feb 19th
   events:
-    - time: 6:00pm - 7:00pm
-      title: Welcome &amp; Registration
+    - time: '6:00pm - 7:00pm'
+      title: 'Welcome &amp; Registration'
       description: |
-        Arrive at the William Pitt Union and sign in to the hackathon! Be sure to bring a student ID with you.
-        
-    - time: 7:00pm - 7:50pm
-      title: Opening Ceremony
-      description: |
-        Learn about the event, the timeline, and the rules.
-        
-    - time: 8:00pm
-      title: Hacking begins
-      description: |
-        Hacking officially starts now. Start coding and building away! 
+        'Arrive at the William Pitt Union and sign in to the hackathon! Be sure to bring a student ID with you.'
 
-    - time: 8:30pm
-      title: Dinner
+    - time: '7:00pm - 7:50pm'
+      title: 'Opening Ceremony'
+      description: |
+        'Learn about the event, the timeline, and the rules.'
 
-- date: Saturday, Feb 20th
+    - time: '8:00pm'
+      title: 'Hacking begins'
+      description: |
+        'Hacking officially starts now. Start coding and building away!'
+
+    - time: '8:30pm'
+      title: 'Dinner'
+
+- date: 'Saturday, Feb 20th'
   events:
-    - time:  9:00am
-      title: Breakfast
+    - time:  '9:00am'
+      title: 'Breakfast'
 
-    - time: 12:00pm
-      title: Lunch
+    - time: '12:00pm'
+      title: 'Lunch'
 
-    - time: 12:30pm - 1:30pm
-      title: Tech talks
+    - time: '12:30pm - 1:30pm'
+      title: 'Tech talks'
 
-    - time: 4:00pm - 5:00pm
-      title: Women in Tech Meetup
+    - time: '4:00pm - 5:00pm'
+      title: 'Women in Tech Meetup'
 
-    - time: 5:30pm - 6:15pm
-      title: Tech Talk: Powered by Expii
+    - time: '5:30pm - 6:15pm'
+      title: 'Tech Talk: Powered by Expii'
       description: |
-        Learn about React and Flask in this talk by the amazing scientists at Expii!
+        'Learn about React and Flask in this talk by the amazing scientists at Expii!'
 
-    - time: 6:30pm
-      title: Dinner
+    - time: '6:30pm'
+      title: 'Dinner'
 
-- date: Sunday, Feb 21st
+- date: 'Sunday, Feb 21st'
   events:
-    - time: 7:00am
+    - time: '7:00am'
       title: |
-        Breakfast
-    
-    - time: 8:00am
-      title: Hacking ends
-      description: |
-        All code must be written and all wires must be wired at this point.
+        'Breakfast'
 
-    - time: 8:15am - 9:15am
-      title: Presentations
+    - time: '8:00am'
+      title: 'Hacking ends'
       description: |
-        Present your hacks in a science fair style expo.
+        'All code must be written and all wires must be wired at this point.'
 
-    - time: 9:30am - 10:15am
-      title: Closing Ceremony
+    - time: '8:15am - 9:15am'
+      title: 'Presentations'
       description: |
-        The top seven teams will present their hacks, and the judges will pick the final winners.
+        'Present your hacks in a science fair style expo.'
+
+    - time: '9:30am - 10:15am'
+      title: 'Closing Ceremony'
+      description: |
+        'The top seven teams will present their hacks, and the judges will pick the final winners.'
 
