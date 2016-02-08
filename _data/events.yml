@@ -30,12 +30,14 @@
       title: 'Tech talks'
 
     - time: '4:00pm - 5:00pm'
-      title: 'Women in Tech Meetup'
+      title: 'Women in Tech Meetup: Sponsored by Bossa Nova'
+      description: |
+          Interact with other amazing women in tech and enjoy hors d'oeuvres and a talk by Jodi Forlizzi from CMU's Human-Computer Interaction Institute!
 
     - time: '5:30pm - 6:15pm'
       title: 'Tech Talk: Powered by Expii'
       description: |
-        Learn about React and Flask in this talk by the amazing scientists at Expii!
+        Learn about React in this talk by the amazing scientists at Expii!
 
     - time: '6:30pm'
       title: 'Dinner'
