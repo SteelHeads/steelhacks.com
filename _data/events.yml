@@ -26,8 +26,8 @@
     - time: '12:00pm'
       title: 'Lunch'
 
-    - time: '12:30pm - 1:30pm'
-      title: 'Tech talks'
+    - time: '3:00 - 4:00pm'
+      title: 'Tech Talk by Tata Consultancy Services'
 
     - time: '4:00pm - 5:00pm'
       title: 'Women in Tech Meetup: Sponsored by <a href=//www.bnrobotics.com/>Bossa Nova</a>'
