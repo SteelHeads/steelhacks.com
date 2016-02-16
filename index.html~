@@ -95,8 +95,6 @@ registrationUrl: "http://my.mlh.io/oauth/authorize?client_id=5ae15f82e76d215c66f
   <div class='container'>
     <h2>Partners</h2>
     <p style="text-align: center"><img src="../img/mlh-logo.svg" alt="MLH" width="300dp" style="margin:auto"></p>
-    <h2>Sponsors</h2>
-    <div id='sponsors'>
       <img class='sponsor first'
            alt='Pitt SSOE'
            src='/img/sponsors/PSE_Standard.svg' />
@@ -106,6 +104,8 @@ registrationUrl: "http://my.mlh.io/oauth/authorize?client_id=5ae15f82e76d215c66f
       <img class='sponsor first'
            alt='CMU ECE'
            src='/img/sponsors/CMU-ECE.svg' />
+    <h2>Sponsors</h2>
+    <div id='sponsors'>
       <img class='sponsor second'
            alt='BNY Mellon'
            src='/img/sponsors/bny-mellon.svg' />
@@ -130,6 +130,10 @@ registrationUrl: "http://my.mlh.io/oauth/authorize?client_id=5ae15f82e76d215c66f
            style='padding-top: 1.7em'
            alt='HP Enterprise'
 	   src='/img/sponsors/HPE.svg' />
+      <img class='sponsor third'
+           style='padding-top: 1.7em'
+           alt='Pittsburgh Code&Supply'
+	   src='/img/sponsors/CS.png' />
       <img class='sponsor third'
            style='padding-top: 1.7em'
            alt='Duolingo'
