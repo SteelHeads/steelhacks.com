@@ -208,7 +208,7 @@
     .title {
       color: $yellow-color;
     }
-    
+
     p {
       margin: 0.2em 1em;
     }
@@ -336,19 +336,36 @@ footer {
 .sponsor {
   display: block;
   margin: 0 auto;
+  width: 100%;
+}
 
-  &.first {
+.sponsor-group {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 3em auto;
+
+  > div:first-child {
+    margin-right: 2em;
+  }
+
+  > div:last-child {
+    margin-left: 2em;
+  }
+
+  .first {
     width: 65%;
   }
 
-  &.second {
-    width: 50%;
+  .second {
+    width: 45%;
   }
 
-  &.third {
-    width: 35%;
+  .third {
+    width: 30%;
   }
-  &.fourth {
-    width: 25%;
+
+  .fourth {
+    width: 22%;
   }
 }
