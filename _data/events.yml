@@ -13,7 +13,11 @@
     - time: '8:00pm'
       title: 'Git Hacking!'
       description: |
-        Find a team and start making.
+        Start making cool stuff.
+         - time: '8:00pm'
+    - title: 'Team Formation'
+      description: |
+        Find a team!
 
     - time: '8:30pm'
       title: 'Dinner'
