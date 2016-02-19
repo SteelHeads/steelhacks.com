@@ -14,9 +14,8 @@
       title: 'Git Hacking!'
       description: |
         Start making cool stuff.
-
-    - time: '8:00pm'
-      title: 'Team Formation'
+         - time: '8:00pm'
+    - title: 'Team Formation'
       description: |
         Find a team!
 
