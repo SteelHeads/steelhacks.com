@@ -156,7 +156,7 @@
   background-color: $yellow-color-dark;
   color: white;
   overflow: auto;
-  padding-bottom: 1.5em;
+  padding: 1.5em 0;
 
   h3 {
     text-align: center;
@@ -367,5 +367,47 @@ footer {
 
   .fourth {
     width: 22%;
+  }
+}
+
+#timer {
+  background-color: rgba(255, 255, 255, 0.25);
+  margin: 2em auto 2em;
+  padding: .5em;
+  width: 60%;
+
+  #timer__pre {
+    text-align: left;
+  }
+
+  #time {
+    font-size: 3em;
+    margin: .25em 0;
+  }
+
+  #timer__post {
+    text-align: right;
+  }
+}
+
+#announcements {
+  margin-bottom: 2em;
+}
+
+.announcement {
+  border-bottom: 1px solid grey;
+
+  .title {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+
+  &:not(:first-of-type) {
+    margin-top: 1em;
+  }
+
+  &:last-of-type {
+    border-bottom: none;
   }
 }
