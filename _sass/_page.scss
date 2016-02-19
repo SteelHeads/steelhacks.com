@@ -369,3 +369,23 @@ footer {
     width: 22%;
   }
 }
+
+#timer {
+  background-color: rgba(255, 255, 255, 0.25);
+  margin: 2em auto 2em;
+  padding: .5em;
+  width: 60%;
+
+  #timer__pre {
+    text-align: left;
+  }
+
+  #time {
+    font-size: 3em;
+    margin: .25em 0;
+  }
+
+  #timer__post {
+    text-align: right;
+  }
+}
