@@ -389,3 +389,25 @@ footer {
     text-align: right;
   }
 }
+
+#announcements {
+  margin-bottom: 2em;
+}
+
+.announcement {
+  border-bottom: 1px solid grey;
+
+  .title {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+
+  &:not(:first-of-type) {
+    margin-top: 1em;
+  }
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+}

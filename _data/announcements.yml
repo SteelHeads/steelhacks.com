@@ -1,0 +1,10 @@
+# Remember:
+# - Text in the description should start with a `|` and will include anything that matches that level of indentation
+# - Time and location are optional, title and description are not
+# - Posts will be shown in the *reverse* order from what they are show as here, so add new posts at the bottom
+# - You can copy and paste one of these blocks to create new ones
+- title: Sign-in starts soon!
+  time: Friday, 5:00
+  location: William Pitt Union
+  description: |
+    Come on by the WPU to sign in for SteelHacks!  Remember, hacking begins at 8:00 tonight!
