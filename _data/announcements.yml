@@ -3,8 +3,15 @@
 # - Time and location are optional, title and description are not
 # - Posts will be shown in the *reverse* order from what they are show as here, so add new posts at the bottom
 # - You can copy and paste one of these blocks to create new ones
+
 - title: Sign-in starts soon!
   time: Friday, 6:00
   location: William Pitt Union
   description: |
     Come on by the WPU to sign in for SteelHacks!  Remember, hacking begins at 8:00 tonight!
+- title: WiFi
+  time: Anytime
+  location: William Pitt Union
+  description: |
+    SSID - SteelHacks
+    Pass: St33lH@cks02
