@@ -68,7 +68,7 @@ h3 {
 
     @include size-greater-than($medium) {
       margin-right: 1.25%;
-      width: 32.5%;
+      width: 50%;
 
       &:last-child {
         margin-right: 0;
