@@ -5,6 +5,6 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://steelhacks.com" # the base hostname & protocol for your site
 twitter_username: steelhacks
-
+registration_url: "https://my.mlh.io/oauth/authorize?client_id=ec64a36d9a5f26cf28ddb0bd0fb61472e954168f9cf5fec280b598cd279823dc&redirect_uri=http%3A%2F%2Fsteelhacks.com%2Fregistered&response_type=token"
 # Build settings
 markdown: kramdown
