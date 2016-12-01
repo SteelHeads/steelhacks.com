@@ -2,9 +2,16 @@ var activeQuestion = null;
 
 function addClickHandler(el) {
   return el.addEventListener('click', function() {
-    activeQuestion.classList.remove('active');
-    activeQuestion = this.parentElement;
-    return activeQuestion.classList.add('active');
+    if(activeQuestion) {
+      activeQuestion.classList.remove('active');
+    }
+
+    if (activeQuestion === this.parentElement) {
+      activeQuestion = null;
+    } else {
+      activeQuestion = this.parentElement;
+      activeQuestion.classList.add('active');
+    }
   });
 }
 
