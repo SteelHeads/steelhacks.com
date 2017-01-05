@@ -10,7 +10,7 @@
 }
 
 #registered {
-  background-color: #3E4247;
+  background-color: $base-blue;
   color: white;
   padding-bottom: 50px;
   text-align: center;
@@ -24,7 +24,7 @@
   }
 
   a:visited {
-    color: #F4C807;
+    color: darken($base-tan, 10%);
   }
 }
 
@@ -56,7 +56,7 @@
   $mobile-navbar-width: 700px;
 
   clear: both;
-  background: rgba(62,66,71,0.2);
+  background: darken($base-blue, 10%);
   margin-bottom: 2%;
   width: 100%;
 
@@ -153,7 +153,7 @@
 }
 
 #signup-form {
-  background-color: $yellow-color-dark;
+  background-color: $base-blue;
   color: white;
   overflow: auto;
   padding: 1.5em 0;
@@ -163,7 +163,7 @@
   }
 
   .button {
-    background-color: $yellow-color;
+    background-color: darken($base-tan, 10%);
     border: 0;
     border-radius: 3px;
     color: white;
@@ -189,7 +189,7 @@
 }
 
 .event-box {
-  border: 2px solid $grey-color;
+  border: 2px solid black;
   list-style: none;
   padding: 0;
 
@@ -198,7 +198,7 @@
     padding: 12px 5px;
 
     &:hover {
-      background-color: $grey-color-light;
+      background-color: darken(white, 10%);
     }
 
     .time {
@@ -206,7 +206,7 @@
     }
 
     .title {
-      color: $yellow-color;
+      color: darken($base-tan, 20%);
     }
 
     p {
@@ -224,7 +224,7 @@
 }
 
 #faq {
-  background-color: $yellow-color-dark;
+  background-color: $base-blue;
   color: white;
 }
 
@@ -302,7 +302,7 @@
 footer {
   $spacing-amount: 30px;
 
-  background-color: $grey-color-dark;
+  background-color: darken($base-blue, 10%);
   color: white;
   font-size: 16px;
   padding-bottom: $spacing-amount;
