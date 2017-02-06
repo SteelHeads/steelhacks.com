@@ -13,22 +13,48 @@
     - time: '7:00pm'
       title: 'Git Hacking!'
       description: |
-        Start making cool stuff.
+        Team formation and hacking will commence.
 
-    - time: '8:30pm'
+    - time: '7:15pm'
       title: 'Dinner'
+
+    - time: '10:00pm-12:00am'
+      title: 'Snacks'
 
 - date: 'Saturday, Feb 11th'
   events:
-    - time:  '9:00am'
+    - time: '12:00am'
+      title: 'Slideshow Karaoke'
+      description: |
+        A fun, hilarious mini event where participants are given a random slide deck and then give a demonstration on it.
+
+    - time:  '8:00am'
       title: 'Breakfast'
 
-    - time: '12:00pm'
+    - time: '12:30pm'
       title: 'Lunch'
 
-    - time: '7:00pm'
-      title: 'Dinner &amp; Expo'
+    - time: '1:30pm'
+      title: 'Cup Stacking'
       description: |
-        Hacking has ended. Eat and show off your projects to judges and other hackers.
+        A tower-structure building tournament using cups
+
+    - time: '5:00pm'
+      title: 'Dinner'
+
+    - time: '6:00pm'
+      title: 'Projects due to Dev Post'
+      description: |
+        Projects are due to dev post at 6pm sharp!
+
+    - time: '7:00pm'
+      title: 'Project Expo'
+      description: |
+        Show off your project to the judges, and check out other teams awesome projects
+
+    - time: '8:00pm'
+      title: 'Demos &amp; Awards'
+      description: |
+        Top teams will demo and winners will be awarded their prizes!
 
 
