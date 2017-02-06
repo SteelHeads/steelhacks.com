@@ -19,8 +19,8 @@ function handleEndOfEvent() {
 }
 
 (function() {
-  var startTime = moment('2016-02-19 20:00:00')
-  var endTime = moment('2016-02-21 08:00:00')
+  var startTime = moment('2017-02-10 19:00:00')
+  var endTime = moment('2016-02-11 18:00:00')
   var currentTime = moment();
   var timeOfInterest;
 
