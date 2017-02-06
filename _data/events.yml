@@ -34,6 +34,11 @@
     - time: '12:30pm'
       title: 'Lunch'
 
+    - time: '12:45pm'
+      title: 'BNY Mellon Workshop'
+      description: |
+        A tower-structure building tournament using cups
+
     - time: '1:30pm'
       title: 'Cup Stacking'
       description: |
