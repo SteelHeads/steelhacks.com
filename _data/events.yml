@@ -47,12 +47,12 @@
     - time: '5:00pm'
       title: 'Dinner'
 
-    - time: '6:00pm'
+    - time: '5:30pm'
       title: 'Projects due to Dev Post'
       description: |
         Projects are due to dev post at 6pm sharp!
 
-    - time: '7:00pm'
+    - time: '6:30pm'
       title: 'Project Expo'
       description: |
         Show off your project to the judges, and check out other teams awesome projects
