@@ -3,9 +3,15 @@
 # - Time and location are optional, title and description are not
 # - Posts will be shown in the *reverse* order from what they are show as here, so add new posts at the bottom
 # - You can copy and paste one of these blocks to create new ones
-
 - title: Sign-in starts soon!
   time: Friday, 5:30
   location: Wyndham, University of Pittsburgh Center
   description: |
     Come to the University of Pittsburgh Wyndham to sign in for SteelHacks!  Remember, hacking begins at 7:00 tonight!
+
+- title: WiFi Fix is Underway
+  time: Friday, 8:00
+  location: Wyndham, University of Pittsburgh Center
+  description: |
+    We are working on the WiFi problem! The hotel's director of engineering is on his way in right now. They are aware of the problem and will be fixing it ASAP. In the meantime, we've ordered more food!
+
