@@ -3,61 +3,6 @@
 # - Time and location are optional, title and description are not
 # - Posts will be shown in the *reverse* order from what they are show as here, so add new posts at the bottom
 # - You can copy and paste one of these blocks to create new ones
-- title: Sign-in starts soon!
-  time: Friday, 5:30 PM
+- title: SteelHacks Begins!
+  time: Saturday, 1pm
   description: |
-    Come to the University of Pittsburgh Wyndham to sign in for SteelHacks!  Remember, hacking begins at 7:00 tonight!
-
-- title: WiFi Fix is Underway
-  time: Friday, 8:00 PM
-  description: |
-    We are working on the WiFi problem! The hotel's director of engineering is on his way in right now. They are aware of the problem and will be fixing it ASAP. In the meantime, we've ordered more food!
-
-- title: The WiFi is fixed!
-  time: Friday, 9:30 PM
-  description: |
-    The WiFi is fixed! Happy hacking!
-
-- title: Evening snack is out!
-  time: Friday, 10:00 PM
-  description: |
-    Chips & ranch dip in the back with the drinks
-
-- title: Slideshow Karaoke with MLH at MIDNIGHT
-  time: Friday, 12:00 AM
-  description: |
-    An enjoyable and hilarious way to break up the hacking
-
-- title: REMINDER - Breakfast at 8AM tomorrow!
-  time: Saturday, 8:00 AM
-  description: |
-    Pastries, bagels, fruit, yogurt, and granola for all!
-
-- title: Don't forget to submit by 5:30 PM tonight!
-  description: |
-    Submissions should be made <a href="https://steelhacks2017.devpost.com">here</a>
-
-- title: Join BNY Mellon for a Lunch Tech Workshop
-  time: Saturday, 12:30 PM
-  description: |
-    Salads and sandwiches will be served!
-
-- title: Cup Stacking Competition with MLH
-  time: Saturday, 1:30 PM
-  description: |
-    Build the highest tower in three minutes and win a sweet prize!
-
-- title: Dinner is served!
-  time: Saturday, 5:00 PM
-  description: |
-    Chicken parm, veggie lasagna, wedding soup, caesar salad, alfredo, and marinara penne for DAYS!
-
-- title: Judging is underway! Good luck teams!
-  time: Saturday, 7:00 PM
-  description: |
-    Stay tuned! Winners will be announced shortly!
-
-- title: Congratulations to our top three teams, coolgamedotwin (1st), Nightmare on Fifth (2nd), and Filibuster (3rd)!
-  time: Saturday, 8:30 PM
-  description: |
-    And congratulations to everyone for all of your wonderful projects! See you all next year!

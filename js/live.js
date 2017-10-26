@@ -1,11 +1,15 @@
 function getTimeDifferenceText(start, other) {
   var diff = moment.duration(other.diff(start));
+  var months = diff.months()
   var days = diff.days();
   var hours = diff.hours();
   var minutes = diff.minutes();
   var string = hours + ' hours, ' + minutes + ' minutes';
   if (days > 0) {
-    string = days + ' day, ' + string;
+    string = days + ' days, ' + string;
+  }
+  if (months > 0) {
+    string = months + ' months, ' + string;
   }
   return string;
 }
@@ -19,8 +23,8 @@ function handleEndOfEvent() {
 }
 
 (function() {
-  var startTime = moment('2017-02-10 19:00:00')
-  var endTime = moment('2016-02-11 18:00:00')
+  var startTime = moment('2018-02-24 13:00:00')
+  var endTime = moment('2018-02-25 15:00:00')
   var currentTime = moment();
   var timeOfInterest;
 
