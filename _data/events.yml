@@ -1,65 +1,13 @@
-- date: Friday, Feb 10th
+- date: 'Saturday, February 24th'
   events:
-    - time: '5:30pm - 6:30pm'
-      title: 'Welcome &amp; Registration'
+    - title: 'Day 1'
       description: |
-        Arrive at the Wyndham Pittsburgh University Center and sign in to the hackathon! Be sure to bring a student ID with you.
 
-    - time: '6:30pm - 7:00pm'
-      title: 'Opening Ceremony'
-      description: |
-        Learn about the event, the timeline, and the rules.
 
-    - time: '7:00pm'
-      title: 'Git Hacking!'
-      description: |
-        Team formation and hacking will commence.
 
-    - time: '7:15pm'
-      title: 'Dinner'
 
-    - time: '10:00pm-12:00am'
-      title: 'Snacks'
-
-- date: 'Saturday, Feb 11th'
+- date: 'Sunday, February 25'
   events:
-    - time: '12:00am'
-      title: 'Slideshow Karaoke'
+    - title: 'Day 2'
       description: |
-        A fun, hilarious mini event where participants are given a random slide deck and then give a demonstration on it.
-
-    - time:  '8:00am'
-      title: 'Breakfast'
-
-    - time: '12:30pm'
-      title: 'Lunch'
-
-    - time: '12:45pm'
-      title: 'BNY Mellon Workshop'
-      description: |
-       A lunch workshop with BNY Mellon
-
-    - time: '1:30pm'
-      title: 'Cup Stacking'
-      description: |
-        A tower-structure building tournament using cups
-
-    - time: '5:00pm'
-      title: 'Dinner'
-
-    - time: '5:30pm'
-      title: 'Projects due to Dev Post'
-      description: |
-        Projects are due to dev post at 5:30pm sharp!
-
-    - time: '6:30pm'
-      title: 'Project Expo'
-      description: |
-        Show off your project to the judges, and check out other teams awesome projects
-
-    - time: '8:00pm'
-      title: 'Demos &amp; Awards'
-      description: |
-        Top teams will demo and winners will be awarded their prizes!
-
-
+        
