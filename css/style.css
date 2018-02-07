@@ -122,6 +122,13 @@ h2 {
   margin:auto;
 }
 
+.secondSponsor {
+  padding-top:50px;
+  width:40%;
+  display:block;
+  margin:auto;
+}
+
 #menuIcon {
   color:white;
   z-index:100000;
