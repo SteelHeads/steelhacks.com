@@ -123,10 +123,11 @@ h2 {
 }
 
 .secondSponsor {
-  padding-top:50px;
   width:40%;
   display:block;
-  margin:auto;
+  float:left;
+  display:block;
+  margin:5%;
 }
 
 #menuIcon {
