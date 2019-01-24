@@ -1,7 +1,7 @@
 # Site settings
-title: SteelHacks 2018
+title: SteelHacks 2019
 description: > # this means to ignore newlines until "baseurl:"
-  University of Pittsburgh's hackathon! February 24-25th, 2018.
+  University of Pittsburgh's hackathon! March 1st-2nd, 2019.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://steelhacks.com" # the base hostname & protocol for your site
 twitter_username: steelhacks
