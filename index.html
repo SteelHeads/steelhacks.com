@@ -1,272 +1,162 @@
 ---
-title: SteelHacks 2019
 layout: default
 ---
-<!DOCTYPE html>
-
-<html>
-
-<!-- Navbar -->
-
-<nav class="hide-on-med-and-down">
-  <div class="nav-wrapper">
-    <ul class="right hide-on-med-and-down">
-      <li class="navItem"><a href="#">Register</a></li>
-      <li class="navItem"><a href="#Schedule">Schedule</a></li>
-      <li class="navItem"><a href="#FAQ">FAQ</a></li>
-      <li class="navItem"><a href="#Sponsors">Sponsors</a></li>
-      <li class="navItem"><a href="#Location">Location</a></li>
-    </ul>
-  </div>
-</nav>
-
-<!-- mobile nav -->
-
-<ul id="slide-out" class="side-nav hide-on-large-only">
-  <li><a class="waves-effect" href="#">Register</a></li>
-  <li><a class="waves-effect" href="#Schedule">Schedule</a></li>
-  <li><a class="waves-effect" href="#FAQ">FAQ</a></li>
-  <li><a class="waves-effect" href="#Sponsors">Sponsors</a></li>
-  <li><a class="waves-effect" href="#Location">Location</a></li>
-</ul>
-<a href="#" id="mobileNav" data-activates="slide-out" class="button-collapse hide-on-large-only"><i id="menuIcon" class="material-icons">menu</i></a>
-
-<!-- SHARE BUTTONS -->
-
-<div class="fixed-action-btn">
-  <a class="btn-floating btn-large" style="background-color:#C5B358;">
-    <i class="large material-icons">share</i>
-  </a>
-  <ul>
-    <li><a href="https://www.facebook.com/steelhacks" class="btn-floating" style="background-color:rgb(59, 89, 152) !important;">
-      <img src="http://pittdeltachi.com/assets/img/facebook.png" style="width:30px; margin-top:5px;">
-    </a></li>
-    <li><a href="https://twitter.com/steelhacks" class="btn-floating darken-1" style="background-color:#00aced;">
-      <img src="assets/twitter.png" style="width:25px; margin-top:8px;">
-    </a></li>
-  </ul>
-</div>
-
-<!-- MLH Badge -->
 <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2019/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2019-season&utm_content=gray" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-gray.svg" alt="Major League Hacking 2019 Hackathon Season" style="width:100%"></a>
 
-<body>
+<header id='welcome' class='slice'>
+  <nav id='navbar' class='container'>
+    <ul id='mobile-nav-trigger' class='pull-right'>
+      <li><a href=''><i class="fa fa-bars"></i></a></li>
+    </ul>
+    <ul id='menu'>
+      <li><a href='#schedule'>Schedule</a></li>
+      <li><a href='#faq'>FAQ</a></li>
+      <li><a href='#sponsors'>Sponsors</a></li>
+      <li>
+        <a target='_blank' href='https://www.facebook.com/steelhacks'>
+          <i class='fa fa-facebook-square'></i>
+          <span class='social-link'>Facebook</span>
+        </a>
+      </li>
+      <li>
+        <a target='_blank' href='https://twitter.com/steelhacks'>
+          <i class='fa fa-twitter-square'></i>
+          <span class='social-link'>Twitter</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class='container'>
+    <img id="main-logo" src="../img/steel.png"/>
+    <h3>MARCH 1ST &amp; 2ND, 2019 - PITTSBURGH, PENNSYLVANIA</h3>
+    <p>
+      SteelHacks is an event hosted at the University of Pittsburgh, through the Department of Computer Science, for
+      students at colleges &amp; universities across the US who are passionate
+      about getting their hands dirty using technology and design.
+    </p>
+    <p>
+      This year is the fifth annual Steelhacks hackathon. Each year students
+      from around the Pittsburgh area and beyond come together to hack and make
+      cool stuff.
+    </p>
+  </div>
+</header>
+<div id='signup-form' class='slice'>
+  <div class='container'>
+     <a class='button' href="{{site.registration_url}}">Register Now</a>
+  </div>
+</div>
+<div id='schedule' class='slice slice--big'>
+  <div class='container'>
+    <h2>Schedule</h2>
+    <div class='column-wrapper'>
+      {% for day in site.data.events %}
+        <div class='column'>
+          <h3>{{ day.date }}</h3>
+          <ul class='event-box'>
+            {% for event in day.events %}
+              <li class='event'>
+                <div class='event__body'>
+                  <p class='time'>{{ event.time }}</p>
+                  <p class='title'>{{ event.title }}</p>
+                  <p class='description'>{{ event.description }}</p>
+                </div>
+                <div class='event__timeline'>
 
-  <h1 id="siteTitle" style="color:#c3c3c3;">Steel <div style="color:#f6eb14;display:inline">Hacks</div></h1>
-  <div class="parallax-container">
-      <div class="parallax"><img src="img/headerbg.jpg"></div>
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<div id='faq' class='slice slice--big'>
+  <div class='container'>
+    <h2>FAQ</h2>
+    {% for question in site.data.faq %}
+      <div class='question'>
+        <div class='question__header'>
+          {{ question.title }}
+          <i class='fa fa-chevron-down pull-right'></i>
+          <i class='fa fa-chevron-up pull-right'></i>
+        </div>
+        <div class='question__body'>
+          {{ question.body }}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+<div id='sponsors' class='slice slice--big'>
+  <div class='container'>
+    <h2>Partners</h2>
+
+    <div class='sponsor-group'>
+      <div class='second'>
+        <img class='sponsor'
+             alt='Major League Hacking'
+             src='/img/mlh-logo-color.png'>
+      </div>
     </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col s12">
-        <div class="card section scrollspy" id="register" style="margin-top:-50px;">
-          <div class="card-content">
-            <p id="date">March 1st & 2nd, 2019</p>
-            <p id="time">Pittsburgh Pennsylvania</p>
-            <a id="registerButton" class="waves-effect waves-light btn" href="https://goo.gl/forms/KrEMhlq3WB41jiSD2"><i class="material-icons left">assignment_turned_in</i>Register</a>
-            <br/><div class="divider" style="background-color:#C5B358;"></div><br/>
-            <p class="mainText">SteelHacks is an event hosted at the University of Pittsburgh, through the School of Computing and Information, for students at colleges & universities across the US who are passionate about getting their hands dirty using technology and design.<br/><br/>This year is the fifth annual Steelhacks hackathon. Each year students from around the Pittsburgh area and beyond come together to hack and make cool stuff.</p>
-            <img src="assets/steel.png" id="homeImage"/>
+    <div class='sponsor-group'>
+      <div class='first'>
+        <img class='sponsor first'
+             alt='Pitt SCI'
+             src='/img/pitt-sci.png' />
+      </div>
+    </div>
 
-          </div>
+
+    <h2>Sponsors</h2>
+
+    <div id='sponsors'>
+      <div class='sponsor-group'>
+        <div class='second'>
+          <img class='sponsor'
+               alt='BNY Mellon'
+               src='/img/sponsors/bny-mellon.svg' />
+        </div>
+        <div class='third'>
+          <img class='sponsor'
+               alt='Google'
+               src='/img/sponsors/google.svg' />
+        </div>
+        <div class='third'>
+          <img class='sponsor'
+               alt='PPG'
+               src='/img/sponsors/ppg.png' />
+        </div>
+      </div>
+      <div class='sponsor-group'>
+        <div class='third'>
+          <img class='sponsor'
+               alt='Dicks'
+               src='/img/sponsors/dicks.svg' />
+        </div>
+        <div class='third'>
+          <img class='sponsor'
+               alt='Cylumena'
+               src='/img/sponsors/cylumena.png' />
+        </div>
+        <div class='third'>
+          <img class='sponsor'
+               alt='SDLC'
+               src='/img/sponsors/sdlc.png' />
+        </div>
+      </div>
+      <div class='sponsor-group'>
+        <div class='third'>
+          <img class='sponsor'
+               alt='SIG'
+               src='/img/sponsors/sig.png' />
         </div>
       </div>
     </div>
   </div>
-
-  <h2 id="Schedule" class="section scrollspy"><i class="eventIcon material-icons">event</i>Schedule</h2>
-
-  <div class="container">
-    <div class="row">
-      <div class="col s12 l6">
-        <div class="card hoverable">
-          <div class="card-content">
-            <h3 class="dayTitles">March 1st</h3>
-            <div class="divider goldDivide smaller"></div>
-            <p class="subTitles">Friday</p>
-            <ul class="collection">
-              <li class="collection-item">Coming out soon.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col s12 l6">
-        <div class="card hoverable">
-          <div class="card-content">
-            <h3 class="dayTitles">March 2nd</h3>
-            <div class="divider goldDivide smaller"></div>
-            <p class="subTitles">Saturday</p>
-            <ul class="collection">
-              <li class="collection-item">Coming out soon.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <h2 class="alternate section scrollspy" id="FAQ"><i class="eventIcon material-icons"  style="color:#212121;"></i>Prizes</h2>
-  <div class="col s6">
-    <div class="card hoverable">
-      <div class="card-content">
-        <h3 class="dayTitles">Prizes to be annouced soon.</h3>
-        <div class="divider goldDivide smaller"></div>
-      </div>
-    </div>
-  </div>
-
-
-  <h2 class="alternate section scrollspy" id="FAQ"><i class="eventIcon material-icons"  style="color:#212121;">question_answer</i>Frequently Asked Questions</h2>
-
-
-  <div class="container">
-    <div class="row">
-      <div class="col s12 l6">
-        <div class="card">
-          <div class="card-content">
-            <span class="card-title">Who can attend SteelHacks?</span>
-            <div class="divider goldDivide"></div>
-            <p>Any undergraduate or graduate student at any college in the world! Non-Pitt college undergraduate students must be at least 18 years old. Unfortunately, high school students can't attend this year.</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-content">
-            <span class="card-title">Does this cost money?</span>
-            <div class="divider goldDivide"></div>
-            <p>Not at all! In fact, we pay for all your meals and provide you with all the hardware and help you need at any time for free.</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-content">
-            <span class="card-title">Where will SteelHacks be held?</span>
-            <div class="divider goldDivide"></div>
-            <p>SteelHacks 2019 will occur at the Alumni Hall on Pitt's campus, 4227 Fifth Ave, Pittsburgh, PA 15260</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-content">
-            <span class="card-title">What is the code of conduct for this event?</span>
-            <div class="divider goldDivide"></div>
-            <p>All participants of SteelHacks 2019 will be required to follow the MLH code of conduct that can be found <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">here</a>.</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-content">
-            <span class="card-title">What is my registration used for?</span>
-            <div class="divider goldDivide"></div>
-            <p>We participate in Major League Hacking (MLH) as a MLH Member Event. You authorize us to share certain application/registration information for event administration, ranking, MLH administration, and occasional messages about hackathons in line with the <a href="https://mlh.io/privacy">MLH Privacy Policy</a>.</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-content">
-            <span class="card-title">Will hardware be available?</span>
-            <div class="divider goldDivide"></div>
-            <p>Yes!  There will be hardware available to use at the event.  The inventory list will be out soon.</p>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="col s12 l6">
-        <div class="card">
-          <div class="card-content">
-            <span class="card-title">I can't register anymore!</span>
-            <div class="divider goldDivide"></div>
-            <p>Don't panic! Shoot an email to steelhacks@pitt.edu and we'll try to sort it out.</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-content">
-            <span class="card-title">Where will I sleep?</span>
-            <div class="divider goldDivide"></div>
-            <p>If you're a Pitt student, you can sleep in your residence hall/apartment. For non-Pitt students, the venue will have designated sleeping places.</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-content">
-            <span class="card-title">I missed the confirmation dealine!  Can I still come?</span>
-            <div class="divider goldDivide"></div>
-            <p>Send us an email to steelhacks@pitt.edu, and we'll see if we can find you a spot!</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-content">
-            <span class="card-title">How do I get there?</span>
-            <div class="divider goldDivide"></div>
-            <p>If you're coming from out-of-state, we unfortunately cannot offer any travel reimbursement at this time. Students at any university in Pittsburgh can simply take a Port Authority bus straight to the event, so that's simple.</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-content">
-            <span class="card-title">How do teams work?</span>
-            <div class="divider goldDivide"></div>
-            <p>Teams can consist of 1-4 people!</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-content">
-            <span class="card-title">What if FAQ didn't answer my question?</span>
-            <div class="divider goldDivide"></div>
-            <p>You can tweet it at us @SteelHacks, or email us at steelhacks@pitt.edu!</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <h2 id="Sponsors" class="section scrollspy"><i class="eventIcon material-icons">group</i>Sponsors</h2>
-
-  <div class="container">
-    <div class="row">
-        <img src="img/sponsors/pitt_sci.png" class="sponsor"/>
-    </div>
-    <br/><div class="divider goldDivide smaller"></div><br/>
-    <div class="row">
-      <img src="img/sponsors/google.svg" class="secondSponsor"/>
-      <img src="img/sponsors/bny-mellon.svg" class="secondSponsor"/>
-    </div>
-    <div class="row">
-       <img src="img/sponsors/ppg.png" style="width:30%; margin-left:10%; margin-right:10%;" class="secondSponsor"/>
-      <img src="img/sponsors/dicks.svg" class="secondSponsor"/>
-    </div>
-    <div class="row">
-      <img src="img/sponsors/cylumena.png" class="secondSponsor"/>
-      <img src="img/sponsors/sdlc.png" class="secondSponsor"/>
-    </div>
-    <div class="row">
-      <img src="img/sponsors/sig.png" class="secondSponsor"/>
-    </div>
-  </div>
-
-  <h2 id="Location" class="alternate section scrollspy"><i class="eventIcon material-icons" style="color:#212121;">map</i>Location</h2>
-
-  <div class="row">
-    <div class="col s3"></div>
-    <div class="col s6">
-      <div class="card">
-        <div class="card-content">
-          <p class="mainText"><b>Alumni Hall</b><br/>4227 Fifth Ave<br/>Pittsburgh, PA 15260</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3036.4036520303575!2d-79.95588574652187!3d40.44420210111034!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x517c2568d7e0544!2sAlumni+Hall!5e0!3m2!1sen!2sus!4v1548219257204" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-</body>
-
-<!-- scripts -->
-<script src="js/script.js"></script>
-
-</html>
+</div>
+<div id='map' class='slice'>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3036.4036520303575!2d-79.95588574652187!3d40.44420210111034!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x517c2568d7e0544!2sAlumni+Hall!5e0!3m2!1sen!2sus!4v1548219257204" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+<script type="text/javascript" charset="utf-8" src="{{ "/js/homepage.js" | prepend: site.baseurl }}"></script>

@@ -1,13 +1,17 @@
-- date: 'Saturday, February 24th'
+- date: Friday, Mar 1st
   events:
-    - title: 'Day 1'
+    - time: '4:30pm - 5:30pm'
+      title: 'Welcome &amp; Registration'
       description: |
 
-
-
-
-- date: 'Sunday, February 25'
-  events:
-    - title: 'Day 2'
+    - time: '5:30pm - 6:30pm'
+      title: 'Opening Ceremony'
       description: |
-        
+        Learn about the event, the timeline, and the rules.
+
+
+- date: 'Saturday, Mar 2nd'
+  events:
+    - time: 'TBA'
+      title: 'More details coming out soon'
+      description: |
