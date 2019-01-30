@@ -3,6 +3,27 @@
 # - Time and location are optional, title and description are not
 # - Posts will be shown in the *reverse* order from what they are show as here, so add new posts at the bottom
 # - You can copy and paste one of these blocks to create new ones
-- title: SteelHacks Begins!
-  time: Saturday, 1pm
+
+- title: Sign-in starts soon!
+  time: Friday, 6:00
+  location: William Pitt Union
   description: |
+    Come on by the WPU to sign in for SteelHacks!  Remember, hacking begins at 8:00 tonight!
+- title: WiFi
+  time: Anytime
+  location: William Pitt Union
+  description: |
+    SSID - SteelHacks
+    Pass: St33lH@cks02
+- title: HP Vertica Instances!
+  location: HP Vertica Booth
+  description: |
+    HP Vertica is offering everyone free AWS instances with data about all streets in North America! Check it out <a href="http://tinyurl.com/verticahacksteel16">here!</a>
+- title: Devpost
+  location: <a href="//steelhacks2016.devpost.com">Click Here!</a>
+  description: |
+    Click the above link the check the Devpost and submit your hacks!
+- title: New Duolingo Prize!
+  location: Duolingo booth
+  description: |
+    The best language or education hack wins plushies of Duo, Duolingo's (adorable) mascot!
