@@ -9,9 +9,30 @@
       description: |
         Learn about the event, the timeline, and the rules.
 
+    - time: '6:30 pm'
+      title: 'Hacking Begins!'
+      description: |
+
+    - time: 'TBA'
+      title: 'More details coming out soon.'
+      description: |
+
 
 - date: 'Saturday, Mar 2nd'
   events:
     - time: 'TBA'
-      title: 'More details coming out soon'
+      title: 'More details coming out soon.'
+      description: |
+
+    - time: '6:00pm'
+      title: 'Hacking ends!'
+      description: |
+        Submit by 6:00pm your project to Devpost.
+
+    - time: '7:00pm - 8:30pm'
+      title: 'Project Expo'
+      description: |
+
+    - time: '9:00pm'
+      title: 'Award Ceremony'
       description: |
