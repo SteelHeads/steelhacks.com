@@ -1,5 +1,9 @@
 - date: Friday, Mar 1st
   events:
+    - time: ''
+      title: 'Schedule is tentative'
+      description: |
+
     - time: '4:30pm - 5:30pm'
       title: 'Welcome &amp; Registration'
       description: |
@@ -17,13 +21,17 @@
       title: 'Dinner'
       description: Pizza will be served
 
-    - time: '11:00 pm'
+    - time: '9:00 pm'
       title: 'MLH/Fun Event'
       description: |
 
 
 - date: 'Saturday, Mar 2nd'
   events:
+    - time: ''
+      title: 'Schedule is tentative'
+      description: |
+
     - time: '8:00 am'
       title: 'Breakfast'
       description: |
