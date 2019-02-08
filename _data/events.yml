@@ -1,9 +1,5 @@
 - date: Friday, Mar 1st
   events:
-    - time: ''
-      title: 'Schedule is tentative'
-      description: |
-
     - time: '4:30pm - 5:30pm'
       title: 'Welcome &amp; Registration'
       description: |
@@ -28,10 +24,6 @@
 
 - date: 'Saturday, Mar 2nd'
   events:
-    - time: ''
-      title: 'Schedule is tentative'
-      description: |
-
     - time: '8:00 am'
       title: 'Breakfast'
       description: |
@@ -41,17 +33,13 @@
       description: |
 
     - time: '5:00 pm'
-      title: 'Dinner'
-      description: |
+      title: 'Diiner & Hacking ends!'
+      description: Submit by 5:00pm your project to Devpost.
 
-    - time: '6:30pm'
-      title: 'Hacking ends!'
-      description: Submit by 6:00pm your project to Devpost.
-
-    - time: '7:00pm - 8:30pm'
+    - time: '6:00pm - 7:30pm'
       title: 'Project Expo'
       description: |
 
-    - time: '9:00pm'
+    - time: '8:00pm'
       title: 'Award Ceremony'
       description: |
