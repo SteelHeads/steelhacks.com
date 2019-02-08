@@ -13,21 +13,32 @@
       title: 'Hacking Begins!'
       description: |
 
-    - time: 'TBA'
-      title: 'More details coming out soon.'
+    - time: '8:00 pm'
+      title: 'Dinner'
+      description: Pizza will be served
+
+    - time: '11:00 pm'
+      title: 'MLH/Fun Event'
       description: |
 
 
 - date: 'Saturday, Mar 2nd'
   events:
-    - time: 'TBA'
-      title: 'More details coming out soon.'
+    - time: '8:00 am'
+      title: 'Breakfast'
       description: |
 
-    - time: '6:00pm'
-      title: 'Hacking ends!'
+    - time: '12:30 pm'
+      title: 'Lunch/Tech Talk'
       description: |
-        Submit by 6:00pm your project to Devpost.
+
+    - time: '5:00 pm'
+      title: 'Dinner'
+      description: |
+
+    - time: '6:30pm'
+      title: 'Hacking ends!'
+      description: Submit by 6:00pm your project to Devpost.
 
     - time: '7:00pm - 8:30pm'
       title: 'Project Expo'
