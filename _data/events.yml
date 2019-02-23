@@ -33,9 +33,9 @@
       description: |
 
     - time: '10:30 am'
-     title: "Women's Coffee Hour"
-     description: |
-       With a special guest
+      title: "Women's Coffee Hour"
+      description: |
+        With a special guest
 
     - time: '12:30 pm'
       title: 'Lunch/Tech Talk'
