@@ -16,7 +16,7 @@
 
     - time: '8:30 pm'
       title: 'Dinner'
-      description: Pizza will be served
+      description: 
 
     - time: '9:00 pm'
       title: 'MLH/Fun Event'
