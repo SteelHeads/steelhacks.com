@@ -1,55 +1,12 @@
 - date: Friday, Mar 1st
   events:
-    - time: '4:30pm - 5:30pm'
-      title: 'Welcome &amp; Registration'
-      description: |
-        Snacks will be provided!
-
-    - time: '5:30pm - 6:30pm'
-      title: 'Opening Ceremony'
-      description: |
-        Learn about the event, the timeline, and the rules. Also team formation will occur if you don't already have a team
-
-    - time: '6:30 pm'
-      title: 'Hacking Begins!'
+    - time: ''
+      title: ''
       description: |
 
-    - time: '8:30 pm'
-      title: 'Dinner'
-      description: 
-
-    - time: '9:00 pm'
-      title: 'MLH/Fun Event'
-      description: MLH Cup Stacking
-
-    - time: '11:00 pm'
-      title: 'Late Night Snack'
-      description: Cookies!
 
 - date: 'Saturday, Mar 2nd'
   events:
-    - time: '8:00 am'
-      title: 'Breakfast'
-      description: |
-
-    - time: '10:30 am'
-      title: "Women's Coffee Hour"
-      description: |
-        With a special guest
-
-    - time: '12:30 pm'
-      title: 'Lunch/Tech Talk'
-      description: |
-        BNY Mellon Tech Talk
-
-    - time: '5:00 pm'
-      title: 'Dinner & Hacking ends!'
-      description: Submit by 5:00pm your project to Devpost.
-
-    - time: '5:30pm - 7:00pm'
-      title: 'Project Expo'
-      description: |
-
-    - time: '7:30pm'
-      title: 'Award Ceremony'
+    - time: ''
+      title: ''
       description: |
