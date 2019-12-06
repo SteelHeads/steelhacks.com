@@ -1,10 +1,10 @@
 # Site settings
-title: SteelHacks 2019
+title: SteelHacks 2020
 description: > # this means to ignore newlines until "baseurl:"
-  University of Pittsburgh's hackathon! March 1st-2nd, 2019.
+  University of Pittsburgh's hackathon! Feb 14th-15th, 2020.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://steelhacks.com" # the base hostname & protocol for your site
 twitter_username: steelhacks
-registration_url: "https://goo.gl/forms/3voj60Rgoeal0JDp1"
+registration_url: ""
 # Build settings
 markdown: kramdown
