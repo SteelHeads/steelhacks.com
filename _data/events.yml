@@ -34,7 +34,7 @@
       description: |
 
     - time: '10:30am'
-      title: 'Women's Coffee Hour'
+      title: 'Women\'s Coffee Hour'
       description: |
         More details coming soon
 
@@ -45,7 +45,6 @@
     - time: '4:30pm'
       title: 'Submit to Devpost'
       description: |
-
       
     - time: '5:00pm'
       title: 'Dinner / End of Hacking'
