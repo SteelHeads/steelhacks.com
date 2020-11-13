@@ -1,9 +1,8 @@
-- date: Friday, Feb 14th
+- date: Friday, Feb 19th
   events:
     - time: '5:00pm - 6:00pm'
       title: 'Welcome &amp; Registration'
       description: |
-        With snacks
 
     - time: '6:00pm - 7:00pm'
       title: 'Opening Ceremony'
@@ -14,45 +13,20 @@
       description: |
         Team formation will also occurs at this time
 
-    - time: '8:00pm'
-      title: 'Dinner'
-      description: |
-
-    - time: '9:00pm'
-      title: 'MLH Event'
-      description: |
-
-    - time: '12:00am'
-      title: 'Midnight Snacks'
-      description: |
-
-- date: 'Saturday, Feb 15th'
+- date: 'Saturday, Feb 20th'
   events:
-    - time: '8:00am'
-      title: 'Breakfast'
-      description: |
-
-    - time: '10:30am'
-      title: "Women's Coffee Hour"
-      description: |
-
-    - time: '12:30pm'
-      title: 'Lunch'
-      description: |
-
     - time: '4:30pm'
       title: 'Submit to Devpost'
       description: |
       
     - time: '5:00pm'
-      title: 'Dinner / End of Hacking'
+      title: 'End of Hacking'
       description: |
 
     - time: '5:45pm - 7:00pm'
       title: 'Project Expo'
       description: |
 
-      
     - time: '7:30pm'
       title: 'Award Ceremony'
       description: |
