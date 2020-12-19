@@ -116,99 +116,29 @@ layout: default
     <h2>Sponsors</h2>
 
     <div id='sponsors'>
-      <div class='sponsor-group'>
-        <div class='second'>
-          <img class='sponsor'
-               alt='BNY Mellon'
-               src='/img/sponsors/bny-mellon.png' />
-        </div>
-        <div class='third'>
-          <img class='sponsor'
-               alt='Google'
-               src='/img/sponsors/google.png' />
-        </div>
-        <div class='third'>
-          <img class='sponsor'
-               alt='PPG'
-               src='/img/sponsors/ppg.png' />
-        </div>
-      </div>
-      <div class='sponsor-group'>
-        <div class='third'>
-          <img class='sponsor'
-               alt='Dicks'
-               src='/img/sponsors/dicks.png' />
-        </div>
-        <div class='third'>
-          <img class='sponsor'
-               alt='Cylumena'
-               src='/img/sponsors/cylumena.png' />
-        </div>
-        <div class='third'>
-          <img class='sponsor'
-               alt='SDLC'
-               src='/img/sponsors/sdlc.png' />
-        </div>
-      </div>
-   
-      <div class='sponsor-group'>
-        <div class='third'>
-          <img class='sponsor'
-               alt='CVS'
-               src='/img/sponsors/cvs.png' />
-        </div><div class='third'>
-          <img class='sponsor'
-               alt='Aetna'
-               src='/img/sponsors/aetna.png' />
-        </div><div class='third'>
-          <img class='sponsor'
-               alt='Netapp'
-               src='/img/sponsors/netapp.jpg' />
-        </div>
-      </div>
 
       <div class='sponsor-group'>
-        <div class='third'>
-          <img class='sponsor'
-               alt='SIG'
-               src='/img/sponsors/sig.png' />
-        </div><div class='third'>
-          <img class='sponsor'
-               alt='Grant Street Group'
-               src='/img/sponsors/gsg.png' />
-        </div><div class='third'>
-          <img class='sponsor'
-               alt='Vanguard'
-               src='/img/sponsors/vanguard.png' />
-        </div>
+          {% assign num = site.data.sponsors.size | divided_by: 3 | plus: 1 | times: 3 %}
+         {% for i in (0..num) %}
+            {% assign rem = i | modulo: 3 %}
+            {% if forloop.first == false %}
+              {% if rem == 0  %}
       </div>
       <div class='sponsor-group'>
-        <div class='third'>
-          <img class='sponsor'
-               alt='Deloitte'
-               src='/img/sponsors/deloitte.JPG' />
-        </div><div class='third'>
-          <img class='sponsor'
-               alt='Intalere'
-               src='/img/sponsors/intalere.jpg' />
-        </div><div class='third'>
-          <img class='sponsor'
-               alt='Norfolk Southern'
-               src='/img/sponsors/ns.png' />
-        </div>
-      </div>
-      <div class='sponsor-group'>
-        <div class='third'>
+              {% endif %}
+            {% endif %}
+
+          <div class='third'>
+            {% if site.data.sponsors[i] %}
             <img class='sponsor'
-            alt='UPMC'
-            src='/img/sponsors/sei.jpg' />
-        </div><div class='third'>
-          <img class='sponsor'
-               alt='UPMC'
-               src='/img/sponsors/UPMC.jpg' />
-        </div><div class='third'>
-        </div>
+                  alt='{{ site.data.sponsors[i].name }}'
+                  src='{{ site.data.sponsors[i].img_src }}' />
+            {% endif %}
+          </div>
+          {% endfor %}
       </div>
+    </div>
+
     </div>
   </div>
 </div>

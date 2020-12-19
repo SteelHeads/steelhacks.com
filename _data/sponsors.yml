@@ -1,0 +1,34 @@
+- name: BNY Mellon
+  img_src: /img/sponsors/bny-mellon.png
+- name: Google
+  img_src: /img/sponsors/google.png
+- name: PPG
+  img_src: /img/sponsors/ppg.png
+- name: Dicks Sporting Goods
+  img_src: /img/sponsors/dicks.png
+- name: CyLumena
+  img_src: /img/sponsors/cylumena.png
+- name: SDLC
+  img_src: /img/sponsors/sdlc.png
+- name: CVS
+  img_src: /img/sponsors/cvs.png
+- name: Aetna
+  img_src: /img/sponsors/aetna.png
+- name: NetApp
+  img_src: /img/sponsors/netapp.jpg
+- name: SIG
+  img_src: /img/sponsors/sig.png
+- name: Grant Street Group
+  img_src: /img/sponsors/gsg.png
+- name: Vanguard
+  img_src: /img/sponsors/vanguard.png
+- name: Deloitte
+  img_src: /img/sponsors/deloitte.JPG
+- name: Intalere
+  img_src: /img/sponsors/intalere.jpg
+- name: Norfolk Southern
+  img_src: /img/sponsors/ns.png
+- name: Software Engineering Institute
+  img_src: /img/sponsors/sei.jpg
+- name: UPMC
+  img_src: /img/sponsors/UPMC.jpg
