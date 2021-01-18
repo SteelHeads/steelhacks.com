@@ -15,6 +15,10 @@
 
 - date: 'Saturday, Feb 20th'
   events:
+
+
+- date: 'Sunday, Feb 21th'
+  events:
     - time: '4:30pm'
       title: 'Submit to Devpost'
       description: |
