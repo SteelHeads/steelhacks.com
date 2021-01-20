@@ -223,6 +223,31 @@
   }
 }
 
+.prize-box {
+  border: 2px solid black;
+  list-style: none;
+  padding: 0;
+
+  .prize {
+    display: flex;
+    padding: 12px 5px;
+
+    .title {
+      color: #000000;
+      font-size: 1.5em;
+      margin: 0.2em 0.6em;
+    }
+
+    p {
+      margin: 0.2em 1em;
+    }
+  }
+
+  .prize__body {
+
+  }
+}
+
 #faq {
   background-color: $base-primary;
   color: white;

@@ -24,18 +24,18 @@ layout: default
         </a>
       </li>
       <!-- TODO: Make this programtic and a forloop and contained inside of includes -->
-      <!-- <li>
-        <a target='_blank' href='https://www.instagram.com/steelhacks'>
+      <li>
+        <a target='_blank' href='https://www.instagram.com/pittsteelhacks'>
           <i class="fa fa-instagram"></i>
           <span class='social-link'>Instagram</span>
         </a>
-      </li> -->
+      </li>
       
     </ul>
   </nav>
   <div class='container'>
   <img id="main-logo" src="../img/logo/steelhacks21.png"/>
-    <h3>SteelHacks 2021: Feb. 19-21</h3>
+    <h3>{{ site.title }}: Feb. 19-21 | Virtual</h3>
     <p>
       SteelHacks is an event hosted at the University of Pittsburgh, through the School of Computing and Information, for
       students at colleges &amp; universities across the US who are passionate
@@ -75,6 +75,40 @@ layout: default
         </div>
       {% endfor %}
     </div>
+
+    {% if site.data.prize-tracks %}
+      <hr/><br/>
+      <h2 class="m-2">Prizes</h2>
+
+      <div class='column-wrapper'>
+      {% assign num = site.data.prize-tracks.size | divided_by: 3 | plus: 1 | times: 3 %}
+      {% for i in (0..num) %}
+        <!--Row Divider-->
+        {% assign rem = i | modulo: 3 %}
+        {% if forloop.first == false %}
+          {% if rem == 0 %}
+        </div>
+        <div class='column-wrapper'>
+          {% endif %}
+        {% endif %}
+        
+        <!--Data-->
+        <div class='column'>
+          {% if i < site.data.prize-tracks.size %}
+          <ul class='prize-box'>
+            <li class='prize'>
+              <div class='prize__body'>
+                <b><p class='title'>{{ site.data.prize-tracks[i].name }}</p></b>
+                <p class='description'>{{ site.data.prize-tracks[i].prize }}</p>
+              </div>
+            </li>
+          </ul>
+          {% endif %}
+        </div>
+    
+      {% endfor %}
+      </div>
+    {% endif %}
   </div>
 </div>
 <div id='faq' class='slice slice--big'>
@@ -120,7 +154,7 @@ layout: default
     <div id='sponsors'>
 
       <div class='sponsor-group'>
-          {% assign num = site.data.sponsors.size | divided_by: 3 | plus: 1 | times: 3 %}
+         {% assign num = site.data.sponsors.size | divided_by: 3 | plus: 1 | times: 3 %}
          {% for i in (0..num) %}
             {% assign rem = i | modulo: 3 %}
             {% if forloop.first == false %}
