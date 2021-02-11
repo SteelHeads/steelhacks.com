@@ -13,15 +13,27 @@
       description: |
         Team formation will also occurs at this time
 
+    - time: '8:00pm - 9:00pm'
+      title: 'Music Hour'
+      description: |
+        Come into the #music-hour channel and listen/suggest some jams!
+
+
 - date: 'Saturday, Feb 20th'
   events:
     - time: 'TBD'
       title: 'Additional Workshops and Activities'
       description: |
 
+    - time: '5:00pm - 6:00pm'
+      title: 'Music Hour'
+      description: |
+        Come into the #music-hour channel and listen/suggest some jams!
+
+
 - date: 'Sunday, Feb 21th'
   events:
-    - time: '9:30am'
+    - time: '9:00am'
       title: 'Submit to Devpost/End of Hacking'
       description: |
 
