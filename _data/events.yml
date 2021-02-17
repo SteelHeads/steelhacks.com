@@ -1,9 +1,5 @@
 - date: 'Friday, Feb 19th'
   events:
-    - time: '5:00pm - 6:00pm'
-      title: 'Welcome &amp; Registration'
-      description: |
-
     - time: '6:00pm - 7:00pm'
       title: 'Opening Ceremony'
       description: |
@@ -23,6 +19,25 @@
   events:
     - time: 'TBD'
       title: 'Additional Workshops and Activities'
+      description: |
+      
+      
+    - time: '12:00pm - 1:00pm'
+      title: 'Pitt CSC Workshop'
+      description: |
+        How to API with Justin Kramer and Dylan Feehan
+
+    - time: '1:00pm - 2:00pm'
+      title: 'Cigna Workshop'
+      description: |
+
+    - time: '2:00pm - 3:00pm'
+      title: "Women's Coffee Hour"
+      description: |
+      
+      
+    - time: '4:00pm - 5:00pm'
+      title: 'Show and Tell Hour'
       description: |
 
     - time: '5:00pm - 6:00pm'
