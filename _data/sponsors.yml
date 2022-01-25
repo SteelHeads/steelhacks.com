@@ -1,0 +1,22 @@
+- name: PNC
+  img_src: /img/sponsors/pnc.png
+- name: NetApp
+  img_src: /img/sponsors/netapp.png
+- name: VISIMO
+  img_src: /img/sponsors/visimo.png
+- name: Eaton
+  img_src: /img/sponsors/eaton.png
+- name: UPMC
+  img_src: /img/sponsors/UPMC.png
+- name: SAP
+  img_src: /img/sponsors/sap.png
+- name: Deloitte
+  img_src: /img/sponsors/deloitte.png
+- name: CGI
+  img_src: /img/sponsors/cgi.png
+- name: PPG
+  img_src: /img/sponsors/ppg.png
+- name: Cadence
+  img_src: /img/sponsors/cadence.png
+- name: Norfolk Southern
+  img_src: /img/sponsors/ns.png
