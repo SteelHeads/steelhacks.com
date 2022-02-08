@@ -1,6 +1,6 @@
 - date: 'Friday, Feb 25th'
   events:
-  - time: '5:00pm - 6:00pm'
+    - time: '5:00pm - 6:00pm'
       title: 'Check-In and Networking with Sponsors'
       description: |
         Held in the Frick Fine Arts Auditorium
