@@ -4,7 +4,7 @@ description: > # this means to ignore newlines until "baseurl:"
   University of Pittsburgh's hackathon! Mar 25, 2023.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://steelhacks.com" # the base hostname & protocol for your site
-registration_url: ""
+registration_url: "https://docs.google.com/forms/d/e/1FAIpQLSeR-6QMKZze3RSHCqrhvEfQ4pwxrRfg2wnkJdjuo6DSZGYCWA/viewform"
 # Build settings
 markdown: kramdown
 
