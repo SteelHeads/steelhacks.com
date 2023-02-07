@@ -1,64 +1,53 @@
-- date: 'Friday, Feb 25th'
+- date: 'Friday, Mar 24th'
   events:
     - time: '5:00pm - 6:00pm'
       title: 'Check-In and Networking with Sponsors'
       description: |
-        Held in the Frick Fine Arts Auditorium
+        Held on the 3rd Floor of the Information Sciences Building
 
     - time: '6:00pm - 8:00pm'
       title: 'Opening Ceremony'
       description: |
-        Held in the Frick Fine Arts Auditorium. Team formation will also occurs at this time
+        Held on the 3rd Floor of the Information Sciences Building.  Team formation will also occur at this time
 
     - time: '8:00pm'
       title: 'Hacking begins!'
       description: |
 
-    - time: '8:30pm - 9:30pm'
-      title: 'Intro to Web Design Workshop'
-      description: |
-        Get an hour long introduction to creating and designing basic webcontent via Discord
 
-
-- date: 'Saturday, Feb 26th'
+- date: 'Saturday, Mar 25th'
   events:
-    - time: '12:00am - 11:59pm'
-      title: 'Hacking'
+    - time: '9:00am - 11:00am'
+      title: 'Breakfast'
       description: |
-        Hacking continues virtually via Discord
+        Hacking continues on the 3rd Floor of the Information Sciences Building
 
-    - time: '10:00am - 12:00pm'
-      title: 'DJ Over Discord'
+    - time: '11:00am'
+      title: 'Workshop TBD'
       description: |
-        Request your favorite songs in Discord to be played as you work
+        
 
-    - time: '1:00pm'
-      title: 'Kahoot'
+    - time: '12:30pm-2:00pm'
+      title: 'LUNCH'
       description: |
-        Play a Pitt Trivia Game via Discord
+        
 
     - time: '2:00pm - 4:00pm'
-      title: 'DJ Over Discord'
+      title: 'DJ - Music Requests'
       description: |
-        Request your favorite songs in Discord to be played as you work
+        Request your favorite songs to be played as you work
 
-    - time: '6:00pm'
-      title: 'SteelHacks Bingo'
-      description: |
-        Play a Pitt and SteelHacks themed game of Bingo over Discord
-
-
-- date: 'Sunday, Feb 27th'
-  events:
-    - time: '9:00am'
+    - time: '5:00pm'
       title: 'Submit to Devpost / End of Hacking'
       description: |
-
-    - time: '10:00am - 12:00pm'
+        
+    - time: '5:30pm-7:30pm'
       title: 'Project Expo / Judging'
       description: |
-        Held in the Wyndham Hotel Ballroom (100 Lytton Avenue, Pittsburgh, PA 15213)
-
-    - time: '12:00pm'
+        Held on the 3rd Floor of the Information Sciences Building
+      
+    - time: '8:00pm'
       title: 'Award Ceremony and Closing'
       description: |
+
+
