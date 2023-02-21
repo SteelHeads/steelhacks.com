@@ -5,10 +5,14 @@
       description: |
         Held on the 3rd Floor of the Information Sciences Building
 
-    - time: '6:00pm - 8:00pm'
-      title: 'Opening Ceremony'
+    - time: '6:00pm - 7:30pm'
+      title: 'Opening Ceremony and Keynote address '
       description: |
         Held on the 3rd Floor of the Information Sciences Building.  Team formation will also occur at this time
+        
+    - time: '7:30pm - 8:00pm'
+      title: 'Team formation'
+      description: |
 
     - time: '8:00pm'
       title: 'Hacking begins!'
@@ -38,7 +42,7 @@
         Request your favorite songs to be played as you work
 
     - time: '5:00pm'
-      title: 'Submit to Devpost / End of Hacking'
+      title: 'DINNER / Submit to Devpost / End of Hacking'
       description: |
         
     - time: '5:30pm - 7:30pm'
