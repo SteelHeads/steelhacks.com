@@ -1,6 +1,6 @@
-- name: PNC
-  img_src: /img/sponsors/pnc.png
-- name: NetApp
-  img_src: /img/sponsors/netapp.png
-- name: CGI
-  img_src: img/sponsors/CGI_logo_color_rgb.png
+# - name: PNC
+#   img_src: /img/sponsors/pnc.png
+# - name: NetApp
+#   img_src: /img/sponsors/netapp.png
+# - name: CGI
+#   img_src: img/sponsors/CGI_logo_color_rgb.png

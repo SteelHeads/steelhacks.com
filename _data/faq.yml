@@ -8,7 +8,7 @@
 
 - title: Where will SteelHacks be held?
   body: |
-    SteelHacks 2023 will be in person on the 3rd Floor of the Information Sciences Building (135 N Bellefield Ave). 
+    SteelHacks 2024 will be in person on the 3rd Floor of the Information Sciences Building (135 N Bellefield Ave). 
     
 - title: I can't register anymore!
   body: |
@@ -22,13 +22,13 @@
   body: |
     Teams can consist of up to 4 people, though you can have any amount less than that as well.
 
-- title: What is the code of conduct for this event?
-  body: |
-    All participants of SteelHacks 2023 will be required to follow the MLH code of conduct that can be found <a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf">here</a>.
+# - title: What is the code of conduct for this event?
+#   body: |
+#     All participants of SteelHacks 2023 will be required to follow the MLH code of conduct that can be found <a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf">here</a>.
 
-- title: What is my registration used for?
-  body: |
-    We participate in Major League Hacking (MLH) as a MLH Member Event. You authorize us to share certain application/registration information for event administration, ranking, MLH administration, and occasional messages about hackathons in line with the <a href="https://mlh.io/privacy">MLH Privacy Policy.</a>
+# - title: What is my registration used for?
+#   body: |
+#     We participate in Major League Hacking (MLH) as a MLH Member Event. You authorize us to share certain application/registration information for event administration, ranking, MLH administration, and occasional messages about hackathons in line with the <a href="https://mlh.io/privacy">MLH Privacy Policy.</a>
 
 - title: What if the FAQ didn't answer my question?
   body: |

@@ -1,25 +1,21 @@
-- date: 'Friday, Mar 24th'
+- date: 'Friday, Mar 29th'
   events:
     - time: '5:00pm - 6:00pm'
       title: 'Check-In and Networking with Sponsors'
       description: |
         Held on the 3rd Floor of the Information Sciences Building
 
-    - time: '6:00pm - 7:30pm'
-      title: 'Opening Ceremony and Keynote address '
+    - time: '6:00pm - 7:00pm'
+      title: 'Opening Ceremony and Keynote address'
       description: |
         Held on the 3rd Floor of the Information Sciences Building.  Team formation will also occur at this time
         
-    - time: '7:30pm - 8:00pm'
-      title: 'Team formation'
-      description: |
-
-    - time: '8:00pm'
+    - time: '7:00pm'
       title: 'Hacking begins!'
       description: |
 
 
-- date: 'Saturday, Mar 25th'
+- date: 'Saturday, Mar 30th'
   events:
     - time: '9:00am - 11:00am'
       title: 'Breakfast'
@@ -30,16 +26,9 @@
       title: 'Workshop TBD'
       description: |
         
-
     - time: '12:30pm - 2:00pm'
       title: 'LUNCH'
       description: |
-        
-
-    - time: '2:00pm - 4:00pm'
-      title: 'DJ - Music Requests'
-      description: |
-        Request your favorite songs to be played as you work
 
     - time: '5:00pm'
       title: 'DINNER / Submit to Devpost / End of Hacking'
@@ -53,5 +42,3 @@
     - time: '8:00pm'
       title: 'Award Ceremony and Closing'
       description: |
-
-
