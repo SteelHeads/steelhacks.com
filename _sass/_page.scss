@@ -56,7 +56,7 @@
   $mobile-navbar-width: 700px;
 
   clear: both;
-  background: darken($base-primary, 10%);
+  background: $base-primary;
   margin-bottom: 2%;
   width: 100%;
 
@@ -327,7 +327,7 @@
 footer {
   $spacing-amount: 30px;
 
-  background-color: darken($base-primary, 10%);
+  background-color: $base-primary;
   color: white;
   font-size: 16px;
   padding-bottom: $spacing-amount;
