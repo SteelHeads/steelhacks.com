@@ -1,11 +1,11 @@
 #welcome {
-  background: rgb(0, 0, 0);
-  color: white;
+  background: rgb(255, 255, 255);
+  color: $text-color;
   padding-bottom: 50px;
   text-align: center;
 
   p {
-    font-size: 22px;
+    font-size: 26px;
   }
 }
 
@@ -29,7 +29,7 @@
 }
 
 #main-logo {
-  max-width: 80%;
+  max-width: 40%;
   height: auto;
 }
 
