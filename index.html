@@ -1,182 +1,92 @@
 ---
 layout: default
 ---
-<header id='welcome' class='slice'>
-  <nav id='navbar' class='container'>
-    <ul id='mobile-nav-trigger' class='pull-right'>
-      <li><a href=''><i class="fa fa-bars"></i></a></li>
-    </ul>
-    <ul id='menu'>
-      <li><a href='#schedule'>Schedule</a></li>
-      <li><a href='#faq'>FAQ</a></li>
-      <li><a href='#sponsors'>Sponsors</a></li>
-      <li>
-        <a target='_blank' href='https://www.facebook.com/steelhacks'>
-          <i class='fa fa-facebook-square'></i>
-          <span class='social-link'>Facebook</span>
-        </a>
-      </li>
-      <li>
-        <a target='_blank' href='https://twitter.com/steelhacks'>
-          <i class='fa fa-twitter-square'></i>
-          <span class='social-link'>Twitter</span>
-        </a>
-      </li>
-      <!-- TODO: Make this programtic and a forloop and contained inside of includes -->
-      <li>
-        <a target='_blank' href='https://www.instagram.com/pittsteelhacks'>
-          <i class="fa fa-instagram"></i>
-          <span class='social-link'>Instagram</span>
-        </a>
-      </li>
-      
-    </ul>
-  </nav>
-  <div class='container'>
-  <img id="main-logo" src="img/logo/steelhacks24_transparent.png"/>
-    <h3>{{ site.title }}: Mar. 29-30 | 3rd Floor 135 N Bellefield Ave</h3>
-    <p>
-      SteelHacks is an event hosted at the University of Pittsburgh, through the School of Computing and Information, for
-      students at colleges &amp; universities across the US who are passionate
-      about getting their hands dirty using technology and design.
-    </p>
-    <p>
-      This year is the tenth annual SteelHacks hackathon. Each year students
-      from around the Pittsburgh area and beyond come together to hack and make
-      cool stuff.
-    </p>
-  </div>
-</header>
-<div id='signup-form' class='slice'>
-  <h3>Registration is <a href="https://forms.gle/xch1W9dZEAVChgwr7">OPEN!</a></h3> <!--Don't forget your registration link-->
-</div>
-<div id='schedule' class='slice slice--big'>
-  <div class='container'>
-    <h2>Schedule</h2>
-    <div class='column-wrapper'>
-      {% for day in site.data.events %}
-        <div class='column'>
-          <h3>{{ day.date }}</h3>
-          <ul class='event-box'>
-            {% for event in day.events %}
-              <li class='event'>
-                <div class='event__body'>
-                  <p class='time'>{{ event.time }}</p>
-                  <p class='title'>{{ event.title }}</p>
-                  <p class='description'>{{ event.description }}</p>
-                </div>
-                <div class='event__timeline'>
 
-                </div>
-              </li>
-            {% endfor %}
-          </ul>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>SteelHacks XI</title>
+    <meta
+      name="description"
+      content="University of Pittsburgh's hackathon! March 29-30, 2024.
+"
+    />
+
+    <meta property="og:title" content="SteelHacks 2024" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://steelhacks.com/" />
+    <meta
+      property="og:image"
+      content="https://steelhacks.com/img/logo/steelhacks24.png"
+    />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Abel"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="canonical" href="http://localhost:4000/" />
+
+    <script type="text/javascript" src="./js/navbar.js"></script>
+  </head>
+
+  <body>
+    <header id="welcome" class="slice">
+      <nav id="navbar" class="container">
+        <div class="steelhacks">SteelHacks</div>
+        <ul id="menu">
+          <li>
+            <a target="_blank" href="https://www.facebook.com/steelhacks">
+              <i class="fa fa-facebook-square"></i>
+              <span class="social-link">Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://twitter.com/steelhacks">
+              <i class="fa fa-twitter-square"></i>
+              <span class="social-link">Twitter</span>
+            </a>
+          </li>
+          <!-- TODO: Make this programtic and a forloop and contained inside of includes -->
+          <li>
+            <a target="_blank" href="https://www.instagram.com/pittsteelhacks">
+              <i class="fa fa-instagram"></i>
+              <span class="social-link">Instagram</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="container landing">
+        <h1 class="fa-5x">STEELHACKS XI</h1>
+        <div id="location">
+          <h2>University of Pittsburgh</h2>
+          <h3>Sep. 28-29, 2024 | Benedum Hall</h3>
         </div>
-      {% endfor %}
-    </div>
 
-    {% if site.data.prize-tracks %}
-      <hr/><br/>
-      <h2 class="m-2">Prizes</h2>
-
-      <div class='column-wrapper'>
-      {% assign num = site.data.prize-tracks.size | divided_by: 3 | plus: 1 | times: 3 %}
-      {% for i in (0..num) %}
-        <!--Row Divider-->
-        {% assign rem = i | modulo: 3 %}
-        {% if forloop.first == false %}
-          {% if rem == 0 %}
-        </div>
-        <div class='column-wrapper'>
-          {% endif %}
-        {% endif %}
-        
-        <!--Data-->
-        <div class='column'>
-          {% if i < site.data.prize-tracks.size %}
-          <ul class='prize-box'>
-            <li class='prize'>
-              <div class='prize__body'>
-                <b><p class='title'>{{ site.data.prize-tracks[i].name }}</p></b>
-                <p class='description'>{{ site.data.prize-tracks[i].prize }}</p>
-              </div>
-            </li>
-          </ul>
-          {% endif %}
-        </div>
-    
-      {% endfor %}
-      </div>
-    {% endif %}
-  </div>
-</div>
-<div id='faq' class='slice slice--big'>
-  <div class='container'>
-    <h2>FAQ</h2>
-    {% for question in site.data.faq %}
-      <div class='question'>
-        <div class='question__header'>
-          {{ question.title }}
-          <i class='fa fa-chevron-down pull-right'></i>
-          <i class='fa fa-chevron-up pull-right'></i>
-        </div>
-        <div class='question__body'>
-          {{ question.body }}
-        </div>
-      </div>
-    {% endfor %}
-  </div>
-</div>
-<div id='sponsors' class='slice slice--big'>
-  <div class='container'>
-    <h2>Partners</h2>
-<!-- 
-    <div class='sponsor-group'>
-      <div class='second'>
-        <img class='sponsor'
-             alt='Major League Hacking'
-             src='/img/partners/mlh-logo-color.png'>
-      </div>
-    </div> -->
-
-    <div class='sponsor-group'>
-      <div class='first'>
-        <img class='sponsor first'
-             alt='Pitt SCI'
-             src='/img/partners/pitt-sci-sheild.png' />
-      </div>
-    </div>
-
-
-    <h2>Sponsors</h2>
-
-    <div id='sponsors'>
-      <div class='sponsor-group'>
-         {% assign num = site.data.sponsors.size | divided_by: 3 | plus: 1 | times: 3 %}
-         {% for i in (0..num) %}
-            {% assign rem = i | modulo: 3 %}
-            {% if forloop.first == false %}
-              {% if rem == 0  %}
-      </div>
-      <div class='sponsor-group'>
-              {% endif %}
-            {% endif %}
-
-          <div class='third'>
-            {% if site.data.sponsors[i] %}
-            <img class='sponsor'
-                  alt='{{ site.data.sponsors[i].name }}'
-                  src='{{ site.data.sponsors[i].img_src }}' />
-            {% endif %}
+        <div id="description-block" class="slice">
+          <div class="yellow-lines">
+            <p>
+              SteelHacks is an event hosted at the University of Pittsburgh,
+              through the School of Computing and Information, for students at
+              colleges &amp; universities across the US who are passionate about
+              getting their hands dirty using technology and design.
+            </p>
+            <p>
+              This year is the eleventh annual SteelHacks hackathon. Each year
+              students from around the Pittsburgh area and beyond come together
+              to hack and make cool stuff.
+            </p>
           </div>
-          {% endfor %}
+        </div>
       </div>
-    </div>
-
-    </div>
-  </div>
-</div>
-<div id='map' class='slice'>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.258922914769!2d-79.95484688470965!3d40.44740587936156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f2258723e905%3A0xbc166e2a40b6776c!2sInformation%20Sciences%20Bldg%2C%20135%20N%20Bellefield%20Ave%2C%20Pittsburgh%2C%20PA%2015213!5e0!3m2!1sen!2sus!4v1675790970217!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3036.4036520303575!2d-79.95588574652187!3d40.44420210111034!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x517c2568d7e0544!2sAlumni+Hall!5e0!3m2!1sen!2sus!4v1548219257204" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
-<script type="text/javascript" charset="utf-8" src="{{ "/js/homepage.js" | prepend: site.baseurl }}"></script>
+    </header>
+  </body>
+</html>
