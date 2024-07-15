@@ -565,6 +565,18 @@ h1 {
     display: none;
   }
   .landing {
-    padding-top: 200px;
+    padding-top: 150px;
+  }
+  #navbar {
+    height: 35px;
+    margin-bottom: 0px;
+    border: 2px solid black;
+  }
+  .landing {
+    margin: 0px;
+  }
+  footer {
+    height: 30px;
+    font-size: 12px;
   }
 }
