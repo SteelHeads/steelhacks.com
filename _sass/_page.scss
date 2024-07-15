@@ -1,35 +1,38 @@
 #welcome {
-  background: rgb(255, 255, 255);
-  color: $text-color;
-  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #111;
+  background-color: slategray;
   text-align: center;
-
-  p {
-    font-size: 26px;
-  }
+  height: 100vh;
+}
+#welcome p {
+  font-size: 26px;
 }
 
-#registered {
-  background-color: $base-primary;
+#description-block {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: slategrey /*rgb(30, 30, 30)*/;
   color: white;
-  padding-bottom: 50px;
   text-align: center;
-
-  p {
-    font-size: 22px;
-  }
-
-  a:link {
-    color: white;
-  }
-
-  a:visited {
-    color: darken($base-secondary, 10%);
-  }
+  align-items: center;
+}
+#registered p {
+  font-size: 22px;
+}
+#registered a:link {
+  color: white;
+}
+#registered a:visited {
+  color: #cfc508;
 }
 
 #main-logo {
-  max-width: 40%;
+  max-width: 50%;
   height: auto;
 }
 
@@ -42,320 +45,277 @@
   top: 0;
   width: 10%;
   z-index: 10000;
-
-  @include size-less-than($small) {
+}
+@media screen and (max-width: 600px) {
+  #mlh-trust-badge {
     top: -52px;
   }
-
-  img {
-    width: 100%;
-  }
+}
+#mlh-trust-badge img {
+  width: 100%;
 }
 
 #navbar {
-  $mobile-navbar-width: 700px;
-
+  color: gold;
   clear: both;
-  background: $base-primary;
-  margin-bottom: 2%;
+  background: black;
   width: 100%;
-
-  @include size-less-than($mobile-navbar-width) {
+  z-index: 1000;
+  display: flex;
+  min-height: 30px;
+  justify-content: space-between;
+}
+@media screen and (max-width: 700px) {
+  #navbar {
     border-bottom: 1px solid white;
-
-    #menu {
-      display: none;
-      float: left;
-      line-height: 2em;
-      margin-top: 0;
-      text-align: left;
-      width: 100%;
-
-      &:before {
-        clear: both;
-        overflow: auto;
-        zoom: 1;
-      }
-
-      &.visible {
-        display: block;
-      }
-
-      a.button {
-        line-height: 3.5em;
-      }
-    }
-
-    li {
-      display: block;
-    }
-
-    .social-link {
-      padding-left: .5em;
-    }
   }
-
-  @include size-greater-than($mobile-navbar-width) {
-    #menu {
-      float: right;
-    }
-
-    li {
-      display: inline;
-    }
-
-    .social-link {
-      display: none;
-    }
-
-    #mobile-nav-trigger {
-      display: none;
-    }
+  #navbar #menu {
+    display: none;
+    float: left;
+    line-height: 2em;
+    margin-top: 0;
+    text-align: left;
+    width: 100%;
   }
-
-  #brand {
-    margin-top: 12px;
-
-    a {
-      font-size: 22px;
-    }
+  #navbar #menu:before {
+    clear: both;
+    overflow: auto;
+    zoom: 1;
   }
-
-  a {
-    color: white;
-    font-size: 16px;
-    text-decoration: none;
-
-    &.button {
-      border: 1px solid white;
-      border-radius: 2px;
-      padding: 7px 26px;
-    }
-
-    &:hover {
-      font-weight: bold;
-    }
+  #navbar #menu.visible {
+    display: block;
   }
-
-  .fa {
-    font-size: 21px;
+  #navbar #menu a.button {
+    line-height: 3.5em;
   }
-
-  ul {
-    list-style: none;
-    padding: 0;
+  #navbar li {
+    display: block;
   }
-
-  li {
-    margin-left: 11px;
-    margin-right: 11px;
+  #navbar .social-link {
+    padding-left: 0.5em;
   }
+}
+@media screen and (min-width: 700px) {
+  #navbar #menu {
+    float: right;
+  }
+  #navbar li {
+    display: inline;
+  }
+  #navbar .social-link {
+    display: none;
+  }
+  #navbar #mobile-nav-trigger {
+    display: none;
+  }
+}
+#navbar #brand {
+  margin-top: 12px;
+}
+#navbar #brand a {
+  font-size: 22px;
+}
+#navbar a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+#navbar a:hover {
+  border-bottom: 1px solid gold;
+}
+#navbar a.button {
+  border: 1px solid white;
+  border-radius: 2px;
+  padding: 7px 26px;
+}
+#navbar a:hover {
+  font-weight: bold;
+}
+#navbar .fa {
+  font-size: 21px;
+}
+#navbar ul {
+  list-style: none;
+  padding: 0;
+}
+#navbar li {
+  margin-left: 11px;
+  margin-right: 11px;
 }
 
 #signup-form {
-  background-color: $base-primary;
+  background-color: #dab821;
   color: white;
   overflow: auto;
   padding: 1.5em 0;
-
-  h3 {
-    text-align: center;
+}
+#signup-form h3 {
+  text-align: center;
+}
+#signup-form {
+  background-color: #f4c807;
+  border: 0;
+  border-radius: 3px;
+  color: white;
+  display: block;
+  margin: 0;
+  min-width: 200px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+@media screen and (max-width: 600px) {
+  #signup-form .button {
+    width: 100%;
   }
-
-  .button {
-    background-color: $yellow-color;
-    border: 0;
-    border-radius: 3px;
-    color: white;
-    display: block;
-    margin: 0 auto;
-    min-width: 200px;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-
-    @include size-less-than($small) {
-      width: 100%;
-    }
-
-    @include size-between($small, $medium) {
-      width: 50%;
-    }
-
-    @include size-greater-than($medium) {
-      width: 40%;
-    }
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  #signup-form .button {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 900px) {
+  #signup-form .button {
+    width: 40%;
   }
 }
 
-.event-box {
-  border: 2px solid black;
+.hour {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  min-height: 100px;
+}
+
+.event {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2px;
+  border-radius: 6px;
+  width: 100%;
+  margin-top: 0px;
+  height: 80px;
+  text-align: start;
+  padding: 8px;
+  color: white;
+}
+
+.event p {
+  margin: 0px;
+}
+.day {
   list-style: none;
   padding: 0;
-
-  .event {
-    display: flex;
-    padding: 12px 5px;
-
-    &:hover {
-      background-color: darken(white, 10%);
-    }
-
-    .time {
-      color: #000000;
-    }
-
-    .title {
-      color: $base-primary;
-    }
-
-    p {
-      margin: 0.2em 1em;
-    }
-  }
-
-  .event__body {
-
-  }
-
-  .event__timeline {
-
-  }
 }
 
 .prize-box {
   border: 2px solid black;
   list-style: none;
   padding: 0;
-
-  .prize {
-    display: flex;
-    padding: 12px 5px;
-
-    .title {
-      color: #000000;
-      font-size: 1.5em;
-      margin: 0.2em 0.6em;
-    }
-
-    p {
-      margin: 0.2em 1em;
-    }
-  }
-
-  .prize__body {
-
-  }
+}
+.prize-box .prize {
+  display: flex;
+  padding: 12px 5px;
+}
+.prize-box .prize .title {
+  color: #000000;
+  font-size: 1.5em;
+  margin: 0.2em 0.6em;
+}
+.prize-box .prize p {
+  margin: 0.2em 1em;
 }
 
 #faq {
-  background-color: $base-primary;
+  background-color: rgb(30, 30, 30);
   color: white;
 }
 
+.question__body {
+  background-color: black;
+}
 .question {
-  $spacing-amount: 22px;
-
   border: 2px solid white;
   font-size: 22px;
-
-  .question__header {
-    cursor: pointer;
-    padding: $spacing-amount;
-  }
-
-  .question__body {
-    padding: $spacing-amount;
-    padding-top: 0;
-  }
-
-  &:not(:last-of-type) {
-    border-bottom: 0;
-  }
-
-  &.active {
-    background-color: black;
-
-    .question__body {
-      display: block;
-    }
-
-    .fa-chevron-down {
-      display: none;
-    }
-
-    .fa-chevron-up {
-      display: block;
-    }
-  }
-
-  .fa {
-    font-size: 16px;
-  }
-
-  .fa-chevron-up {
-    display: none;
-  }
-
-  .question__body {
-    display: none;
-    margin-top: $spacing-amount;
-  }
+}
+.question .question__header {
+  cursor: pointer;
+  padding: 22px;
+}
+.question .question__body {
+  padding: 22px;
+  padding-top: 0;
+}
+.question:not(:last-of-type) {
+  border-bottom: 0;
+}
+.question.active {
+}
+.question.active .question__body {
+  display: block;
+}
+.question.active .fa-chevron-down {
+  display: none;
+}
+.question.active .fa-chevron-up {
+  display: block;
+}
+.question .fa {
+  font-size: 16px;
+}
+.question .fa-chevron-up {
+  display: none;
+}
+.question .question__body {
+  display: none;
+  margin-top: 22px;
 }
 
-#sponsors {
-  .get-in-touch {
-    text-align: center;
-  }
+#sponsors .get-in-touch {
+  text-align: center;
 }
 
-#map {
-  @include size-less-than($small) {
+@media screen and (max-width: 600px) {
+  #map {
     height: 250px;
   }
-
-  @include size-greater-than($small) {
+}
+@media screen and (min-width: 600px) {
+  #map {
     height: 350px;
   }
-
-  iframe {
-    height: 100%;
-    width: 100%;
-  }
+}
+#map iframe {
+  height: 100%;
+  width: 100%;
 }
 
 footer {
-  $spacing-amount: 30px;
-
-  background-color: $base-primary;
+  background-color: #dab821;
   color: white;
   font-size: 16px;
-  padding-bottom: $spacing-amount;
-  padding-top: $spacing-amount;
-
-  a,
-  a:visited {
-    color: white;
-    font-size: 18px;
-  }
-
-  .fa {
-    padding-left: .5em;
-  }
-
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  li {
-    display: inline;
-  }
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+footer a,
+footer a:visited {
+  color: white;
+  font-size: 18px;
+}
+footer .fa {
+  padding-left: 0.5em;
+}
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer li {
+  display: inline;
 }
 
 .heart {
-  color: #F60D0D;
+  color: #f60d0d;
 }
 
 .sponsor {
@@ -369,54 +329,44 @@ footer {
   display: flex;
   justify-content: center;
   margin: 3em auto;
-
-  > div:first-child {
-    margin-right: 2em;
-  }
-
-  > div:last-child {
-    margin-left: 2em;
-  }
-
-  .first {
-    width: 75%;
-  }
-
-  .second {
-    width: 55%;
-  }
-
-  .third {
-    width: 40%;
-  }
-
-  .fourth {
-    width: 32%;
-  }
-
-  .fifth {
-    width: 25%;
-  }
+}
+.sponsor-group > div:first-child {
+  margin-right: 2em;
+}
+.sponsor-group > div:last-child {
+  margin-left: 2em;
+}
+.sponsor-group .first {
+  width: 75%;
+}
+.sponsor-group .second {
+  width: 55%;
+}
+.sponsor-group .third {
+  width: 40%;
+}
+.sponsor-group .fourth {
+  width: 32%;
+}
+.sponsor-group .fifth {
+  width: 25%;
 }
 
 #timer {
   background-color: rgba(0, 0, 0, 0);
   margin: 2em auto 2em;
-  padding: .5em;
+  padding: 0.5em;
   width: 60%;
-
-  #timer__pre {
-    text-align: left;
-  }
-
-  #time {
-    font-size: 3em;
-    margin: .25em 0;
-  }
-
-  #timer__post {
-    text-align: right;
-  }
+}
+#timer #timer__pre {
+  text-align: left;
+}
+#timer #time {
+  font-size: 3em;
+  margin: 0.25em 0;
+}
+#timer #timer__post {
+  text-align: right;
 }
 
 #announcements {
@@ -425,18 +375,196 @@ footer {
 
 .announcement {
   border-bottom: 1px solid grey;
+}
+.announcement .title {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+.announcement:not(:first-of-type) {
+  margin-top: 1em;
+}
+.announcement:last-of-type {
+  border-bottom: none;
+}
 
-  .title {
-    font-weight: bold;
-    font-size: 1.1em;
-    margin-bottom: 10px;
+#registration-button {
+  background-color: rgb(30, 30, 30);
+  border-radius: 40px;
+  color: white;
+  height: 80px;
+  width: 350px;
+  border: 3px solid rgb(30, 30, 30);
+}
+#registration-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.text-white {
+  color: white;
+}
+.landing {
+  margin: 0px;
+  background-color: slategray;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+h2,
+h3 {
+  margin: 0;
+}
+
+.yellow-lines {
+  border-top: 3px solid gold;
+  border-bottom: 3px solid gold;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 30px;
+}
+.time-line {
+  border: 0.5px solid black;
+  width: 1000px;
+  height: 0.25px;
+  background-color: black;
+  margin: 1px;
+  z-index: -1;
+}
+
+.time-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 5px;
+}
+
+.time {
+  margin-right: 4px;
+}
+.events {
+  position: absolute;
+  display: flex;
+  min-height: 100px;
+  max-width: 410px;
+  min-width: 300px;
+  margin-top: 4px;
+}
+.space {
+  min-height: 20px;
+  min-width: 50px;
+}
+
+#Hacking-Begins {
+  position: relative;
+  display: flex;
+  height: 22px;
+  background-color: rgb(255, 203, 73);
+  justify-content: center;
+  margin-bottom: 5px;
+  border: solid white 2px;
+  color: black;
+  z-index: 1000;
+}
+#Hacking-Ends {
+  position: relative;
+  display: flex;
+  height: 20px;
+  background-color: black;
+  justify-content: center;
+  margin-bottom: 5px;
+
+  color: rgb(255, 255, 255);
+  z-index: 1000;
+}
+#Hacking-Begins p,
+#Hacking-Ends p {
+  align-self: center;
+}
+
+.hacking {
+  min-height: 30px;
+  margin-bottom: 5px;
+}
+.two-hours {
+  overflow: visible;
+  height: 180px;
+  z-index: 2;
+  background-color: white;
+}
+
+.half-hour {
+  height: 32px;
+  justify-content: center;
+}
+.start-half {
+  margin-top: 48px;
+}
+
+.meal {
+  background-color: rgb(2, 134, 2);
+}
+
+.important {
+  background-color: rgb(208, 3, 3);
+}
+
+.ceremony {
+  background-color: purple;
+}
+
+.sponsor-event {
+  background-color: rgb(62, 163, 241);
+}
+
+.eighty-mins {
+  height: 125px;
+}
+.start-forty {
+  margin-top: 65px;
+}
+
+.forty-mins {
+  height: 62px;
+}
+.start-fifty {
+  margin-top: 80px;
+}
+
+.event-time {
+  font-size: 0.75em;
+}
+#team-formation {
+  margin-top: 15px;
+}
+h1 {
+  margin-bottom: 0px;
+}
+
+.steelhacks {
+  margin-left: 20px;
+  justify-self: start;
+  align-self: center;
+  color: white;
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 12px;
   }
-
-  &:not(:first-of-type) {
-    margin-top: 1em;
+  #description-block {
+    display: none;
   }
-
-  &:last-of-type {
-    border-bottom: none;
+  .landing {
+    padding-top: 200px;
   }
 }
