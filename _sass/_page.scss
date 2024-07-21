@@ -3,20 +3,32 @@
   flex-direction: column;
   align-items: center;
   color: #111;
-  background-color: slategray;
+  background: linear-gradient(
+    to bottom,
+    #050318,
+    rgb(1, 18, 60),
+    #1e57b3,
+    rgb(248, 55, 164)
+  );
   text-align: center;
   height: 100vh;
+  overflow: hidden;
 }
 #welcome p {
   font-size: 26px;
 }
-
+#skyline {
+  z-index: 3;
+  position: absolute;
+  bottom: 0px;
+  filter: brightness(0%);
+}
 #description-block {
   display: flex;
   flex-direction: column;
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: slategrey /*rgb(30, 30, 30)*/;
+  background-color: black /*rgb(30, 30, 30)*/;
   color: white;
   text-align: center;
   align-items: center;
@@ -34,6 +46,9 @@
 #main-logo {
   max-width: 50%;
   height: auto;
+  margin-bottom: 0px;
+  border-radius: 50%;
+  clip-path: circle(40% at 50% 50%);
 }
 
 #mlh-trust-badge {
@@ -56,14 +71,15 @@
 }
 
 #navbar {
+  display: flex;
+  justify-content: space-between;
   color: gold;
   clear: both;
   background: black;
+  margin-bottom: 2%;
   width: 100%;
   z-index: 1000;
-  display: flex;
-  min-height: 30px;
-  justify-content: space-between;
+  min-height: 50px;
 }
 @media screen and (max-width: 700px) {
   #navbar {
@@ -94,6 +110,9 @@
   #navbar .social-link {
     padding-left: 0.5em;
   }
+}
+.container {
+  align-items: center;
 }
 @media screen and (min-width: 700px) {
   #navbar #menu {
@@ -158,7 +177,7 @@
   border-radius: 3px;
   color: white;
   display: block;
-  margin: 0;
+  margin: 0 auto;
   min-width: 200px;
   padding: 10px;
   text-align: center;
@@ -178,6 +197,59 @@
   #signup-form .button {
     width: 40%;
   }
+}
+
+@keyframes move-twinkle-back {
+  from {
+    background-position: 0 0;
+    to {
+      background-position: -10000px 5000px;
+    }
+  }
+}
+
+.twinkling {
+  background: transparent url(css/background/twinkling.png) repeat top center;
+  z-index: 50;
+  animation: move-twinkle-back 200s linear infinite;
+}
+.moon {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  top: 120px;
+  left: 200px;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 50%;
+  z-index: 100;
+  box-shadow:
+    0 0 0 0.62em rgba(32, 105, 149, 0.6),
+    0 0 0 1.25em rgba(32, 105, 149, 0.5),
+    0 0 0 1.9em rgba(32, 105, 149, 0.4);
+}
+.moon:before {
+  content: "";
+  position: absolute;
+  background-color: #ebefe7;
+  height: 0.62em;
+  width: 0.62em;
+  border-radius: 50%;
+  top: 0.5em;
+  left: 0.37em;
+}
+.moon:after {
+  content: "";
+  position: absolute;
+  background-color: #ebefe7;
+  height: 0.43em;
+  width: 0.43em;
+  border-radius: 50%;
+  top: 1.25em;
+  left: 0.75em;
+}
+
+.menu {
+  align-items: left;
 }
 
 .hour {
@@ -225,7 +297,9 @@
 .prize-box .prize p {
   margin: 0.2em 1em;
 }
-
+.stars {
+  z-index: 2;
+}
 #faq {
   background-color: rgb(30, 30, 30);
   color: white;
@@ -389,17 +463,16 @@ footer li {
 }
 
 #registration-button {
-  margin-top: 25px;
-  background-color: rgb(30, 30, 30);
+  background-color: black;
   border-radius: 40px;
-  color: white;
+  color: rgb(253, 253, 253);
   height: 80px;
   width: 350px;
-  border: 3px solid rgb(30, 30, 30);
-  font-size: 30px;
+  border: 3px solid gold;
+  margin-bottom: 50px;
 }
 #registration-button:hover {
-  background-color: slategray;
+  background-color: white;
   color: black;
 }
 
@@ -407,19 +480,45 @@ footer li {
   color: white;
 }
 .landing {
-  margin: 0px;
-  background-color: slategray;
+  position: absolute;
+  padding-top: 20px;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  height: 100vh;
+  z-index: 5;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#skyline {
+  z-index: 4;
+  margin-bottom: 0%;
+  width: 1500px;
+}
+
+#mountains {
+  position: absolute;
+  margin-top: 700px;
+  width: 1500px;
+  z-index: 3;
+  opacity: 1;
+  transform: translateY(-50%) scaleY(0.5);
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  filter: brightness(0.5);
 }
 #location {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 0px;
   margin-bottom: 30px;
 }
 
@@ -567,18 +666,6 @@ h1 {
     display: none;
   }
   .landing {
-    padding-top: 100px;
-  }
-  #navbar {
-    height: 35px;
-    margin-bottom: 0px;
-    border: 2px solid black;
-  }
-  .landing {
-    margin: 0px;
-  }
-  footer {
-    height: 30px;
-    font-size: 12px;
+    padding-top: 200px;
   }
 }

@@ -1,57 +1,634 @@
 ---
 layout: default
 ---
-    
-    <header id="welcome" class="slice">
-      <nav id="navbar" class="container">
+
+
+    <header id='welcome' class='slice'>
+      <nav id='navbar' class='container'>
         <div class="steelhacks">SteelHacks</div>
-        <ul id="menu">
+        <ul id='mobile-nav-trigger' class='pull-right'>
+          <li><a href=''><i class="fa fa-bars"></i></a></li>
+        </ul>
+        <ul id='menu'>
+          <li><a href='#schedule'>Schedule</a></li>
+          <li><a href='#faq'>FAQ</a></li>
+          <li><a href='#sponsors'>Sponsors</a></li>
           <li>
-            <a target="_blank" href="https://www.facebook.com/steelhacks">
-              <i class="fa fa-facebook-square"></i>
-              <span class="social-link">Facebook</span>
+            <a target='_blank' href='https://www.facebook.com/steelhacks'>
+              <i class='fa fa-facebook-square'></i>
+              <span class='social-link'>Facebook</span>
             </a>
           </li>
           <li>
-            <a target="_blank" href="https://twitter.com/steelhacks">
-              <i class="fa fa-twitter-square"></i>
-              <span class="social-link">Twitter</span>
+            <a target='_blank' href='https://twitter.com/steelhacks'>
+              <i class='fa fa-twitter-square'></i>
+              <span class='social-link'>Twitter</span>
             </a>
           </li>
           <!-- TODO: Make this programtic and a forloop and contained inside of includes -->
           <li>
-            <a target="_blank" href="https://www.instagram.com/pittsteelhacks">
+            <a target='_blank' href='https://www.instagram.com/pittsteelhacks'>
               <i class="fa fa-instagram"></i>
-              <span class="social-link">Instagram</span>
+              <span class='social-link'>Instagram</span>
             </a>
           </li>
+          
         </ul>
       </nav>
-      <div class="container landing">
-        <h1 class="fa-5x">STEELHACKS XI</h1>
+      <div class="moon"></div>
+      <img src="/img/background/stars.png" class="stars"alt="">
+      <img src="/img/background/twinkling.png" class="twinkling" alt="">
+      <img src="/img/background/pittsburgh.png" id="skyline"alt="">
+      <img src="/img/background/mountains.jpg" id="mountains" alt="">
+    
+        <div class='container landing'>
+          <img id="main-logo" src="img/logo/astronaut-1.png"/> 
         <div id="location">
           <h2>University of Pittsburgh</h2>
           <h3>Sep. 28-29, 2024 | Benedum Hall</h3>
-          <form target="_blank" action="https://docs.google.com/forms/d/e/1FAIpQLSd8k22PUxmv4Mnzfd1vdqHi8U5J4pcDBLzkBh65U3LZNkrDdw/viewform">
-            <button id="registration-button" class="fa-fw">Register Now!</button>
-          </form>
+        </div>
+        
+        <form target="_blank" action="https://docs.google.com/forms/d/e/1FAIpQLSd8k22PUxmv4Mnzfd1vdqHi8U5J4pcDBLzkBh65U3LZNkrDdw/viewform">
+          <button id="registration-button" class="fa-fw">Register Now!</button>
+        </form>
+
+      </div>
+      </header>
+    
+    <div id='description-block' class='slice'>
+      <div class="yellow-lines">
+      <p>
+        SteelHacks is an event hosted at the University of Pittsburgh, through the School of Computing and Information, for
+        students at colleges &amp; universities across the US who are passionate
+        about getting their hands dirty using technology and design.
+      </p>
+      <p>
+        This year is the eleventh annual SteelHacks hackathon. Each year students
+        from around the Pittsburgh area and beyond come together to hack and make
+        cool stuff.
+      </p>
+    </div>
+      </div>
+    <div id='schedule' class='slice slice--big'>
+      <div class='container'>
+        <h2 id="schedule-title">Schedule</h2>
+        <div class='column-wrapper'>
+          
+            <div class='column'>
+              <h3>Saturday, Sep. 28th</h3>
+              <ul>
+                <li class="hour">
+                    <div class="time-box">
+                        <p class="time"> 8am</p>
+                        <div class="time-line">
+                        </div>
+                    </div>
+                    <div class="events">
+                      <div class="space"></div>
+                      <div class="event two-hours meal">
+                        <p>Breakfast</p>
+                        <p class="event-time">8am - 10am</p>
+                      </div>
+                      <div class="event two-hours important">
+                        <p>Check-in</p>
+                        <p class="event-time">8am - 10am</p>
+                      </div>
+                    
+                    </div>
+                </li>
+                <li class="hour">
+                  <div class="time-box">
+                      <p class="time"> 9am</p>
+                      <div class="time-line">
+                      </div>
+                  </div>
+                  <div class="events">
+                  </div>
+                </li>
+                <li class="hour">
+                  <div class="time-box">
+                      <p class="time">10am</p>
+                      <div class="time-line">
+                      </div>
+                  </div>
+                  <div class="events">
+                    <div class="space"></div>
+                    <div class="event ceremony">
+                      <p>Opening Ceremony</p>
+                        <p class="event-time">10am - 11am</p>
+                    </div>
+                  </div>
+              </li>
+              <li class="hour">
+                <div class="time-box hacking">
+                    <p class="time">11am</p>
+                    <div class="time-line" id="Hacking-Begins">
+                      <p>Hacking Begins!</p>
+                    </div>
+                </div>
+                <div class="events">
+                  <div class="space"></div>
+                  <div class="event important">
+                    <p id="team-formation">Team Formation</p>
+                    <p class="event-time">11am - 12pm</p>
+                  </div>
+                </div>
+            </li>
+            <li class="hour">
+              <div class="time-box">
+                  <p class="time">12pm</p>
+                  <div class="time-line">
+                  </div>
+              </div>
+              <div class="events">
+                <div class="space"></div>
+                <div class="event half-hour sponsor-event">
+                  <p>Sponsor Slot</p>
+                  <p class="event-time">12pm - 12:30pm</p>
+                </div>
+                <div class="event half-hour sponsor-event start-half"><p>Sponsor Slot</p>
+                  <p class="event-time">12:30pm - 1pm</p></div>
+              </div>
+          </li>
+          <li class="hour">
+            <div class="time-box">
+                <p class="time">1pm</p>
+                <div class="time-line">
+                </div>
+            </div>
+            <div class="events">
+              <div class="space"></div>
+                <div class="event half-hour sponsor-event">
+                  <p>Sponsor Slot</p>
+                  <p class="event-time">1pm - 1:30pm</p>
+                </div>
+                <div class="event half-hour sponsor-event start-half"><p>Sponsor Slot</p>
+                  <p class="event-time">1:30pm - 2pm</p></div>
+            </div>
+          </li>
+          <li class="hour">
+            <div class="time-box">
+                <p class="time">2pm</p>
+                <div class="time-line">
+                </div>
+            </div>
+            <div class="events">
+              <div class="space"></div>
+                <div class="event half-hour sponsor-event">
+                  <p>Sponsor Slot</p>
+                  <p class="event-time">2pm - 2:30pm</p>
+                </div>
+                <div class="event half-hour sponsor-event start-half"><p>Sponsor Slot</p>
+                  <p class="event-time">2:30pm - 3pm</p></div>
+            </div>
+          </li>
+          <li class="hour">
+            <div class="time-box">
+                <p class="time">3pm</p>
+                <div class="time-line">
+                </div>
+            </div>
+            <div class="events">
+              <div class="space"></div>
+                <div class="event half-hour sponsor-event">
+                  <p>Sponsor Slot</p>
+                  <p class="event-time">3pm - 3:30pm</p>
+                </div>
+                <div class="event half-hour sponsor-event start-half"><p>Sponsor Slot</p>
+                  <p class="event-time">3:30pm - 4pm</p></div>
+            </div>
+          </li>
+          <li class="hour">
+            <div class="time-box">
+                <p class="time">4pm</p>
+                <div class="time-line">
+                </div>
+            </div>
+            <div class="events">
+              <div class="space"></div>
+                <div class="event half-hour sponsor-event">
+                  <p>Sponsor Slot</p>
+                  <p class="event-time">4pm - 4:30pm</p>
+                </div>
+                <div class="event half-hour sponsor-event start-half"><p>Sponsor Slot</p>
+                  <p class="event-time">4:30pm - 5pm</p></div>
+            </div>
+          </li>
+          <li class="hour">
+            <div class="time-box">
+                <p class="time">5pm</p>
+                <div class="time-line">
+                </div>
+            </div>
+            <div class="events">
+              <div class="space"></div>
+                <div class="event half-hour sponsor-event">
+                  <p>Sponsor Slot</p>
+                  <p class="event-time">5pm - 5:30pm</p>
+                </div>
+                <div class="event half-hour sponsor-event start-half"><p>Sponsor Slot</p>
+                  <p class="event-time">5:30pm - 6pm</p></div>
+            </div>
+          </li>
+          <li class="hour">
+            <div class="time-box">
+                <p class="time">6pm</p>
+                <div class="time-line">
+                </div>
+            </div>
+            <div class="events">
+              <div class="space"></div>
+              <div class="event meal"><p>Dinner</p><p class="event-time">6pm - 7pm</p></div>
+              <div class="event sponsor-event"><p>Possible Sponsored Talk</p><p class="event-time">6pm - 7pm</p></div>
+            </div>
+          </li>
+          <li class="hour">
+            <div class="time-box">
+                <p class="time">7pm</p>
+                <div class="time-line">
+                </div>
+            </div>
+            <div class="events">
+            </div>
+          </li>
+          <li class="hour">
+            <div class="time-box">
+                <p class="time">8pm</p>
+                <div class="time-line">
+                </div>
+            </div>
+            <div class="events">
+            </div>
+          </li>
+          <li class="hour">
+            <div class="time-box">
+                <p class="time">9pm</p>
+                <div class="time-line">
+                </div>
+            </div>
+            <div class="events">
+            </div>
+          </li>
+          <li class="hour">
+            <div class="time-box">
+                <p class="time">10pm</p>
+                <div class="time-line">
+                </div>
+            </div>
+            <div class="events">
+              <div class="space"></div>
+              <div class="event meal two-hours"><p>Late-Night Snack</p><p class="event-time">10pm - 12am</p></div>
+            </div>
+          </li>
+          <li class="hour">
+            <div class="time-box">
+                <p class="time">11pm</p>
+                <div class="time-line">
+                </div>
+            </div>
+            <div class="events">
+            </div>
+          </li>
+                
+              </ul>
+            </div>
+            <div class='column'>
+              <h3>Sunday, Sep. 29th</h3>
+              <ul>
+                
+                <li class="hour">
+                    <div class="time-box">
+                        <p class="time">8am</p>
+                        <div class="time-line">
+                        </div>
+                    </div>
+                    <div class="events">
+                      <div class="space"></div>
+                    </div>
+                </li>
+                <li class="hour">
+                  <div class="time-box">
+                      <p class="time">9am</p>
+                      <div class="time-line">
+                      </div>
+                  </div>
+                  <div class="events">
+                    <div class="space"></div>
+                  </div>
+              </li>
+                <li class="hour">
+                  <div class="time-box">
+                      <p class="time">10am</p>
+                      <div class="time-line">
+                      </div>
+                  </div>
+                  <div class="events">
+                    <div class="space"></div>
+                    <div class="event two-hours meal"><p>Brunch</p><p class="event-time">10am - 12pm</p></div>
+                  </div>
+              </li>
+              <li class="hour">
+                <div class="time-box hacking">
+                  <p class="time">11am</p>
+                  <div class="time-line" id="Hacking-Ends">
+                    <p>Hacking Ends!</p>
+                  </div>
+              </div>
+                <div class="events">
+                </div>
+            </li>
+            <li class="hour">
+              <div class="time-box">
+                  <p class="time">12pm</p>
+                  <div class="time-line">
+                  </div>
+              </div>
+              <div class="events">
+                <div class="space"></div>
+                <div class="event eighty-mins important"><p>Judging Expo Round 1</p><p class="event-time">12pm - 1:20pm</p></div>
+              </div>
+          </li>
+          <li class="hour">
+            <div class="time-box">
+                <p class="time">1pm</p>
+                <div class="time-line">
+                </div>
+            </div>
+            <div class="events">
+              <div class="space"></div>
+                <div class="event forty-mins start-forty important"><p>Judging Expo Round 2</p><p class="event-time">1:40pm - 2:20pm</p></div>
+            </div>
+          </li>
+          <li class="hour">
+            <div class="time-box">
+                <p class="time">2pm</p>
+                <div class="time-line">
+                </div>
+            </div>
+            <div class="events">
+              <div class="space"></div>
+                <div class="event seventy-mins start-fifty important"><p>Finalists Presentations and Judging</p><p class="event-time">2:50pm-4:00pm</p></div>
+            </div>
+          </li>
+          <li class="hour">
+            <div class="time-box">
+                <p class="time">3pm</p>
+                <div class="time-line">
+                </div>
+            </div>
+            <div class="events">
+            </div>
+          </li>
+          <li class="hour">
+            <div class="time-box">
+                <p class="time">4pm</p>
+                <div class="time-line">
+                </div>
+            </div>
+            <div class="events">
+                <div class="space"></div>
+                  <div class="event ceremony start-half"><p>Awards Presentation & Closing Ceremony</p><p class="event-time">4:30pm - 5:30pm</p></div>
+              
+            </div>
+          </li>
+          <li class="hour">
+            <div class="time-box">
+                <p class="time">5pm</p>
+                <div class="time-line">
+                </div>
+            </div>
+            <div class="events">
+            </div>
+          </li>
+          <li class="hour">
+            <div class="time-box">
+                <p class="time">6pm</p>
+                <div class="time-line">
+                </div>
+            </div>
+            <div class="events">
+            </div>
+          </li>
+        
+                
+              </ul>
+            </div>
+          
         </div>
 
-        <div id="description-block" class="slice">
-          <div class="yellow-lines">
-            <p>
-              SteelHacks is an event hosted at the University of Pittsburgh,
-              through the School of Computing and Information, for students at
-              colleges &amp; universities across the US who are passionate about
-              getting their hands dirty using technology and design.
-            </p>
-            <p>
-              This year is the eleventh annual SteelHacks hackathon. Each year
-              students from around the Pittsburgh area and beyond come together
-              to hack and make cool stuff.
-            </p>
+        
+      </div>
+      
+    </div>
+    <div id='faq' class='slice slice--big'>
+      <div class='container'>
+        <h2>FAQ</h2>
+        
+          <div class='question'>
+            <div class='question__header'>
+              Who can attend SteelHacks?
+              <i class='fa fa-chevron-down pull-right'></i>
+              <i class='fa fa-chevron-up pull-right'></i>
+            </div>
+            <div class='question__body'>
+              Any undergraduate or graduate student at any college in the U.S.! Non-Pitt college undergraduate students must be at least 18 years old. Unfortunately, high school students can’t attend this year.
+
+            </div>
+          </div>
+        
+          <div class='question'>
+            <div class='question__header'>
+              Does this cost money?
+              <i class='fa fa-chevron-down pull-right'></i>
+              <i class='fa fa-chevron-up pull-right'></i>
+            </div>
+            <div class='question__body'>
+              Nope! The event is free. 
+
+            </div>
+          </div>
+        
+          <div class='question'>
+            <div class='question__header'>
+              Where will SteelHacks be held?
+              <i class='fa fa-chevron-down pull-right'></i>
+              <i class='fa fa-chevron-up pull-right'></i>
+            </div>
+            <div class='question__body'>
+              SteelHacks 2024 will be in person on the 3rd Floor of the Information Sciences Building (135 N Bellefield Ave). 
+
+            </div>
+          </div>
+        
+          <div class='question'>
+            <div class='question__header'>
+              I can't register anymore!
+              <i class='fa fa-chevron-down pull-right'></i>
+              <i class='fa fa-chevron-up pull-right'></i>
+            </div>
+            <div class='question__body'>
+              Don't panic! Shoot an email to steelhacks@pittcsc.org and we'll try to sort it out.
+
+            </div>
+          </div>
+        
+          <div class='question'>
+            <div class='question__header'>
+              I missed the confirmation deadline! Can I still come?
+              <i class='fa fa-chevron-down pull-right'></i>
+              <i class='fa fa-chevron-up pull-right'></i>
+            </div>
+            <div class='question__body'>
+              Send us an email to steelhacks@pittcsc.org, and we'll see if we can find you a spot!
+
+            </div>
+          </div>
+        
+          <div class='question'>
+            <div class='question__header'>
+              How do teams work?
+              <i class='fa fa-chevron-down pull-right'></i>
+              <i class='fa fa-chevron-up pull-right'></i>
+            </div>
+            <div class='question__body'>
+              Teams can consist of up to 4 people, though you can have any amount less than that as well.
+
+            </div>
+          </div>
+        
+          <div class='question'>
+            <div class='question__header'>
+              What if the FAQ didn't answer my question?
+              <i class='fa fa-chevron-down pull-right'></i>
+              <i class='fa fa-chevron-up pull-right'></i>
+            </div>
+            <div class='question__body'>
+              You can tweet it at us @SteelHacks, or email us at steelhacks@pittcsc.org!
+
+            </div>
+          </div>
+        
+      </div>
+    </div>
+    <div id='sponsors' class='slice slice--big'>
+      <div class='container'>
+        <h2>Partners</h2>
+    <!-- 
+        <div class='sponsor-group'>
+          <div class='second'>
+            <img class='sponsor'
+                alt='Major League Hacking'
+                src='/img/partners/mlh-logo-color.png'>
+          </div>
+        </div> -->
+
+        <div class='sponsor-group'>
+          <div class='first'>
+            <img class='sponsor first'
+                alt='Pitt SCI'
+                src='/img/partners/pitt-sci-sheild.png' />
           </div>
         </div>
+
+
+        <h2>Sponsors</h2>
+
+        <div id='sponsors'>
+          <div class='sponsor-group'>
+            
+            
+                
+                
+
+              <div class='third'>
+                
+                <img class='sponsor'
+                      alt='PNC'
+                      src='/img/sponsors/pnc.png' />
+                
+              </div>
+              
+                
+                
+                  
+                
+
+              <div class='third'>
+                
+                <img class='sponsor'
+                      alt='NetApp'
+                      src='/img/sponsors/netapp.png' />
+                
+              </div>
+              
+                
+                
+                  
+                
+
+              <div class='third'>
+                
+                <img class='sponsor'
+                      alt='BNYMellon'
+                      src='/img/sponsors/bny-mellon.png' />
+                
+              </div>
+              
+                
+                
+                  
+          </div>
+          <div class='sponsor-group'>
+                  
+                
+
+              <div class='third'>
+                
+                <img class='sponsor'
+                      alt='Naval Nuclear Laboratory'
+                      src='/img/sponsors/nnl_new.jpg' />
+                
+              </div>
+              
+                
+                
+                  
+                
+
+              <div class='third'>
+                
+              </div>
+              
+                
+                
+                  
+                
+
+              <div class='third'>
+                
+              </div>
+              
+                
+                
+                  
+          </div>
+          <div class='sponsor-group'>
+                  
+                
+
+              <div class='third'>
+                
+              </div>
+              
+          </div>
+        </div>
+
+        </div>
       </div>
-    </header>
-    <script type="text/javascript" charset="utf-8" src="{{ "/js/homepage.js" | prepend: site.baseurl }}"></script>
+    </div>
+    <div id='map' class='slice'>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.258922914769!2d-79.95484688470965!3d40.44740587936156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f2258723e905%3A0xbc166e2a40b6776c!2sInformation%20Sciences%20Bldg%2C%20135%20N%20Bellefield%20Ave%2C%20Pittsburgh%2C%20PA%2015213!5e0!3m2!1sen!2sus!4v1675790970217!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3036.4036520303575!2d-79.95588574652187!3d40.44420210111034!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x517c2568d7e0544!2sAlumni+Hall!5e0!3m2!1sen!2sus!4v1548219257204" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+    
+    <script type="text/javascript" charset="utf-8" src="/js/homepage.js"></script>
+

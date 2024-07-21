@@ -6,6 +6,11 @@ body {
   padding: 0;
 }
 
+button {
+  font-family: "Abel", Helvetica, Arial, sans-serif;
+  font-size: 35px;
+}
+
 // Headers
 h1 {
   font-size: 52px;
@@ -25,55 +30,53 @@ h3 {
 
 .slice {
   width: 100%;
-
-  &.slice--big {
-    $spacing-amount: 60px;
-    padding-bottom: $spacing-amount;
-    padding-top: $spacing-amount;
-
-    h1,
-    h2,
-    h3 {
-      margin-top: 0;
-    }
+}
+.slice.slice--big {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+.slice.slice--big h1,
+.slice.slice--big h2,
+.slice.slice--big h3 {
+  margin-top: 0;
+}
+.slice > .container {
+  margin: 0 auto;
+  overflow: hidden;
+}
+@media screen and (max-width: 600px) {
+  .slice > .container {
+    width: 95%;
   }
-
-  > .container {
-    margin: 0 auto;
-    overflow: hidden;
-
-    @include size-less-than($small) {
-      width: 95%;
-    }
-
-    @include size-between($small, $large) {
-      width: 80%;
-    }
-
-    @include size-greater-than($large) {
-      width: 950px;
-    }
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .slice > .container {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .slice > .container {
+    width: 950px;
   }
 }
 
-.column-wrapper {
-  @include size-greater-than($medium) {
+@media screen and (min-width: 900px) {
+  .column-wrapper {
     display: flex;
   }
-
-  .column {
-    @include size-less-than($medium) {
-      width: 100%;
-    }
-
-    @include size-greater-than($medium) {
-      margin-right: 1.25%;
-      width: 50%;
-
-      &:last-child {
-        margin-right: 0;
-      }
-    }
+}
+@media screen and (max-width: 900px) {
+  .column-wrapper .column {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .column-wrapper .column {
+    margin-right: 1.25%;
+    width: 50%;
+  }
+  .column-wrapper .column:last-child {
+    margin-right: 0;
   }
 }
 
