@@ -1,7 +1,7 @@
 # Site settings
-title: SteelHacks 2024
+title: SteelHacks XI
 description: > # this means to ignore newlines until "baseurl:"
-  University of Pittsburgh's hackathon! March 29-30, 2024.
+  University of Pittsburgh's hackathon! September 28-29, 2024.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://steelhacks.com" # the base hostname & protocol for your site
 registration_url: "https://forms.gle/xch1W9dZEAVChgwr7"
