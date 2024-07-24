@@ -5,24 +5,32 @@
   color: #111;
   background: linear-gradient(
     to bottom,
-    #050318,
+    #050318 60%,
     rgb(1, 18, 60),
-    #1e57b3,
-    rgb(248, 55, 164)
+    #182b8e,
+    rgb(217, 47, 155),
+    rgb(236, 3, 120)
   );
   text-align: center;
   height: 100vh;
   overflow: hidden;
 }
+.column {
+  margin-left: -10px;
+  overflow: visible;
+  color: white;
+}
+#schedule {
+  background: linear-gradient(to bottom, black, rgb(1, 18, 60));
+}
+#schedule-title {
+  margin-bottom: 20px;
+  color: white;
+}
 #welcome p {
   font-size: 26px;
 }
-#skyline {
-  z-index: 3;
-  position: absolute;
-  bottom: 0px;
-  filter: brightness(0%);
-}
+
 #description-block {
   display: flex;
   flex-direction: column;
@@ -44,11 +52,8 @@
 }
 
 #main-logo {
-  max-width: 50%;
+  width: 100%;
   height: auto;
-  margin-bottom: 0px;
-  border-radius: 50%;
-  clip-path: circle(40% at 50% 50%);
 }
 
 #mlh-trust-badge {
@@ -73,17 +78,16 @@
 #navbar {
   display: flex;
   justify-content: space-between;
-  color: gold;
   clear: both;
+  border: solid black 2px;
   background: black;
-  margin-bottom: 2%;
   width: 100%;
   z-index: 1000;
   min-height: 50px;
 }
 @media screen and (max-width: 700px) {
-  #navbar {
-    border-bottom: 1px solid white;
+  #welcome {
+    height: 100vh;
   }
   #navbar #menu {
     display: none;
@@ -98,8 +102,18 @@
     overflow: auto;
     zoom: 1;
   }
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
   #navbar #menu.visible {
     display: block;
+    height: 150px;
+    z-index: 500;
+    margin-top: 50px;
+    background-color: black;
+    position: absolute;
   }
   #navbar #menu a.button {
     line-height: 3.5em;
@@ -110,6 +124,9 @@
   #navbar .social-link {
     padding-left: 0.5em;
   }
+}
+.center-text {
+  text-align: center;
 }
 .container {
   align-items: center;
@@ -171,6 +188,18 @@
 #signup-form h3 {
   text-align: center;
 }
+.date {
+  display: flex;
+  background-color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  align-self: center;
+  color: black;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
 #signup-form {
   background-color: #f4c807;
   border: 0;
@@ -202,17 +231,24 @@
 @keyframes move-twinkle-back {
   from {
     background-position: 0 0;
-    to {
-      background-position: -10000px 5000px;
-    }
+  }
+  to {
+    background-position: -10000px 5000px;
   }
 }
 
 .twinkling {
-  background: transparent url(css/background/twinkling.png) repeat top center;
-  z-index: 50;
+  background: transparent url(../img/background/twinkling.png) repeat top center;
+  z-index: 3;
   animation: move-twinkle-back 200s linear infinite;
+  position: absolute;
+  top: 0;
+  margin-bottom: 500px;
+  width: 100%;
+  height: 60%;
+  display: block;
 }
+
 .moon {
   position: absolute;
   background-color: rgb(255, 255, 255);
@@ -221,7 +257,7 @@
   height: 2.2em;
   width: 2.2em;
   border-radius: 50%;
-  z-index: 100;
+  z-index: 4;
   box-shadow:
     0 0 0 0.62em rgba(32, 105, 149, 0.6),
     0 0 0 1.25em rgba(32, 105, 149, 0.5),
@@ -253,6 +289,7 @@
 }
 
 .hour {
+  color: white;
   display: flex;
   flex-direction: column;
   min-width: 200px;
@@ -301,13 +338,28 @@
   z-index: 2;
 }
 #faq {
-  background-color: rgb(30, 30, 30);
+  background: linear-gradient(to bottom, rgb(1, 18, 60), rgb(170, 58, 77));
   color: white;
+}
+#sponsors {
+  background: linear-gradient(to bottom, rgb(170, 58, 77), rgb(253, 130, 37));
+}
+.sponsor-group {
+  background-color: transparent;
+}
+.question__body {
+  background-color: gold;
+  color: black;
 }
 
 .question__body {
+  text-decoration: none;
+}
+
+.question.active .question__header {
   background-color: black;
 }
+
 .question {
   border: 2px solid white;
   font-size: 22px;
@@ -315,15 +367,21 @@
 .question .question__header {
   cursor: pointer;
   padding: 22px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 5;
 }
+
 .question .question__body {
-  padding: 22px;
-  padding-top: 0;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .question:not(:last-of-type) {
   border-bottom: 0;
 }
 .question.active {
+  background-color: black;
 }
 .question.active .question__body {
   display: block;
@@ -337,12 +395,14 @@
 .question .fa {
   font-size: 16px;
 }
+.question:hover .fa-chevron-down {
+  color: gold;
+}
 .question .fa-chevron-up {
   display: none;
 }
 .question .question__body {
   display: none;
-  margin-top: 22px;
 }
 
 #sponsors .get-in-touch {
@@ -365,11 +425,12 @@
 }
 
 footer {
-  background-color: #dab821;
+  background-color: rgb(0, 0, 0);
   color: white;
   font-size: 16px;
   padding-bottom: 30px;
   padding-top: 30px;
+  display: flex;
 }
 footer a,
 footer a:visited {
@@ -472,8 +533,9 @@ footer li {
   margin-bottom: 50px;
 }
 #registration-button:hover {
-  background-color: white;
+  background-color: gold;
   color: black;
+  border: 3px solid black;
 }
 
 .text-white {
@@ -481,13 +543,13 @@ footer li {
 }
 .landing {
   position: absolute;
-  padding-top: 20px;
+  padding-top: 50px;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+
   z-index: 5;
 }
 .main {
@@ -498,20 +560,21 @@ footer li {
 }
 
 #skyline {
-  z-index: 4;
-  margin-bottom: 0%;
-  width: 1500px;
-}
-
-#mountains {
   position: absolute;
-  margin-top: 700px;
-  width: 1500px;
+  bottom: 0px;
+  filter: brightness(0%);
+  width: 100vw;
+  z-index: 4;
+}
+#mountains {
+  bottom: 0px;
+  position: absolute;
+  width: 100vw;
   z-index: 3;
   opacity: 1;
-  transform: translateY(-50%) scaleY(0.5);
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
-  filter: brightness(0.5);
+  filter: brightness(60%);
+  max-height: 200px;
 }
 #location {
   display: flex;
@@ -524,23 +587,47 @@ footer li {
 
 h2,
 h3 {
+  color: white;
   margin: 0;
+}
+
+.yellow-line {
+  height: 0px;
+  border: 2px solid gold;
+  border-radius: 4px;
+  width: 80%;
+  margin-right: 20px;
+  margin-left: 20px;
+  align-self: center;
+}
+.page-break {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0);
+  height: 0px;
 }
 
 .yellow-lines {
   border-top: 3px solid gold;
   border-bottom: 3px solid gold;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 55px;
+  margin-right: 55px;
   padding: 30px;
 }
+.date-box {
+  padding-left: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  justify-content: center;
+}
 .time-line {
-  border: 0.5px solid black;
+  border: 0.5px solid white;
   width: 1000px;
   height: 0.25px;
-  background-color: black;
+  background-color: white;
   margin: 1px;
-  z-index: -1;
 }
 
 .time-box {
@@ -551,6 +638,7 @@ h3 {
 }
 
 .time {
+  color: white;
   margin-right: 4px;
 }
 .events {
@@ -566,27 +654,24 @@ h3 {
   min-width: 50px;
 }
 
-#Hacking-Begins {
-  position: relative;
-  display: flex;
-  height: 22px;
-  background-color: rgb(255, 203, 73);
-  justify-content: center;
-  margin-bottom: 5px;
-  border: solid white 2px;
-  color: black;
-  z-index: 1000;
-}
+#Hacking-Begins,
 #Hacking-Ends {
   position: relative;
   display: flex;
   height: 20px;
-  background-color: black;
+  background-color: rgb(255, 203, 73);
   justify-content: center;
+  border: none;
   margin-bottom: 5px;
-
-  color: rgb(255, 255, 255);
+  color: black;
   z-index: 1000;
+  max-width: 385px;
+  font-weight: bold;
+
+  border-radius: 10px;
+}
+#Hacking-Ends {
+  background-color: white;
 }
 #Hacking-Begins p,
 #Hacking-Ends p {
@@ -658,14 +743,55 @@ h1 {
   align-self: center;
   color: white;
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   body {
     font-size: 12px;
   }
-  #description-block {
-    display: none;
+  .yellow-lines {
+    width: 80%;
+  }
+  .yellow-line {
+    width: 1000px;
+    margin: 0;
+  }
+  #schedule-title {
+    align-self: center;
+  }
+  #registration-button {
+    background-color: transparent;
+  }
+  .date-box {
+    margin-left: -35px;
+  }
+  .title-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+  .moon {
+    left: 15%;
+  }
+
+  .column ul {
+    margin-left: -20px;
   }
   .landing {
-    padding-top: 200px;
+    padding-top: 150px;
   }
+  .column {
+    justify-content: center;
+  }
+}
+.sponsors {
+  background-color: transparent;
+}
+#sponsor-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+#sponsor-list h3 {
+  font-size: 40px;
+  color: white;
 }
