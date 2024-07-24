@@ -87,7 +87,7 @@
 }
 @media screen and (max-width: 700px) {
   #welcome {
-    height: 100vh;
+    height: 80%;
   }
   #navbar #menu {
     display: none;
@@ -746,6 +746,11 @@ h1 {
 @media (max-width: 700px) {
   body {
     font-size: 12px;
+  }
+
+  #skyline,
+  #mountains {
+    bottom: 0px;
   }
   .yellow-lines {
     width: 80%;
