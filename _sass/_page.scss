@@ -569,19 +569,17 @@ footer li {
 }
 
 #skyline {
-  margin-top: auto;
   position: absolute;
   bottom: 0px;
   filter: brightness(0%);
   width: 100vw;
-  z-index: 4;
+  z-index: 5;
 }
 #mountains {
-  margin-top: auto;
-  bottom: 0px;
   position: absolute;
+  bottom: 0px;
   width: 100vw;
-  z-index: 3;
+  z-index: 4;
   opacity: 1;
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
   filter: brightness(60%);
@@ -807,7 +805,8 @@ h1 {
   justify-content: center;
   height: 300px;
 }
-#sponsor-list h3 {
+#Coming-soon {
+  text-align: center;
   font-size: 40px;
   color: white;
 }
