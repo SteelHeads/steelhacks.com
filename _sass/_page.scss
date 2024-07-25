@@ -11,6 +11,7 @@
     rgb(217, 47, 155),
     rgb(236, 3, 120)
   );
+  justify-content: space-between;
   text-align: center;
   height: 100vh;
   overflow: hidden;
@@ -334,6 +335,14 @@
 .prize-box .prize p {
   margin: 0.2em 1em;
 }
+
+.landscape {
+  display: flex;
+  z-index: 3;
+  width: 100vw;
+  align-items: start;
+  justify-self: start;
+}
 .stars {
   z-index: 2;
 }
@@ -560,6 +569,7 @@ footer li {
 }
 
 #skyline {
+  margin-top: auto;
   position: absolute;
   bottom: 0px;
   filter: brightness(0%);
@@ -567,6 +577,7 @@ footer li {
   z-index: 4;
 }
 #mountains {
+  margin-top: auto;
   bottom: 0px;
   position: absolute;
   width: 100vw;
