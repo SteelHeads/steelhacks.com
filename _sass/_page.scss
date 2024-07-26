@@ -767,10 +767,13 @@ h1 {
 @media (max-width: 700px) {
   .landing {
     justify-content: center;
-    top: -20px;
+    top: -10px;
   }
-  #location {
-    font-size: 10px;
+  #location h3 {
+    font-size: 15px;
+  }
+  #location h2 {
+    font-size: 20px;
   }
   #registration-button {
     margin-top: 20px;
@@ -779,7 +782,7 @@ h1 {
     font-size: 24px;
   }
   #welcome {
-    height: 700px;
+    height: 650px;
   }
   .stars {
     width: auto;
