@@ -55,7 +55,6 @@
 #main-logo {
   width: auto;
   height: 70%;
-  max-width: auto;
   z-index: 5000;
 }
 
@@ -90,7 +89,7 @@
 }
 @media screen and (max-width: 700px) {
   #main-logo {
-    width: 80%;
+    width: 90%;
     height: auto;
   }
   #navbar #menu {
