@@ -342,11 +342,12 @@
   width: 100vw;
   align-items: start;
   justify-self: start;
+  bottom: 0;
 }
 .stars {
   z-index: 2;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 #faq {
   background: linear-gradient(to bottom, rgb(1, 18, 60), rgb(170, 58, 77));
