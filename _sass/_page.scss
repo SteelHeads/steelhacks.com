@@ -53,28 +53,34 @@
 }
 
 #main-logo {
-  width: auto;
-  height: 70%;
+  width: 100%;
+  height: auto;
   z-index: 5000;
 }
 
-#mlh-trust-badge {
-  display: block;
-  left: 50px;
-  max-width: 100px;
-  min-width: 60px;
-  position: fixed;
-  top: 0;
-  width: 10%;
-  z-index: 10000;
-}
-@media screen and (max-width: 600px) {
-  #mlh-trust-badge {
-    top: -52px;
+@media screen and (max-height: 800px) {
+  #main-logo {
+    width: auto;
+    height: 60%;
   }
-}
-#mlh-trust-badge img {
-  width: 100%;
+  #location h3 {
+    font-size: 15px;
+  }
+  #location h2 {
+    font-size: 20px;
+  }
+  #registration-button {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    height: 45px;
+    width: 220px !important;
+    font-size: 15px;
+    background-color: transparent;
+    padding: 5px;
+  }
+  #location {
+    margin-bottom: 5px;
+  }
 }
 
 #navbar {
@@ -87,47 +93,7 @@
   z-index: 10;
   min-height: 50px;
 }
-@media screen and (max-width: 700px) {
-  #main-logo {
-    width: 90vw;
-    height: auto;
-  }
-  #navbar #menu {
-    display: none;
-    float: left;
-    line-height: 2em;
-    margin-top: 0;
-    text-align: left;
-    width: 100%;
-  }
-  #navbar #menu:before {
-    clear: both;
-    overflow: auto;
-    zoom: 1;
-  }
-  #navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-  }
-  #navbar #menu.visible {
-    display: block;
-    height: 150px;
-    z-index: 5;
-    margin-top: 50px;
-    background-color: black;
-    position: absolute;
-  }
-  #navbar #menu a.button {
-    line-height: 3.5em;
-  }
-  #navbar li {
-    display: block;
-  }
-  #navbar .social-link {
-    padding-left: 0.5em;
-  }
-}
+
 .center-text {
   text-align: center;
 }
@@ -215,42 +181,6 @@
   text-align: center;
   text-decoration: none;
 }
-@media screen and (max-width: 600px) {
-  #signup-form .button {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 900px) {
-  #signup-form .button {
-    width: 50%;
-  }
-}
-@media screen and (min-width: 900px) {
-  #signup-form .button {
-    width: 40%;
-  }
-}
-
-@keyframes move-twinkle-back {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -10000px 5000px;
-  }
-}
-
-.twinkling {
-  background: transparent url(../img/background/twinkling.png) repeat top center;
-  z-index: 3;
-  animation: move-twinkle-back 200s linear infinite;
-  position: absolute;
-  top: 0;
-  margin-bottom: 500px;
-  width: 100%;
-  height: 60%;
-  display: block;
-}
 
 .moon {
   position: absolute;
@@ -320,33 +250,6 @@
   padding: 0;
 }
 
-.prize-box {
-  border: 2px solid black;
-  list-style: none;
-  padding: 0;
-}
-.prize-box .prize {
-  display: flex;
-  padding: 12px 5px;
-}
-.prize-box .prize .title {
-  color: #000000;
-  font-size: 1.5em;
-  margin: 0.2em 0.6em;
-}
-.prize-box .prize p {
-  margin: 0.2em 1em;
-}
-
-.landscape {
-  display: flex;
-  z-index: 3;
-  width: 100vw;
-  align-items: start;
-  justify-self: center;
-  align-self: end;
-  bottom: 0;
-}
 .stars {
   z-index: 2;
   min-width: 100%;
@@ -424,16 +327,6 @@
   text-align: center;
 }
 
-@media screen and (max-width: 600px) {
-  #map {
-    height: 250px;
-  }
-}
-@media screen and (min-width: 600px) {
-  #map {
-    height: 350px;
-  }
-}
 #map iframe {
   height: 100%;
   width: 100%;
@@ -571,7 +464,7 @@ footer li {
   align-items: center;
   justify-content: center;
 
-  z-index: 5000;
+  z-index: 5;
 }
 .main {
   display: flex;
@@ -764,11 +657,13 @@ h1 {
   align-self: center;
   color: white;
 }
-@media (max-width: 700px) {
+
+@media (max-width: 700px) and (min-height: 500px) {
   .landing {
     justify-content: center;
     top: -10px;
   }
+
   #location h3 {
     font-size: 15px;
   }
@@ -776,13 +671,17 @@ h1 {
     font-size: 20px;
   }
   #registration-button {
+    background-color: transparent;
     margin-top: 20px;
     height: 60px;
-    width: 300px;
+    width: 200px;
+    font-size: 24px;
+    margin-top: 20px;
+    height: 60px;
     font-size: 24px;
   }
   #welcome {
-    height: 650px;
+    height: 100vh;
   }
   .stars {
     width: auto;
@@ -801,10 +700,6 @@ h1 {
   #schedule-title {
     align-self: center;
   }
-  #registration-button {
-    margin-top: 10px;
-    background-color: transparent;
-  }
   .date-box {
     margin-left: -35px;
   }
@@ -822,6 +717,49 @@ h1 {
   }
   .column {
     justify-content: center;
+  }
+
+  #main-logo {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  #navbar #menu {
+    display: none;
+    float: left;
+    line-height: 2em;
+    margin-top: 0;
+    text-align: left;
+    width: 100%;
+  }
+  #navbar #menu:before {
+    clear: both;
+    overflow: auto;
+    zoom: 1;
+  }
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  #navbar #menu.visible {
+    display: block;
+    height: 150px;
+    z-index: 10;
+    margin-top: 50px;
+    background-color: black;
+    position: absolute;
+  }
+  #navbar #menu a.button {
+    line-height: 3.5em;
+  }
+  #navbar li {
+    display: block;
+  }
+  #navbar .social-link {
+    padding-left: 0.5em;
   }
 }
 .sponsors {
