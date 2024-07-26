@@ -89,8 +89,7 @@
 }
 @media screen and (max-width: 700px) {
   #main-logo {
-    max-width: 100%;
-    width: 100%;
+    width: 90vw;
     height: auto;
   }
   #navbar #menu {
@@ -767,8 +766,8 @@ h1 {
 }
 @media (max-width: 700px) {
   .landing {
-    top: 55px;
-    justify-content: start;
+    justify-content: center;
+    top: -20px;
   }
   #location {
     font-size: 10px;
