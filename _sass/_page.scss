@@ -30,7 +30,6 @@
   color: white;
 }
 #welcome p {
-  font-size: 26px;
 }
 
 #description-block {
@@ -58,6 +57,7 @@
   height: auto;
   max-height: 70%;
   max-width: 80%;
+  z-index: 5000;
 }
 
 #mlh-trust-badge {
@@ -86,7 +86,7 @@
   border: solid black 2px;
   background: black;
   width: 100%;
-  z-index: 1000;
+  z-index: 10;
   min-height: 50px;
 }
 @media screen and (max-width: 700px) {
@@ -111,7 +111,7 @@
   #navbar #menu.visible {
     display: block;
     height: 150px;
-    z-index: 500;
+    z-index: 5;
     margin-top: 50px;
     background-color: black;
     position: absolute;
@@ -542,9 +542,9 @@ footer li {
   color: rgb(253, 253, 253);
   height: 20%px;
   padding: 10px;
-  font-size: auto;
   width: 350px;
   border: 3px solid gold;
+  margin-top: 15px;
   margin-bottom: 50px;
 }
 #registration-button:hover {
@@ -557,6 +557,8 @@ footer li {
   color: white;
 }
 .landing {
+  padding: 25px;
+  top: 60px;
   top: 50px;
   bottom: 10px;
   height: 90vh;
@@ -565,9 +567,9 @@ footer li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 
-  z-index: 5;
+  z-index: 5000;
 }
 .main {
   display: flex;
@@ -594,6 +596,7 @@ footer li {
   max-height: 200px;
 }
 #location {
+  font-size: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -760,12 +763,12 @@ h1 {
   color: white;
 }
 @media (max-width: 700px) {
-  body {
-    font-size: 12px;
-  }
   .landing {
     top: 55px;
     justify-content: start;
+  }
+  #location {
+    font-size: 10px;
   }
   #registration-button {
     margin-top: 20px;
@@ -794,6 +797,7 @@ h1 {
     align-self: center;
   }
   #registration-button {
+    margin-top: 10px;
     background-color: transparent;
   }
   .date-box {
