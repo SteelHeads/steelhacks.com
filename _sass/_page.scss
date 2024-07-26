@@ -341,7 +341,8 @@
   z-index: 3;
   width: 100vw;
   align-items: start;
-  justify-self: start;
+  justify-self: center;
+  align-self: end;
   bottom: 0;
 }
 .stars {
@@ -554,8 +555,8 @@ footer li {
   color: white;
 }
 .landing {
-  position: absolute;
   padding-top: 50px;
+  position: absolute;
   color: white;
   display: flex;
   flex-direction: column;
@@ -758,6 +759,12 @@ h1 {
 @media (max-width: 700px) {
   body {
     font-size: 12px;
+  }
+  #welcome {
+    height: 100vh;
+  }
+  .stars {
+    width: auto;
   }
 
   #skyline,
