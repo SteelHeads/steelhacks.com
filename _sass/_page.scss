@@ -1,6 +1,7 @@
 #welcome {
   display: flex;
   flex-direction: column;
+  position: relative;
   align-items: center;
   color: #111;
   background: linear-gradient(
@@ -87,9 +88,6 @@
   min-height: 50px;
 }
 @media screen and (max-width: 700px) {
-  #welcome {
-    height: 100vh;
-  }
   #navbar #menu {
     display: none;
     float: left;
@@ -761,7 +759,7 @@ h1 {
     font-size: 12px;
   }
   #welcome {
-    height: 100vh;
+    height: 800px;
   }
   .stars {
     width: auto;
