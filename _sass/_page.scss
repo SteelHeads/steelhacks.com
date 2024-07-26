@@ -54,8 +54,10 @@
 }
 
 #main-logo {
-  width: 90%;
+  width: auto;
   height: auto;
+  max-height: 70%;
+  max-width: 80%;
 }
 
 #mlh-trust-badge {
@@ -538,7 +540,9 @@ footer li {
   background-color: black;
   border-radius: 40px;
   color: rgb(253, 253, 253);
-  height: 80px;
+  height: 20%px;
+  padding: 10px;
+  font-size: auto;
   width: 350px;
   border: 3px solid gold;
   margin-bottom: 50px;
@@ -553,14 +557,14 @@ footer li {
   color: white;
 }
 .landing {
-  height: 90vh;
-  padding-top: 50px;
+  top: 50px;
+  bottom: 10px;
   position: absolute;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 
   z-index: 5;
 }
@@ -594,7 +598,6 @@ footer li {
   align-items: center;
   justify-content: center;
   margin-top: 0px;
-  margin-bottom: 30px;
 }
 
 h2,
@@ -760,12 +763,11 @@ h1 {
     font-size: 12px;
   }
   #welcome {
-    height: 700px;
+    height: 600px;
   }
   .stars {
     width: auto;
   }
-
   #skyline,
   #mountains {
     bottom: 0px;
@@ -797,9 +799,6 @@ h1 {
 
   .column ul {
     margin-left: -20px;
-  }
-  .landing {
-    padding-top: 150px;
   }
   .column {
     justify-content: center;
