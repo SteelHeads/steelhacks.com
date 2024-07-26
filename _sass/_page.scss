@@ -75,6 +75,18 @@
     border-width: 2px !important;
   }
 }
+@media screen and (max-height: 500px) and (min-width: 600px) {
+  #main-logo {
+    width: auto;
+    height: 50vh;
+  }
+  #location h2 {
+    font-size: 15px;
+  }
+  #location h3 {
+    font-size: 10;
+  }
+}
 
 #navbar {
   display: flex;
