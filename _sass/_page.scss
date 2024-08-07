@@ -43,8 +43,6 @@
   margin-bottom: 20px;
   color: white;
 }
-#welcome p {
-}
 
 #description-block {
   display: flex;
@@ -279,7 +277,7 @@
   color: white;
 }
 #sponsors {
-  background: linear-gradient(to bottom, rgb(170, 58, 77), rgb(253, 130, 37));
+  background: linear-gradient(to bottom, rgb(170, 58, 77), rgb(254, 54, 23));
 }
 .sponsor-group {
   background-color: transparent;
@@ -389,29 +387,8 @@ footer li {
 .sponsor-group {
   align-items: center;
   display: flex;
-  justify-content: center;
-  margin: 3em auto;
-}
-.sponsor-group > div:first-child {
-  margin-right: 2em;
-}
-.sponsor-group > div:last-child {
-  margin-left: 2em;
-}
-.sponsor-group .first {
-  width: 75%;
-}
-.sponsor-group .second {
-  width: 55%;
-}
-.sponsor-group .third {
-  width: 40%;
-}
-.sponsor-group .fourth {
-  width: 32%;
-}
-.sponsor-group .fifth {
-  width: 25%;
+  justify-content: space-around;
+  width: 100%;
 }
 
 #timer {
@@ -490,6 +467,9 @@ footer li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+#hackmit {
+  width: 300px;
 }
 
 #skyline {
@@ -610,7 +590,12 @@ h3 {
 #Hacking-Ends p {
   align-self: center;
 }
-
+#mlh-trust-badge {
+  right: 260px;
+}
+#scottylabs {
+  border-radius: 50%;
+}
 .hacking {
   min-height: 30px;
   margin-bottom: 5px;
@@ -780,18 +765,63 @@ h1 {
   #navbar .social-link {
     padding-left: 0.5em;
   }
+  #mlh-trust-badge {
+    right: 50px;
+  }
 }
 .sponsors {
   background-color: transparent;
 }
 #sponsor-list {
+  position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 300px;
 }
 #Coming-soon {
   text-align: center;
   font-size: 40px;
   color: white;
+}
+
+#eaton {
+  width: 100%;
+}
+
+#pnc {
+  width: 45vw;
+  margin: -30px;
+}
+
+#wolfram,
+#mcs,
+#bic {
+  width: 15vw;
+}
+
+#bic {
+  border-radius: 10%;
+}
+
+#ansys {
+  width: 20vw;
+}
+#wvu-medicine {
+  width: 45vw;
+}
+
+#hackmit,
+#scottylabs {
+  width: 20vw;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#sponsor-list {
+  margin: 20px;
+}
+
+#partners {
+  margin-bottom: 20px;
 }
