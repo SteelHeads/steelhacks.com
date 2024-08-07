@@ -356,15 +356,14 @@ footer {
   padding-bottom: 30px;
   padding-top: 30px;
   display: flex;
+  justify-content: space-between;
 }
 footer a,
 footer a:visited {
   color: white;
   font-size: 18px;
 }
-footer .fa {
-  padding-left: 0.5em;
-}
+
 footer ul {
   list-style: none;
   margin: 0;
