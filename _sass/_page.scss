@@ -273,11 +273,11 @@
   min-height: 100%;
 }
 #faq {
-  background: linear-gradient(to bottom, rgb(1, 18, 60), rgb(205, 48, 222));
+  background: linear-gradient(to bottom, rgb(1, 18, 60), rgb(76, 3, 118));
   color: white;
 }
 #sponsors {
-  background: linear-gradient(to bottom, rgb(205, 48, 222), rgb(251, 41, 202));
+  background: linear-gradient(to bottom, rgb(76, 3, 118), rgb(249, 128, 62));
 }
 .sponsor-group {
   background-color: transparent;
@@ -796,10 +796,12 @@ h1 {
   width: 65vw;
 }
 
-#hacktech {
+#hacktech,
+#treehacks {
   border-radius: 80px;
   width: 15vw;
-  margin: 30px;
+  margin-right: 6vw;
+  margin-left: 6vw;
 }
 
 #pnc {
@@ -822,6 +824,9 @@ h1 {
   border-radius: 10%;
 }
 
+.together {
+  justify-content: center;
+}
 #ansys {
   width: 20vw;
 }
