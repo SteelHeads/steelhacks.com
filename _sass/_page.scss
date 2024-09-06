@@ -812,20 +812,28 @@ h1 {
   margin-bottom: -30px;
 }
 
-#wolfram,
-#mcs {
-  width: 15vw;
+#wolfram {
+  background-color: white;
+  border-radius: 20%;
+  border: 10px solid white;
+  width: 12vw;
 }
 
+#mcs {
+  background-color: black;
+  border-radius: 20px;
+  border: 8px solid black;
+  width: 15vw;
+}
 #bic {
-  width: 10vw;
+  background-color: gray;
+  border-radius: 15%;
+  border: 10px solid gray;
+  width: 8vw;
 }
 
 #hackharvard {
   width: 12vw;
-}
-#bic {
-  border-radius: 10%;
 }
 
 .together {
