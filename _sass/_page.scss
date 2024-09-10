@@ -788,10 +788,14 @@ h1 {
   width: 100%;
 }
 
-#pnc {
+#pnc,
+#google {
   width: 55vw;
 }
 
+#google {
+  margin-top: 50px;
+}
 #bny {
   width: 65vw;
 }
@@ -810,6 +814,7 @@ h1 {
 
 #pnc {
   margin-bottom: -30px;
+  margin-top: -30px;
 }
 
 #wolfram {
