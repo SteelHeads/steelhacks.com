@@ -242,7 +242,7 @@
   color: white;
   display: flex;
   flex-direction: column;
-  min-width: 200px;
+  min-width: 250px;
   min-height: 100px;
 }
 
@@ -557,7 +557,7 @@ h3 {
   position: absolute;
   display: flex;
   min-height: 100px;
-  max-width: 410px;
+  max-width: 300px;
   min-width: 300px;
   margin-top: 4px;
 }
@@ -577,7 +577,7 @@ h3 {
   margin-bottom: 5px;
   color: black;
   z-index: 1000;
-  max-width: 385px;
+  width: 100%;
   font-weight: bold;
 
   border-radius: 10px;
@@ -606,6 +606,18 @@ h3 {
   background-color: white;
 }
 
+.three-hours {
+  overflow: visible;
+  height: 280px;
+  z-index: 2;
+}
+
+.ninety-mins {
+  overflow: visible;
+  height: 130px;
+  z-index: 2;
+}
+
 .half-hour {
   height: 32px;
   justify-content: center;
@@ -630,6 +642,14 @@ h3 {
   background-color: rgb(62, 163, 241);
 }
 
+.student-event {
+  background-color: rgb(242, 86, 211);
+}
+
+.fun-event {
+  background-color: orange;
+}
+
 .eighty-mins {
   height: 125px;
 }
@@ -646,6 +666,10 @@ h3 {
 
 .event-time {
   font-size: 0.75em;
+}
+
+.event-location {
+  font-size: 0.8em;
 }
 #team-formation {
   margin-top: 15px;
@@ -866,4 +890,9 @@ h1 {
 
 #partners {
   margin-bottom: 20px;
+}
+
+.list-end {
+  margin-bottom: 100px;
+  list-style-type: none;
 }
