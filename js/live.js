@@ -41,19 +41,3 @@ function handleEndOfEvent() {
   var difference = getTimeDifferenceText(currentTime, timeOfInterest);
   document.getElementById("time").innerHTML = difference;
 })();
-
-var openingCeremonyDate = new Date("Sep 28, 2024 10:00:00").getTime();
-var x = setInterval(function () {
-  var currTime = new Date().getTime();
-  var difference = openingCeremonyDate - currTime;
-
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  document.getElementById("countdown-days").innerHTML = days;
-  // document.getElementById("countdown-hours").innerHTML = days;
-  // document.getElementById("countdown-minutes").innerHTML = days;
-  // document.getElementById("countdown-seconds").innerHTML = seconds;
-}, 1000);
