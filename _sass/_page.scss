@@ -896,3 +896,36 @@ h1 {
   margin-bottom: 100px;
   list-style-type: none;
 }
+
+#countdown {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+  margin: 30px;
+}
+
+.countdown {
+  display: flex;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  z-index: 1000;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid gold;
+}
+.countdown-text {
+  margin-top: 8px;
+}
+
+.countdown-segment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.val {
+  font-size: 30px;
+}

@@ -24,3 +24,22 @@ window.addEventListener("DOMContentLoaded", function () {
     addClickHandler(header);
   }
 });
+
+var openingCeremonyDate = new Date("Sep 28, 2024 10:00:00").getTime();
+var x = setInterval(function () {
+  var currTime = new Date().getTime();
+  var difference = openingCeremonyDate - currTime;
+
+  var days = Math.floor(difference / (1000 * 60 * 60 * 24));
+  var hours = Math.floor(
+    (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  );
+  var minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+  console.log(days);
+  document.getElementById("countdown-days").innerHTML = days;
+  document.getElementById("countdown-hours").innerHTML = hours;
+  document.getElementById("countdown-minutes").innerHTML = minutes;
+  document.getElementById("countdown-seconds").innerHTML = seconds;
+}, 1000);
