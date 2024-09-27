@@ -37,7 +37,39 @@
   color: white;
 }
 #schedule {
-  background: linear-gradient(to bottom, black, rgb(1, 18, 60));
+  background-color: black;
+}
+
+.track-title {
+  font-size: 20px;
+  color: black;
+}
+
+.track-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+}
+
+.pnc-logo {
+  margin: -20px;
+}
+
+.track-item {
+  border: 4px solid gold;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  border-radius: 30px;
+  height: auto;
+  width: 300px;
+  text-align: center;
+}
+.track-sponsor {
+  width: 150px;
 }
 #schedule-title {
   margin-bottom: 20px;
@@ -271,6 +303,10 @@
   z-index: 2;
   min-width: 100%;
   min-height: 100%;
+}
+
+#tracks {
+  background: linear-gradient(to bottom, black, rgb(1, 18, 60));
 }
 #faq {
   background: linear-gradient(to bottom, rgb(1, 18, 60), rgb(76, 3, 118));
@@ -590,7 +626,7 @@ h3 {
   align-self: center;
 }
 #mlh-trust-badge {
-  right: 260px;
+  right: 320px;
 }
 #scottylabs {
   border-radius: 50%;
@@ -598,6 +634,14 @@ h3 {
 .hacking {
   min-height: 30px;
   margin-bottom: 5px;
+}
+
+.track-info {
+  background-color: gold;
+  color: black;
+  border: 8px solid black;
+  padding: 30px;
+  border-radius: 30px;
 }
 .two-hours {
   overflow: visible;
@@ -794,6 +838,13 @@ h1 {
 }
 .sponsors {
   background-color: transparent;
+}
+
+.track-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #sponsor-list {
   position: relative;
