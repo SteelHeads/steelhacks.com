@@ -97,7 +97,7 @@
 }
 
 #main-logo {
-  width: 100%;
+  width: 90%;
   height: auto;
   z-index: 5000;
 }
@@ -483,7 +483,7 @@ footer li {
   color: white;
 }
 .landing {
-  padding: 25px;
+  padding: 0px;
   top: 60px;
   top: 50px;
   bottom: 10px;
@@ -569,6 +569,13 @@ h3 {
   align-items: center;
   justify-self: center;
   justify-content: center;
+}
+.countdown-time-left {
+  border-radius: 20px;
+  height: auto;
+  font-size: 25px;
+  margin-bottom: 0px;
+  margin-top: 3px;
 }
 .time-line {
   border: 0.5px solid white;
@@ -953,10 +960,16 @@ h1 {
 }
 
 #countdown {
+  background-color: black;
+  border: 2px solid gold;
+  border-radius: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   width: 300px;
-  margin: 20px;
+  margin: 0px;
+  margin-top: 20px;
+  padding: 10px;
+  padding-bottom: 0px;
 }
 
 .countdown {
@@ -973,12 +986,16 @@ h1 {
 }
 .countdown-text {
   margin-top: 8px;
+  margin-bottom: 5px;
 }
 
 .countdown-segment {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-right: 8px;
+  margin-left: 8px;
+  padding: 0px;
 }
 
 .val {
