@@ -989,6 +989,22 @@ h1 {
   margin-bottom: 5px;
 }
 
+.time-devpost {
+  display: flex;
+}
+
+#devpost-button {
+  background-color: gold;
+  color: black;
+  width: 300px;
+  height: 120px;
+  margin-top: 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+
 .countdown-segment {
   display: flex;
   flex-direction: column;
